@@ -3,6 +3,7 @@ import { Card } from "@joshuagardiner/typescript-component-library";
 import { Summary } from "../Summary/Summary";
 import { Skills } from "../Skills/Skills";
 import { Experience } from "../Experience/Experience";
+import { Education } from "../Education/Education";
 import styling from "./Body.module.css";
 
 export const Body: React.FC = () => {
@@ -14,6 +15,7 @@ export const Body: React.FC = () => {
             <Summary />
             <Skills />
             <Experience />
+            <Education />
           </Card>
         </div>
       </div>
