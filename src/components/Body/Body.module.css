@@ -14,13 +14,3 @@
   top: -6vw;
   width: 94%;
 }
-
-.avatar {
-  border-radius: 50%;
-  display: "inherit";
-  height: "17vw";
-  margin-left: "auto";
-  margin-right: "auto";
-  position: "relative";
-  width: "17vw";
-}
