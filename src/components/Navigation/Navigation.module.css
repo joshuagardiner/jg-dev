@@ -1,0 +1,31 @@
+.navigation {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2.5%;
+}
+
+.navigationTitle {
+  float: left;
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+
+.navigationIcons {
+  display: inline-flex;
+  flex-direction: row;
+  float: right;
+  line-height: 2vw;
+}
+
+@media screen and (max-width: 425px) {
+  .navigationIcons {
+    margin-top: -1.25vw;
+  }
+}
+
+.navigationIcon {
+  padding: 0.07vw 0.45vw;
+}
+.navigationIcon:last-of-type {
+  padding-right: none;
+}
