@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "@joshuagardiner/typescript-component-library";
 import { Summary } from "../Summary/Summary";
 import { Skills } from "../Skills/Skills";
+import { Experience } from "../Experience/Experience";
 import styling from "./Body.module.css";
 
 export const Body: React.FC = () => {
@@ -12,6 +13,7 @@ export const Body: React.FC = () => {
           <Card marginTop={"-9.5vw"} width={"66%"}>
             <Summary />
             <Skills />
+            <Experience />
           </Card>
         </div>
       </div>
