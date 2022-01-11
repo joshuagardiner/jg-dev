@@ -1,5 +1,6 @@
 import React from "react";
-import { IoLogoReact } from "react-icons/io5";
+import { IconButton } from "@joshuagardiner/typescript-component-library";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import styling from "./Footer.module.css";
 
 export const Footer: React.FC = () => {
@@ -20,9 +21,25 @@ export const Footer: React.FC = () => {
             Joshua Gardiner, 2022
           </a>
 
-          <div className={styling.iconContainer}>
-            <p className={styling.authorText}>Powered by:</p>
-            <IoLogoReact className={styling.icon} />
+          <div className={styling.authorSocials}>
+            <IconButton
+              color="#132138"
+              data-testid="instagram"
+              external={true}
+              height="1.8vw"
+              href="https://github.com/joshuagardiner"
+              icon={IoLogoGithub}
+              width="1.8vw"
+            />
+            <IconButton
+              color="#132138"
+              data-testid="linkedin"
+              external={true}
+              height="1.8vw"
+              href="https://www.linkedin.com/in/joshua-gardiner"
+              icon={IoLogoLinkedin}
+              width="1.8vw"
+            />
           </div>
         </div>
       </div>

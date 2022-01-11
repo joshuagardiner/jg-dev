@@ -27,17 +27,8 @@
   padding-right: 0.5rem;
 }
 
-.iconContainer {
+.authorSocials {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: -5%;
-}
-
-.icon {
-  color: #3c4858;
-  height: 1.8vw;
-  margin-right: 2%;
-  margin-top: 5%;
-  width: 1.8vw;
 }

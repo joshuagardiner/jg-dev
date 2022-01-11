@@ -37,6 +37,11 @@ export const Summary: React.FC = () => {
         text={"Software Development Engineer"}
         textTransform={"uppercase"}
       />
+      <div className={styling.contactInformation}>
+        <p>37 Oakwood Gardens, Halifax, HX28HB</p>
+        <p>joshuagardiner@live.com</p>
+        <p>+44 7947 633 294</p>
+      </div>
       <Text
         fontSize={"1.125vw"}
         lineHeight={"2.5vw"}
