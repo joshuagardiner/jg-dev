@@ -7,12 +7,11 @@ import {
   Title as Role,
   Title as Tenure,
 } from "@joshuagardiner/typescript-component-library";
-import styling from "./Experience.module.css";
 
 export const Experience: React.FC = () => {
   return (
     <>
-      <Title fontSize={"2vw"} marginTop={"7.5%"} text={"Experience"} />
+      <Title fontSize={"2vw"} marginTop={"5%"} text={"Experience"} />
       <Card width={"100%"}>
         <Role
           fontSize={"1.25vw"}
