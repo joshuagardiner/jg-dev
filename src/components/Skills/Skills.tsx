@@ -27,7 +27,7 @@ export const Skills: React.FC = () => {
 
   return (
     <>
-      <Title fontSize={"2vw"} marginTop={"5%"} text={"Skills"} />
+      <Title fontSize={"2vw"} marginTop={"7.5%"} text={"Skills"} />
       <ul className={styling.skills}>
         {skillsArray.map((skill) => (
           <li key={skill}>{<Text fontSize={"1.125vw"} text={skill} />}</li>
