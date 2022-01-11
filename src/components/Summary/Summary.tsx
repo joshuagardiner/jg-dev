@@ -30,7 +30,7 @@ export const Summary: React.FC = () => {
           width="17vw"
         />
       </div>
-      <Title fontSize={"3.5vw"} marginTop={"5%"} text={"Joshua Gardiner"} />
+      <Title fontSize={"3.5vw"} marginTop={"7.5%"} text={"Joshua Gardiner"} />
       <Role
         fontSize={"1.25vw"}
         marginTop={"-1.75%"}
