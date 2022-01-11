@@ -74,10 +74,10 @@ export const Experience: React.FC = () => {
             textTransform={"uppercase"}
           />
           <Text
-            fontSize={"1.125vw"}
+            fontSize={"1vw"}
             lineHeight={"2.5vw"}
             maxWidth={"75%"}
-            text={`You can write here details about one of your team members. You can give more details about what they do. Feel free to add some links for people to be able to follow them outside the site.`}
+            text={`Responsible for delivering a first class customer service in any capacity around the store. My role was to in the first instance operate the checkouts, whilst during busier periods I would become the focal point of the checkouts department. Ensuring all colleagues have everything they need to hand, answering any customer queries a colleague could not.`}
           />
         </Card>
       </Card>
