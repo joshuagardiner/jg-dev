@@ -28,7 +28,7 @@ p {
 }
 
 .tcl-card {
-  display: inline-block;
+  display: inline-flex;
   margin-left: auto;
   margin-right: auto;
 }

@@ -64,7 +64,7 @@ export const Experience: React.FC = () => {
           maxWidth={"75%"}
           text={`I naturally undertook the mentoring of an apprentice developer and test engineer within my team, which led to a company-wide award in the inaugural EMIS Quarterly Heroes Q1 2021 for living the Supportive value of the business.`}
         />
-        <Card width="100%">
+        <Card marginTop={"2vw"} width="100%">
           <Card width={"50%"}>
             <Role
               fontSize={"1.25vw"}
