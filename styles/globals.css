@@ -14,3 +14,34 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1 {
+  color: #3c4858;
+}
+
+p {
+  color: #999999;
+}
+
+.tcl-avatar__image {
+  border-radius: 50%;
+}
+
+.tcl-card {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tcl-icon-btn:hover {
+  cursor: pointer;
+}
+
+ul,
+li {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+}

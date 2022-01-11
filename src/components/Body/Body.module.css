@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+}
+
+.content {
+  background-color: #ffffff;
+  border-radius: 1.2vw;
+  box-shadow: 0 1.2vw 6vw rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  height: auto;
+  left: 3%;
+  position: relative;
+  text-align: center;
+  top: -6vw;
+  width: 94%;
+}
