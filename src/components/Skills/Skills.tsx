@@ -15,6 +15,8 @@ export const Skills: React.FC = () => {
     "Cypress",
     "Terraform",
     "Docker",
+    "C#",
+    "Golang",
   ];
 
   const softSkillsArray = [
