@@ -51,10 +51,10 @@ export const Experience: React.FC = () => {
             textTransform={"uppercase"}
           />
           <Text
-            fontSize={"1.125vw"}
+            fontSize={"1vw"}
             lineHeight={"2.5vw"}
             maxWidth={"75%"}
-            text={`You can write here details about one of your team members. You can give more details about what they do. Feel free to add some links for people to be able to follow them outside the site.`}
+            text={`I joined the award winning training programme and undertook weekly modules such as: SQL, Web Development and Professional Skills. Before a more concentrated .NET period which focused on the SOLID principles, Object-oriented programming and TDD. Culminating in a presentation to my peers, and wider department involving the eCommerce project created during this time.`}
           />
         </Card>
         <Card width={"50%"}>
