@@ -52,7 +52,7 @@ export const Summary: React.FC = () => {
         fontSize={"1.125vw"}
         lineHeight={"2.5vw"}
         maxWidth={"75%"}
-        text={`A budding leader with a proven ability to mentor and motivate my peers, who can communicate confidently, problem-solve effectively and utilise initiative to deliver applications that are tailored to organizational needs using best practices and the best tool for the job.`}
+        text={`A budding leader with a proven ability to mentor and motivate colleagues, who can communicate confidently, problem-solve effectively and utilise initiative to deliver applications that are tailored to organizational needs using best practices and the best tool for the job.`}
       />
     </>
   );
