@@ -26,8 +26,6 @@ export const Summary: React.FC = () => {
           alt={"jg_avatar"}
           layout="fill"
           objectFit="contain"
-          height="17vw"
-          width="17vw"
         />
       </div>
       <Title fontSize={"3.5vw"} marginTop={"7.5%"} text={"Joshua Gardiner"} />
