@@ -3,8 +3,8 @@ import { Navigation } from "../Navigation/Navigation";
 import styling from "./Header.module.css";
 
 /**
- * The Header component is responsible for rendering components
- * the sit within the application Header.
+ * The Header component is responsible for rendering the components
+ * that sit within the application Header.
  *
  * @returns the Header component.
  */
