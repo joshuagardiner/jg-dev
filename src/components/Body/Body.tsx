@@ -6,6 +6,12 @@ import { Experience } from "../Experience/Experience";
 import { Education } from "../Education/Education";
 import styling from "./Body.module.css";
 
+/**
+ * The Body component is responsible for rendering the components
+ * that sit within the application's main Body of content.
+ *
+ * @returns the Body component.
+ */
 export const Body: React.FC = () => {
   return (
     <>
