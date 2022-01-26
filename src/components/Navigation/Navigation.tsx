@@ -3,6 +3,12 @@ import { IconButton } from "@joshuagardiner/typescript-component-library";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import styling from "./Navigation.module.css";
 
+/**
+ * The Navigation component is responsbile for rendering actionable
+ * IconButton's within the application Header.
+ *
+ * @returns the Navigation component.
+ */
 export const Navigation: React.FC = () => {
   return (
     <>
