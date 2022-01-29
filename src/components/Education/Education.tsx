@@ -9,6 +9,12 @@ import {
 } from "@joshuagardiner/typescript-component-library";
 import styling from "./Education.module.css";
 
+/**
+ * The Experience component is responsible for rendering content
+ * within the application Body.
+ *
+ * @returns the Education component.
+ */
 export const Education: React.FC = () => {
   return (
     <>
