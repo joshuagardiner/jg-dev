@@ -7,6 +7,13 @@ import {
 import Image from "next/image";
 import styling from "./Summary.module.css";
 
+/**
+ * The Summary component is responsible for rendering the Avatar component
+ * and contact details / bio content that sits within the application's main Body
+ * of content.
+ *
+ * @returns the Summary component.
+ */
 export const Summary: React.FC = () => {
   return (
     <>
