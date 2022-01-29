@@ -3,8 +3,8 @@ import { Text, Title } from "@joshuagardiner/typescript-component-library";
 import styling from "./Skills.module.css";
 
 /**
- * The Skills component is reponsible for rendering an unordered list
- * of the Text component within the application Body.
+ * The Skills component is reponsible for rendering content
+ * within the application Body.
  *
  * @returns the Skills component.
  */
