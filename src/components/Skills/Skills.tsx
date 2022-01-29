@@ -2,8 +2,17 @@ import React from "react";
 import { Text, Title } from "@joshuagardiner/typescript-component-library";
 import styling from "./Skills.module.css";
 
+/**
+ * The Skills component is reponsible for rendering an unordered list
+ * of the Text component within the application Body.
+ *
+ * @returns the Skills component.
+ */
 export const Skills: React.FC = () => {
-  const skillsArray = [
+  /**
+   * The technical skills.
+   */
+  const skillsArray: string[] = [
     "React",
     "TypeScript",
     "CI/CD",
@@ -19,7 +28,10 @@ export const Skills: React.FC = () => {
     "Golang",
   ];
 
-  const softSkillsArray = [
+  /**
+   * The soft skills.
+   */
+  const softSkillsArray: string[] = [
     "Communication",
     "Iniative",
     "Leadership",
