@@ -8,6 +8,12 @@ import {
   Title as Tenure,
 } from "@joshuagardiner/typescript-component-library";
 
+/**
+ * The Experience component is responsible for rendering content
+ * within the application Body.
+ *
+ * @returns the Experience component.
+ */
 export const Experience: React.FC = () => {
   return (
     <>
