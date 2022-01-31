@@ -1,9 +1,9 @@
 import React from "react";
 import { Card } from "@joshuagardiner/typescript-component-library";
-import { Summary } from "../Summary/Summary";
-import { Skills } from "../Skills/Skills";
-import { Experience } from "../Experience/Experience";
 import { Education } from "../Education/Education";
+import { Experience } from "../Experience/Experience";
+import { Skills } from "../Skills/Skills";
+import { Summary } from "../Summary/Summary";
 import styling from "./Body.module.css";
 
 /**
