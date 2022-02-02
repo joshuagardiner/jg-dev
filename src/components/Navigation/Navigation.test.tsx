@@ -1,12 +1,15 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import { Navigation } from "./Navigation";
 
+const OLD_OPEN = global.open;
+
 beforeEach(() => {
   global.open = jest.fn();
 });
 
 afterEach(() => {
   jest.clearAllMocks();
+  global.open = OLD_OPEN;
 });
 
 describe("Navigation", () => {
