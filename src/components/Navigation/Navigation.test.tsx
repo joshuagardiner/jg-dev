@@ -10,7 +10,7 @@ afterEach(() => {
 });
 
 describe("Navigation", () => {
-  it("should render the Navigation component correctly.", () => {
+  it("renders the Navigation component correctly.", () => {
     render(<Navigation />);
 
     const navigationTitle = screen.getByTestId("navigation-title");

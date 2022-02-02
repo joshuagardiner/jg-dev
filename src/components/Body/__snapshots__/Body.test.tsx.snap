@@ -1,0 +1,678 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Body renders the Body component unchanged. 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="content"
+    >
+      <div
+        class="tcl-card"
+        data-testid="card"
+        style="height: auto; margin-top: -9.5vw; max-width: 66%;"
+      >
+        <div
+          class="tcl-card__content"
+          data-testid="card-content"
+        >
+          <div
+            data-testid="summary-component"
+          >
+            <div
+              style="display: inherit; height: 17vw; margin-left: auto; margin-right: auto; position: relative; width: 17vw;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="jg_avatar"
+                  class="avatar"
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+                />
+                <noscript />
+              </span>
+            </div>
+            <div
+              class="tcl-title"
+              data-testid="title"
+            >
+              <h1
+                style="font-size: 3.5vw; margin-top: 7.5%;"
+              >
+                Joshua Gardiner
+              </h1>
+            </div>
+            <div
+              class="tcl-title"
+              data-testid="title"
+            >
+              <h1
+                style="font-size: 1.25vw; margin-top: -1.75%; text-transform: uppercase;"
+              >
+                Software Development Engineer
+              </h1>
+            </div>
+            <div
+              class="contactInformation"
+            >
+              <p>
+                37 Oakwood Gardens, Halifax, HX28HB
+              </p>
+              <p>
+                joshuagardiner@live.com
+              </p>
+              <p>
+                +44 7947 633 294
+              </p>
+            </div>
+            <div
+              class="tcl-text"
+              data-testid="text"
+            >
+              <p
+                style="font-size: 1.125vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+              >
+                An experienced software development engineer with a passion for developing web applications. Well-versed in a variety of technologies and writing code to create applications that are reliable and user-friendly.
+              </p>
+            </div>
+            <div
+              class="tcl-text"
+              data-testid="text"
+            >
+              <p
+                style="font-size: 1.125vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+              >
+                A budding leader with a proven ability to mentor and motivate colleagues, who can communicate confidently, problem-solve effectively and utilise initiative to deliver applications that are tailored to organizational needs using best practices and the best tool for the job.
+              </p>
+            </div>
+          </div>
+          <div
+            data-testid="skills-component"
+          >
+            <div
+              class="tcl-title"
+              data-testid="title"
+            >
+              <h1
+                style="font-size: 2vw; margin-top: 7.5%;"
+              >
+                Skills
+              </h1>
+            </div>
+            <ul
+              class="skills"
+            >
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    React
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    TypeScript
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    CI/CD
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    AWS
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Azure
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    TDD
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    GitHub
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Jest
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Cypress
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Terraform
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Docker
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    C#
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Golang
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Communication
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Iniative
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Leadership
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Problem solving
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
+                  >
+                    Teamwork
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div
+            data-testid="experience-component"
+          >
+            <div
+              class="tcl-title"
+              data-testid="title"
+            >
+              <h1
+                style="font-size: 2vw; margin-top: 5%;"
+              >
+                Experience
+              </h1>
+            </div>
+            <div
+              class="tcl-card"
+              data-testid="card"
+              style="height: auto; margin-top: auto; max-width: 100%;"
+            >
+              <div
+                class="tcl-card__content"
+                data-testid="card-content"
+              >
+                <div
+                  class="tcl-title"
+                  data-testid="title"
+                >
+                  <h1
+                    style="font-size: 1.25vw; text-transform: uppercase;"
+                  >
+                    Software Development Engineer
+                  </h1>
+                </div>
+                <div
+                  class="tcl-title"
+                  data-testid="title"
+                >
+                  <h1
+                    style="font-size: 1vw; text-transform: uppercase;"
+                  >
+                    EMIS Health
+                  </h1>
+                </div>
+                <div
+                  class="tcl-title"
+                  data-testid="title"
+                >
+                  <h1
+                    style="font-size: .75vw; text-transform: uppercase;"
+                  >
+                    November '17 - Present
+                  </h1>
+                </div>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                  >
+                    I have enjoyed working with a wide ranging, ever changing tech stack during my time at the company which began in C#, involving the refactoring of a legacy product alongside resolving priority SLA items.
+                  </p>
+                </div>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                  >
+                    I was a member of the first set of engineers to begin coding the next generation of product for the business which allowed a great deal of flexibility and freedom as we identified new tools and services fit for use. Including as a learning exercise the creation of a Twitter bot (@motivationalboz) using Node.js and AWS Lambda to post a tweet on a CRON schedule.
+                  </p>
+                </div>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                  >
+                    After this period of elaboration I began to work exclusively in this space with Golang and the varying services AWS provide, inc. API Gateway, CloudFormation, CodePipeline and Lambda. Writing one of the first CloudFormation templates which deployed a CI/CD pipeline in the department.
+                  </p>
+                </div>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                  >
+                    This has organically led to the consumption of API’s and a more front-end focus with the use of React and TypeScript, and allowed for more hands-on experience with the likes of Terraform and Docker through repository management and containerised applications.
+                  </p>
+                </div>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                  >
+                    I began to contribute to our new and growing community initiatives before identifying an opportunity and leading on my own with the support of my peers, whilst actively looking for areas of improvement not only within the team but within the department by identifying new tools and best practices.
+                  </p>
+                </div>
+                <div
+                  class="tcl-text"
+                  data-testid="text"
+                >
+                  <p
+                    style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                  >
+                    I naturally undertook the mentoring of an apprentice developer and test engineer within my team, which led to a company-wide award in the inaugural EMIS Quarterly Heroes Q1 2021 for living the Supportive value of the business.
+                  </p>
+                </div>
+                <div
+                  class="tcl-card"
+                  data-testid="card"
+                  style="height: auto; margin-top: 2vw; max-width: 100%;"
+                >
+                  <div
+                    class="tcl-card__content"
+                    data-testid="card-content"
+                  >
+                    <div
+                      class="tcl-card"
+                      data-testid="card"
+                      style="height: auto; margin-top: auto; max-width: 50%;"
+                    >
+                      <div
+                        class="tcl-card__content"
+                        data-testid="card-content"
+                      >
+                        <div
+                          class="tcl-title"
+                          data-testid="title"
+                        >
+                          <h1
+                            style="font-size: 1.25vw; text-transform: uppercase;"
+                          >
+                            .NET Developer
+                          </h1>
+                        </div>
+                        <div
+                          class="tcl-title"
+                          data-testid="title"
+                        >
+                          <h1
+                            style="font-size: 1vw; text-transform: uppercase;"
+                          >
+                            FDM Group
+                          </h1>
+                        </div>
+                        <div
+                          class="tcl-title"
+                          data-testid="title"
+                        >
+                          <h1
+                            style="font-size: .75vw; text-transform: uppercase;"
+                          >
+                            May '17 - October '17
+                          </h1>
+                        </div>
+                        <div
+                          class="tcl-text"
+                          data-testid="text"
+                        >
+                          <p
+                            style="font-size: .75vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                          >
+                            I joined the award winning training programme and undertook weekly modules such as: SQL, Web Development and Professional Skills. Before a more concentrated .NET period which focused on the SOLID principles, Object-oriented programming and TDD. Culminating in a presentation to my peers, and wider department involving the eCommerce project created during this time.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tcl-card"
+                      data-testid="card"
+                      style="height: auto; margin-top: auto; max-width: 50%;"
+                    >
+                      <div
+                        class="tcl-card__content"
+                        data-testid="card-content"
+                      >
+                        <div
+                          class="tcl-title"
+                          data-testid="title"
+                        >
+                          <h1
+                            style="font-size: 1.25vw; text-transform: uppercase;"
+                          >
+                            Customer Service Assistant
+                          </h1>
+                        </div>
+                        <div
+                          class="tcl-title"
+                          data-testid="title"
+                        >
+                          <h1
+                            style="font-size: 1vw; text-transform: uppercase;"
+                          >
+                            Sainsbury's
+                          </h1>
+                        </div>
+                        <div
+                          class="tcl-title"
+                          data-testid="title"
+                        >
+                          <h1
+                            style="font-size: .75vw; text-transform: uppercase;"
+                          >
+                            December '13 - June '15
+                          </h1>
+                        </div>
+                        <div
+                          class="tcl-text"
+                          data-testid="text"
+                        >
+                          <p
+                            style="font-size: .75vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
+                          >
+                            Responsible for delivering a first class customer service in any capacity around the store. My role was to in the first instance operate the checkouts, whilst during busier periods I would become the focal point of the checkouts department. Ensuring all colleagues have everything they need to hand, answering any customer queries a colleague could not.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container"
+            data-testid="education-component"
+          >
+            <div
+              class="tcl-title"
+              data-testid="title"
+            >
+              <h1
+                style="font-size: 2vw; margin-top: 7.5%;"
+              >
+                Education
+              </h1>
+            </div>
+            <div
+              class="tcl-card"
+              data-testid="card"
+              style="height: auto; margin-top: auto; max-width: 100%;"
+            >
+              <div
+                class="tcl-card__content"
+                data-testid="card-content"
+              >
+                <div
+                  class="tcl-title"
+                  data-testid="title"
+                >
+                  <h1
+                    style="font-size: 1.25vw;"
+                  >
+                    BSc (Hons) COMPUTING
+                  </h1>
+                </div>
+                <div
+                  class="tcl-title"
+                  data-testid="title"
+                >
+                  <h1
+                    style="font-size: 1vw; text-transform: uppercase;"
+                  >
+                    Manchester Metropolitan University
+                  </h1>
+                </div>
+                <div
+                  class="tcl-title"
+                  data-testid="title"
+                >
+                  <h1
+                    style="font-size: .75vw; text-transform: uppercase;"
+                  >
+                    September '11 - June '16
+                  </h1>
+                </div>
+                <div
+                  class="tcl-card"
+                  data-testid="card"
+                  style="height: auto; margin-top: 1vw; max-width: 100%;"
+                >
+                  <div
+                    class="tcl-card__content"
+                    data-testid="card-content"
+                  >
+                    <div
+                      class="tcl-title"
+                      data-testid="title"
+                    >
+                      <h1
+                        style="font-size: 1vw; text-transform: uppercase;"
+                      >
+                        The Brooksbank School and Sixth Form
+                      </h1>
+                    </div>
+                    <div
+                      class="tcl-title"
+                      data-testid="title"
+                    >
+                      <h1
+                        style="font-size: .75vw; text-transform: uppercase;"
+                      >
+                        September '03 - June '10
+                      </h1>
+                    </div>
+                    <div
+                      class="tcl-text"
+                      data-testid="text"
+                    >
+                      <p
+                        style="font-size: .75vw; margin-left: auto; margin-right: auto;"
+                      >
+                        A-level's: Information technology, Geography
+                      </p>
+                    </div>
+                    <div
+                      class="tcl-text"
+                      data-testid="text"
+                    >
+                      <p
+                        style="font-size: .75vw; margin-left: auto; margin-right: auto;"
+                      >
+                        AS-level's: Business studies, Physical education
+                      </p>
+                    </div>
+                    <div
+                      class="tcl-text"
+                      data-testid="text"
+                    >
+                      <p
+                        style="font-size: .75vw; margin-left: auto; margin-right: auto;"
+                      >
+                        GCSE's: 10 [A-C]
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
