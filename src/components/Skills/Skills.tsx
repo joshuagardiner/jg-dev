@@ -40,7 +40,7 @@ export const Skills: React.FC = () => {
   ];
 
   return (
-    <>
+    <div data-testid={"skills-component"}>
       <Title fontSize={"2vw"} marginTop={"7.5%"} text={"Skills"} />
       <ul className={styling.skills}>
         {skillsArray.map((skill) => (
@@ -52,6 +52,6 @@ export const Skills: React.FC = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 };

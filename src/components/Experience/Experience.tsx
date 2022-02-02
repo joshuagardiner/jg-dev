@@ -16,7 +16,7 @@ import {
  */
 export const Experience: React.FC = () => {
   return (
-    <>
+    <div data-testid={"experience-component"}>
       <Title fontSize={"2vw"} marginTop={"5%"} text={"Experience"} />
       <Card width={"100%"}>
         <Role
@@ -119,6 +119,6 @@ export const Experience: React.FC = () => {
           </Card>
         </Card>
       </Card>
-    </>
+    </div>
   );
 };

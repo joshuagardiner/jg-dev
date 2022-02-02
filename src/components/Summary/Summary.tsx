@@ -15,7 +15,7 @@ import styling from "./Summary.module.css";
  */
 export const Summary: React.FC = () => {
   return (
-    <>
+    <div data-testid={"summary-component"}>
       <div
         style={{
           display: "inherit",
@@ -58,6 +58,6 @@ export const Summary: React.FC = () => {
         maxWidth={"75%"}
         text={`A budding leader with a proven ability to mentor and motivate colleagues, who can communicate confidently, problem-solve effectively and utilise initiative to deliver applications that are tailored to organizational needs using best practices and the best tool for the job.`}
       />
-    </>
+    </div>
   );
 };
