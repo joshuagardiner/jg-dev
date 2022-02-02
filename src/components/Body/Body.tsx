@@ -14,17 +14,15 @@ import styling from "./Body.module.css";
  */
 export const Body: React.FC = () => {
   return (
-    <>
-      <div className={styling.container}>
-        <div className={styling.content}>
-          <Card marginTop={"-9.5vw"} width={"66%"}>
-            <Summary />
-            <Skills />
-            <Experience />
-            <Education />
-          </Card>
-        </div>
+    <div className={styling.container} data-testid={"body-component"}>
+      <div className={styling.content}>
+        <Card marginTop={"-9.5vw"} width={"66%"}>
+          <Summary />
+          <Skills />
+          <Experience />
+          <Education />
+        </Card>
       </div>
-    </>
+    </div>
   );
 };

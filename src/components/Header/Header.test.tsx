@@ -5,9 +5,11 @@ describe("Header", () => {
   it("renders the Header component correctly.", () => {
     render(<Header />);
 
-    const header = screen.getByTestId("header-component");
+    const headerComponent = screen.getByTestId("header-component");
+    const navigationComponent = screen.getByTestId("navigation-component");
 
-    expect(header).toBeDefined();
+    expect(headerComponent).toBeDefined();
+    expect(navigationComponent).toBeDefined();
   });
 
   it("renders the Header component unchanged.", () => {

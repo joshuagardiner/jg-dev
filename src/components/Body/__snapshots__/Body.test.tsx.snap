@@ -4,6 +4,7 @@ exports[`Body renders the Body component unchanged. 1`] = `
 <div>
   <div
     class="container"
+    data-testid="body-component"
   >
     <div
       class="content"
@@ -59,14 +60,21 @@ exports[`Body renders the Body component unchanged. 1`] = `
             </div>
             <div
               class="contactInformation"
+              data-testid="summary-contact"
             >
-              <p>
+              <p
+                data-testid="summary-contact-address"
+              >
                 37 Oakwood Gardens, Halifax, HX28HB
               </p>
-              <p>
+              <p
+                data-testid="summary-contact-email"
+              >
                 joshuagardiner@live.com
               </p>
-              <p>
+              <p
+                data-testid="summary-contact-telephone"
+              >
                 +44 7947 633 294
               </p>
             </div>
