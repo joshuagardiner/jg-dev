@@ -42,12 +42,14 @@ export const Skills: React.FC = () => {
   return (
     <div data-testid={"skills-component"}>
       <Title fontSize={"2vw"} marginTop={"7.5%"} text={"Skills"} />
-      <ul className={styling.skills}>
+      <ul className={styling.skills} data-testid={"skills-list"}>
         {skillsArray.map((skill) => (
-          <li key={skill}>{<Text fontSize={"1.125vw"} text={skill} />}</li>
+          <li data-testid={"technical-skill"} key={skill}>
+            {<Text fontSize={"1.125vw"} text={skill} />}
+          </li>
         ))}
         {softSkillsArray.map((softSkill) => (
-          <li key={softSkill}>
+          <li data-testid={"soft-skill"} key={softSkill}>
             {<Text fontSize={"1.125vw"} text={softSkill} />}
           </li>
         ))}
