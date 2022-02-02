@@ -114,8 +114,11 @@ exports[`Body renders the Body component unchanged. 1`] = `
             </div>
             <ul
               class="skills"
+              data-testid="skills-list"
             >
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -127,7 +130,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -139,7 +144,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -151,7 +158,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -163,7 +172,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -175,7 +186,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -187,7 +200,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -199,7 +214,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -211,7 +228,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -223,7 +242,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -235,7 +256,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -247,7 +270,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -259,7 +284,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="technical-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -271,7 +298,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="soft-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -283,7 +312,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="soft-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -295,7 +326,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="soft-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -307,7 +340,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="soft-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
@@ -319,7 +354,9 @@ exports[`Body renders the Body component unchanged. 1`] = `
                   </p>
                 </div>
               </li>
-              <li>
+              <li
+                data-testid="soft-skill"
+              >
                 <div
                   class="tcl-text"
                   data-testid="text"
