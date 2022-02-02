@@ -34,17 +34,27 @@ export const Summary: React.FC = () => {
           objectFit="contain"
         />
       </div>
-      <Title fontSize={"3.5vw"} marginTop={"7.5%"} text={"Joshua Gardiner"} />
+      <Title
+        data-testid={"summary-title"}
+        fontSize={"3.5vw"}
+        marginTop={"7.5%"}
+        text={"Joshua Gardiner"}
+      />
       <Role
         fontSize={"1.25vw"}
         marginTop={"-1.75%"}
         text={"Software Development Engineer"}
         textTransform={"uppercase"}
       />
-      <div className={styling.contactInformation}>
-        <p>37 Oakwood Gardens, Halifax, HX28HB</p>
-        <p>joshuagardiner@live.com</p>
-        <p>+44 7947 633 294</p>
+      <div
+        className={styling.contactInformation}
+        data-testid={"summary-contact"}
+      >
+        <p data-testid={"summary-contact-address"}>
+          37 Oakwood Gardens, Halifax, HX28HB
+        </p>
+        <p data-testid={"summary-contact-email"}>joshuagardiner@live.com</p>
+        <p data-testid={"summary-contact-telephone"}>+44 7947 633 294</p>
       </div>
       <Text
         fontSize={"1.125vw"}

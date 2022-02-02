@@ -4,6 +4,7 @@ exports[`Navigation renders the Navigation component unchanged. 1`] = `
 <div>
   <div
     class="navigation"
+    data-testid="navigation-component"
   >
     <div
       class="navigationTitle"

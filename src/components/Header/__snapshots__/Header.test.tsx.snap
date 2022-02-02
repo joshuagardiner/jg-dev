@@ -8,6 +8,7 @@ exports[`Header renders the Header component unchanged. 1`] = `
   >
     <div
       class="navigation"
+      data-testid="navigation-component"
     >
       <div
         class="navigationTitle"
