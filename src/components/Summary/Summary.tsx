@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Text,
-  Title,
-  Title as Role,
-} from "@joshuagardiner/typescript-component-library";
+import { Text, Title, Title as Role } from "@joshuagardiner/typescript-component-library";
 import Image from "next/image";
 import styling from "./Summary.module.css";
 
@@ -23,7 +19,7 @@ export const Summary: React.FC = () => {
           marginLeft: "auto",
           marginRight: "auto",
           position: "relative",
-          width: "17vw",
+          width: "17vw"
         }}
       >
         <Image
@@ -46,13 +42,8 @@ export const Summary: React.FC = () => {
         text={"Software Development Engineer"}
         textTransform={"uppercase"}
       />
-      <div
-        className={styling.contactInformation}
-        data-testid={"summary-contact"}
-      >
-        <p data-testid={"summary-contact-address"}>
-          37 Oakwood Gardens, Halifax, HX28HB
-        </p>
+      <div className={styling.contactInformation} data-testid={"summary-contact"}>
+        <p data-testid={"summary-contact-address"}>37 Oakwood Gardens, Halifax, HX28HB</p>
         <p data-testid={"summary-contact-email"}>joshuagardiner@live.com</p>
         <p data-testid={"summary-contact-telephone"}>+44 7947 633 294</p>
       </div>

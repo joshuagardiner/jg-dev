@@ -25,7 +25,7 @@ export const Skills: React.FC = () => {
     "Terraform",
     "Docker",
     "C#",
-    "Golang",
+    "Golang"
   ];
 
   /**
@@ -36,7 +36,7 @@ export const Skills: React.FC = () => {
     "Iniative",
     "Leadership",
     "Problem solving",
-    "Teamwork",
+    "Teamwork"
   ];
 
   return (

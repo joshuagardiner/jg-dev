@@ -16,13 +16,9 @@ describe("Summary", () => {
     expect(summaryImage).toBeDefined();
     expect(summaryTitles).toHaveLength(2);
     expect(summaryTitles[0].textContent).toEqual("Joshua Gardiner");
-    expect(summaryTitles[1].textContent).toEqual(
-      "Software Development Engineer"
-    );
+    expect(summaryTitles[1].textContent).toEqual("Software Development Engineer");
     expect(summaryContactInfo).toBeDefined();
-    expect(summaryAddress.textContent).toEqual(
-      "37 Oakwood Gardens, Halifax, HX28HB"
-    );
+    expect(summaryAddress.textContent).toEqual("37 Oakwood Gardens, Halifax, HX28HB");
     expect(summaryEmail.textContent).toEqual("joshuagardiner@live.com");
     expect(summaryTelephone.textContent).toEqual("+44 7947 633 294");
     expect(summaryText).toHaveLength(2);

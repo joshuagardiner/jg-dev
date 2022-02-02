@@ -5,7 +5,7 @@ import {
   Title,
   Title as Company,
   Title as Role,
-  Title as Tenure,
+  Title as Tenure
 } from "@joshuagardiner/typescript-component-library";
 
 /**
@@ -24,16 +24,8 @@ export const Experience: React.FC = () => {
           text={"Software Development Engineer"}
           textTransform={"uppercase"}
         />
-        <Company
-          fontSize={"1vw"}
-          text={"EMIS Health"}
-          textTransform={"uppercase"}
-        />
-        <Tenure
-          fontSize={".75vw"}
-          text={"November '17 - Present"}
-          textTransform={"uppercase"}
-        />
+        <Company fontSize={"1vw"} text={"EMIS Health"} textTransform={"uppercase"} />
+        <Tenure fontSize={".75vw"} text={"November '17 - Present"} textTransform={"uppercase"} />
         <Text
           fontSize={"1vw"}
           lineHeight={"2.5vw"}
@@ -72,21 +64,9 @@ export const Experience: React.FC = () => {
         />
         <Card marginTop={"2vw"} width="100%">
           <Card width={"50%"}>
-            <Role
-              fontSize={"1.25vw"}
-              text={".NET Developer"}
-              textTransform={"uppercase"}
-            />
-            <Company
-              fontSize={"1vw"}
-              text={"FDM Group"}
-              textTransform={"uppercase"}
-            />
-            <Tenure
-              fontSize={".75vw"}
-              text={"May '17 - October '17"}
-              textTransform={"uppercase"}
-            />
+            <Role fontSize={"1.25vw"} text={".NET Developer"} textTransform={"uppercase"} />
+            <Company fontSize={"1vw"} text={"FDM Group"} textTransform={"uppercase"} />
+            <Tenure fontSize={".75vw"} text={"May '17 - October '17"} textTransform={"uppercase"} />
             <Text
               fontSize={".75vw"}
               lineHeight={"2.5vw"}
@@ -100,11 +80,7 @@ export const Experience: React.FC = () => {
               text={"Customer Service Assistant"}
               textTransform={"uppercase"}
             />
-            <Company
-              fontSize={"1vw"}
-              text={"Sainsbury's"}
-              textTransform={"uppercase"}
-            />
+            <Company fontSize={"1vw"} text={"Sainsbury's"} textTransform={"uppercase"} />
             <Tenure
               fontSize={".75vw"}
               text={"December '13 - June '15"}
