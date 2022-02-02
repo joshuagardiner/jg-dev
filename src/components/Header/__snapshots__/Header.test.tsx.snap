@@ -11,6 +11,7 @@ exports[`Header renders the Header component unchanged. 1`] = `
     >
       <div
         class="navigationTitle"
+        data-testid="navigation-title"
       >
         JG.dev
       </div>
@@ -22,7 +23,7 @@ exports[`Header renders the Header component unchanged. 1`] = `
         >
           <button
             class="tcl-icon-btn"
-            data-testid="icon-btn-instagram"
+            data-testid="icon-btn-navigation-github"
             style="background-color: inherit; border-radius: 50%;"
             type="button"
           >
@@ -48,7 +49,7 @@ exports[`Header renders the Header component unchanged. 1`] = `
         >
           <button
             class="tcl-icon-btn"
-            data-testid="icon-btn-linkedin"
+            data-testid="icon-btn-navigation-linkedin"
             style="background-color: inherit; border-radius: 50%;"
             type="button"
           >

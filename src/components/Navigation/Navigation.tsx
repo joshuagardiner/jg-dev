@@ -13,12 +13,17 @@ export const Navigation: React.FC = () => {
   return (
     <>
       <div className={styling.navigation}>
-        <div className={styling.navigationTitle}>JG.dev</div>
+        <div
+          className={styling.navigationTitle}
+          data-testid={"navigation-title"}
+        >
+          JG.dev
+        </div>
         <div className={styling.navigationIcons}>
           <div className={styling.navigationIcon}>
             <IconButton
               color="#FFFFFF"
-              data-testid="instagram"
+              data-testid="navigation-github"
               external={true}
               height="1.8vw"
               href="https://github.com/joshuagardiner"
@@ -29,7 +34,7 @@ export const Navigation: React.FC = () => {
           <div className={styling.navigationIcon}>
             <IconButton
               color="#FFFFFF"
-              data-testid="linkedin"
+              data-testid="navigation-linkedin"
               external={true}
               height="1.8vw"
               href="https://www.linkedin.com/in/joshua-gardiner"
