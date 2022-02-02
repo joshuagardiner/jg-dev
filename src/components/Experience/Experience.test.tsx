@@ -12,17 +12,13 @@ describe("Experience", () => {
     expect(experienceTitles).toBeDefined();
     expect(experienceTitles).toHaveLength(10);
     expect(experienceTitles[0].textContent).toEqual("Experience");
-    expect(experienceTitles[1].textContent).toEqual(
-      "Software Development Engineer"
-    );
+    expect(experienceTitles[1].textContent).toEqual("Software Development Engineer");
     expect(experienceTitles[2].textContent).toEqual("EMIS Health");
     expect(experienceTitles[3].textContent).toEqual("November '17 - Present");
     expect(experienceTitles[4].textContent).toEqual(".NET Developer");
     expect(experienceTitles[5].textContent).toEqual("FDM Group");
     expect(experienceTitles[6].textContent).toEqual("May '17 - October '17");
-    expect(experienceTitles[7].textContent).toEqual(
-      "Customer Service Assistant"
-    );
+    expect(experienceTitles[7].textContent).toEqual("Customer Service Assistant");
     expect(experienceTitles[8].textContent).toEqual("Sainsbury's");
     expect(experienceTitles[9].textContent).toEqual("December '13 - June '15");
     expect(experienceCards).toBeDefined();

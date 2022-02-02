@@ -5,7 +5,7 @@ import {
   Title,
   Title as Course,
   Title as Tenure,
-  Title as University,
+  Title as University
 } from "@joshuagardiner/typescript-component-library";
 import styling from "./Education.module.css";
 
@@ -26,11 +26,7 @@ export const Education: React.FC = () => {
           text={"Manchester Metropolitan University"}
           textTransform={"uppercase"}
         />
-        <Tenure
-          fontSize={".75vw"}
-          text={"September '11 - June '16"}
-          textTransform={"uppercase"}
-        />
+        <Tenure fontSize={".75vw"} text={"September '11 - June '16"} textTransform={"uppercase"} />
         <Card marginTop={"1vw"} width={"100%"}>
           <University
             fontSize={"1vw"}
@@ -42,14 +38,8 @@ export const Education: React.FC = () => {
             text={"September '03 - June '10"}
             textTransform={"uppercase"}
           />
-          <Text
-            fontSize={".75vw"}
-            text={"A-level's: Information technology, Geography"}
-          />
-          <Text
-            fontSize={".75vw"}
-            text={"AS-level's: Business studies, Physical education"}
-          />
+          <Text fontSize={".75vw"} text={"A-level's: Information technology, Geography"} />
+          <Text fontSize={".75vw"} text={"AS-level's: Business studies, Physical education"} />
           <Text fontSize={".75vw"} text={"GCSE's: 10 [A-C]"} />
         </Card>
       </Card>
