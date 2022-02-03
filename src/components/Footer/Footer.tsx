@@ -13,24 +13,19 @@ export const Footer: React.FC = () => {
   return (
     <>
       <div className={styling.container}>
-        <div className={styling.contactInfo}>
-          <p>37 Oakwood Gardens, Halifax, HX28HB</p>
-          <p>joshuagardiner@live.com</p>
-          <p>+44 7947 633 294</p>
+        <div className={styling.contactInfo} data-testid={"footer-contact"}>
+          <p data-testid={"footer-contact-address"}>37 Oakwood Gardens, Halifax, HX28HB</p>
+          <p data-testid={"footer-contact-email"}>joshuagardiner@live.com</p>
+          <p data-testid={"footer-contact-telephone"}>+44 7947 633 294</p>
         </div>
-        <div className={styling.authorInfo}>
-          <a
-            href={"https://www.linkedin.com/in/joshua-gardiner"}
-            rel={"noopener noreferrer"}
-            target={"_blank"}
-          >
+        <div className={styling.authorInfo} data-testid={"footer-author"}>
+          <a className={styling.authorText} data-testid={"footer-author-title"}>
             Joshua Gardiner, 2022
           </a>
-
           <div className={styling.authorSocials}>
             <IconButton
               color="#132138"
-              data-testid="instagram"
+              data-testid="footer-github"
               external={true}
               height="1.8vw"
               href="https://github.com/joshuagardiner"
@@ -39,7 +34,7 @@ export const Footer: React.FC = () => {
             />
             <IconButton
               color="#132138"
-              data-testid="linkedin"
+              data-testid="footer-linkedin"
               external={true}
               height="1.8vw"
               href="https://www.linkedin.com/in/joshua-gardiner"
