@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { getTitle } from "../../client/Client";
 import { Navigation } from "../Navigation/Navigation";
 import styling from "./Header.module.css";
 
@@ -8,12 +9,27 @@ import styling from "./Header.module.css";
  *
  * @returns the Header component.
  */
-export const Header: React.FC = () => {
-  return (
-    <>
-      <div className={styling.container} data-testid={"header-component"}>
-        <Navigation />
-      </div>
-    </>
+export const Header: React.FC = (): JSX.Element => {
+  const [error, setError] = useState("");
+  const [title, setTitle] = useState("");
+  useEffect(() => {
+    getTitle().then(
+      (result) => {
+        setTitle(result.title);
+      },
+      (error) => {
+        setError("Error: " + error);
+      }
+    );
+  });
+
+  return error ? (
+    <div className={styling.container} data-testid={"header-component"}>
+      {error}
+    </div>
+  ) : (
+    <div className={styling.container} data-testid={"header-component"}>
+      <Navigation title={title} />
+    </div>
   );
 };
