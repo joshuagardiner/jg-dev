@@ -1,6 +1,7 @@
-import React from "react";
 import { IconButton } from "@joshuagardiner/typescript-component-library";
+import React from "react";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { INavigationProps } from "./INavigationProps";
 import styling from "./Navigation.module.css";
 
 /**
@@ -9,11 +10,11 @@ import styling from "./Navigation.module.css";
  *
  * @returns the Navigation component.
  */
-export const Navigation: React.FC = () => {
+export const Navigation: React.FC<INavigationProps> = ({ title }): JSX.Element => {
   return (
     <div className={styling.navigation} data-testid={"navigation-component"}>
       <div className={styling.navigationTitle} data-testid={"navigation-title"}>
-        JG.dev
+        {title}
       </div>
       <div className={styling.navigationIcons}>
         <div className={styling.navigationIcon}>
