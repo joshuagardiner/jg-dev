@@ -616,10 +616,10 @@
     ufo "^0.7.10"
     unstorage "^0.2.8"
 
-"@netlify/plugin-nextjs@^4.2.2":
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-4.2.2.tgz#41922dd3e457fb5f53fa89f3a5ceb61f5d569c52"
-  integrity sha512-zDfKWcDq1mzslBEEGb+kGc6uxTGzFBI+K27YuStbto4oedn8q4WOMM21W9IAYh2UgvXvcrwORdWrYXaQbYrxhw==
+"@netlify/plugin-nextjs@^4.2.5":
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-4.2.5.tgz#4031d7d4da8623e6daf2e4445ab007e7d76747a6"
+  integrity sha512-+UHVGqbOSNT2dylPjzKxSg9LvBxKN2Cqk3gZURhv67tn5mliQfXfBrzh6SSUINWT8eeTmYSbv55X6VH6tFhZiw==
   dependencies:
     "@netlify/functions" "^0.11.0"
     "@netlify/ipx" "^0.0.9"
@@ -628,6 +628,7 @@
     fs-extra "^10.0.0"
     globby "^11.0.4"
     moize "^6.1.0"
+    next "^12.0.10"
     node-fetch "^2.6.6"
     node-stream-zip "^1.15.0"
     outdent "^0.8.0"
@@ -4598,7 +4599,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next@12.0.10:
+next@12.0.10, next@^12.0.10:
   version "12.0.10"
   resolved "https://registry.yarnpkg.com/next/-/next-12.0.10.tgz#fcc4584177418bd777ce157f3165b7ba5e7708f7"
   integrity sha512-1y3PpGzpb/EZzz1jgne+JfZXKAVJUjYXwxzrADf/LWN+8yi9o79vMLXpW3mevvCHkEF2sBnIdjzNn16TJrINUw==
