@@ -28,6 +28,7 @@ export const Summary: React.FC = () => {
           alt={"jg_avatar"}
           layout="fill"
           objectFit="contain"
+          priority={true}
         />
       </div>
       <Title
