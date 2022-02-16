@@ -1,3 +1,27 @@
 .container {
   margin-bottom: 7.5%;
 }
+
+.course {
+  font-size: 1.125vw;
+  text-transform: uppercase;
+}
+
+.faculty {
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+
+.grades {
+  font-size: 0.75vw;
+  line-height: 1.75vw;
+}
+
+.tenure {
+  font-size: 0.75vw;
+  text-transform: uppercase;
+}
+.title {
+  font-size: 2vw;
+  margin-top: 7.5%;
+}

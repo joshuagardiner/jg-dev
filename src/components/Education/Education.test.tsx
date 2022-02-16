@@ -5,23 +5,25 @@ describe("Education", () => {
   it("renders the Education component correctly.", () => {
     render(<Education />);
 
-    const educationTitles = screen.getAllByTestId("title");
-    const educationText = screen.getAllByTestId("text");
+    const educationComponent = screen.getByTestId("education-component");
+    const educationTitle = screen.getByTestId("education-title");
+    const educationCourse = screen.getByTestId("education-course");
+    const educationFaculties = screen.getAllByTestId("education-faculty");
+    const educationTenures = screen.getAllByTestId("education-tenure");
+    const educationGrades = screen.getByTestId("education-grades");
 
-    expect(educationTitles).toHaveLength(6);
-    expect(educationTitles[0].textContent).toEqual("Education");
-    expect(educationTitles[1].textContent).toEqual("BSc (Hons) COMPUTING");
-    expect(educationTitles[2].textContent).toEqual("Manchester Metropolitan University");
-    expect(educationTitles[3].textContent).toEqual("September '11 - June '16");
-    expect(educationTitles[4].textContent).toEqual("The Brooksbank School and Sixth Form");
-    expect(educationTitles[5].textContent).toEqual("September '03 - June '10");
-
-    expect(educationText).toHaveLength(3);
-    expect(educationText[0].textContent).toEqual("A-level's: Information technology, Geography");
-    expect(educationText[1].textContent).toEqual(
-      "AS-level's: Business studies, Physical education"
+    expect(educationComponent).toBeDefined();
+    expect(educationTitle.textContent).toEqual("Education");
+    expect(educationCourse.textContent).toEqual("BSc (Hons) COMPUTING");
+    expect(educationFaculties).toHaveLength(2);
+    expect(educationTenures).toHaveLength(2);
+    expect(educationFaculties[0].textContent).toEqual("Manchester Metropolitan University");
+    expect(educationTenures[0].textContent).toEqual("September '11 - June '16");
+    expect(educationFaculties[1].textContent).toEqual("The Brooksbank School and Sixth Form");
+    expect(educationTenures[1].textContent).toEqual("September '03 - June '10");
+    expect(educationGrades.textContent).toEqual(
+      "A-level's: Information technology, GeographyAS-level's: Business studies, Physical educationGCSE's: 10 [A-C]"
     );
-    expect(educationText[2].textContent).toEqual("GCSE's: 10 [A-C]");
   });
 
   it("renders the Education component unchanged.", () => {

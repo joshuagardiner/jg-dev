@@ -5,16 +5,12 @@ exports[`Skills renders the Skills component unchanged. 1`] = `
   <div
     data-testid="skills-component"
   >
-    <div
-      class="tcl-title"
-      data-testid="title"
+    <h2
+      class="title"
+      data-testid="skills-title"
     >
-      <h1
-        style="font-size: 2vw; margin-top: 7.5%;"
-      >
-        Skills
-      </h1>
-    </div>
+      Skills
+    </h2>
     <ul
       class="skills"
       data-testid="skills-list"
@@ -22,254 +18,128 @@ exports[`Skills renders the Skills component unchanged. 1`] = `
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            React
-          </p>
-        </div>
+        <p>
+          React
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            TypeScript
-          </p>
-        </div>
+        <p>
+          TypeScript
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            CI/CD
-          </p>
-        </div>
+        <p>
+          CI/CD
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            AWS
-          </p>
-        </div>
+        <p>
+          AWS
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Azure
-          </p>
-        </div>
+        <p>
+          Azure
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            TDD
-          </p>
-        </div>
+        <p>
+          TDD
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            GitHub
-          </p>
-        </div>
+        <p>
+          GitHub
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Jest
-          </p>
-        </div>
+        <p>
+          Jest
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Cypress
-          </p>
-        </div>
+        <p>
+          Cypress
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Terraform
-          </p>
-        </div>
+        <p>
+          Terraform
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Docker
-          </p>
-        </div>
+        <p>
+          Docker
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            C#
-          </p>
-        </div>
+        <p>
+          C#
+        </p>
       </li>
       <li
         data-testid="technical-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Golang
-          </p>
-        </div>
+        <p>
+          Golang
+        </p>
       </li>
       <li
         data-testid="soft-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Communication
-          </p>
-        </div>
+        <p>
+          Communication
+        </p>
       </li>
       <li
         data-testid="soft-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Iniative
-          </p>
-        </div>
+        <p>
+          Iniative
+        </p>
       </li>
       <li
         data-testid="soft-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Leadership
-          </p>
-        </div>
+        <p>
+          Leadership
+        </p>
       </li>
       <li
         data-testid="soft-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Problem solving
-          </p>
-        </div>
+        <p>
+          Problem solving
+        </p>
       </li>
       <li
         data-testid="soft-skill"
       >
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1.125vw; margin-left: auto; margin-right: auto;"
-          >
-            Teamwork
-          </p>
-        </div>
+        <p>
+          Teamwork
+        </p>
       </li>
     </ul>
   </div>

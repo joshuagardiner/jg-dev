@@ -1,5 +1,4 @@
 import React from "react";
-import { Text, Title } from "@joshuagardiner/typescript-component-library";
 import styling from "./Skills.module.css";
 
 /**
@@ -41,16 +40,18 @@ export const Skills: React.FC = () => {
 
   return (
     <div data-testid={"skills-component"}>
-      <Title fontSize={"2vw"} marginTop={"7.5%"} text={"Skills"} />
+      <h2 className={styling.title} data-testid={"skills-title"}>
+        Skills
+      </h2>
       <ul className={styling.skills} data-testid={"skills-list"}>
         {skillsArray.map((skill) => (
           <li data-testid={"technical-skill"} key={skill}>
-            {<Text fontSize={"1.125vw"} text={skill} />}
+            <p>{skill}</p>
           </li>
         ))}
         {softSkillsArray.map((softSkill) => (
           <li data-testid={"soft-skill"} key={softSkill}>
-            {<Text fontSize={"1.125vw"} text={softSkill} />}
+            <p>{softSkill}</p>
           </li>
         ))}
       </ul>

@@ -6,16 +6,12 @@ exports[`Education renders the Education component unchanged. 1`] = `
     class="container"
     data-testid="education-component"
   >
-    <div
-      class="tcl-title"
-      data-testid="title"
+    <h2
+      class="title"
+      data-testid="education-title"
     >
-      <h1
-        style="font-size: 2vw; margin-top: 7.5%;"
-      >
-        Education
-      </h1>
-    </div>
+      Education
+    </h2>
     <div
       class="tcl-card"
       data-testid="card"
@@ -25,36 +21,24 @@ exports[`Education renders the Education component unchanged. 1`] = `
         class="tcl-card__content"
         data-testid="card-content"
       >
-        <div
-          class="tcl-title"
-          data-testid="title"
+        <h3
+          class="course"
+          data-testid="education-course"
         >
-          <h1
-            style="font-size: 1.25vw;"
-          >
-            BSc (Hons) COMPUTING
-          </h1>
-        </div>
-        <div
-          class="tcl-title"
-          data-testid="title"
+          BSc (Hons) COMPUTING
+        </h3>
+        <h4
+          class="faculty"
+          data-testid="education-faculty"
         >
-          <h1
-            style="font-size: 1vw; text-transform: uppercase;"
-          >
-            Manchester Metropolitan University
-          </h1>
-        </div>
-        <div
-          class="tcl-title"
-          data-testid="title"
+          Manchester Metropolitan University
+        </h4>
+        <h5
+          class="tenure"
+          data-testid="education-tenure"
         >
-          <h1
-            style="font-size: .75vw; text-transform: uppercase;"
-          >
-            September '11 - June '16
-          </h1>
-        </div>
+          September '11 - June '16
+        </h5>
         <div
           class="tcl-card"
           data-testid="card"
@@ -64,56 +48,28 @@ exports[`Education renders the Education component unchanged. 1`] = `
             class="tcl-card__content"
             data-testid="card-content"
           >
-            <div
-              class="tcl-title"
-              data-testid="title"
+            <h4
+              class="faculty"
+              data-testid="education-faculty"
             >
-              <h1
-                style="font-size: 1vw; text-transform: uppercase;"
-              >
-                The Brooksbank School and Sixth Form
-              </h1>
-            </div>
-            <div
-              class="tcl-title"
-              data-testid="title"
+              The Brooksbank School and Sixth Form
+            </h4>
+            <h5
+              class="tenure"
+              data-testid="education-tenure"
             >
-              <h1
-                style="font-size: .75vw; text-transform: uppercase;"
-              >
-                September '03 - June '10
-              </h1>
-            </div>
-            <div
-              class="tcl-text"
-              data-testid="text"
+              September '03 - June '10
+            </h5>
+            <p
+              class="grades"
+              data-testid="education-grades"
             >
-              <p
-                style="font-size: .75vw; margin-left: auto; margin-right: auto;"
-              >
-                A-level's: Information technology, Geography
-              </p>
-            </div>
-            <div
-              class="tcl-text"
-              data-testid="text"
-            >
-              <p
-                style="font-size: .75vw; margin-left: auto; margin-right: auto;"
-              >
-                AS-level's: Business studies, Physical education
-              </p>
-            </div>
-            <div
-              class="tcl-text"
-              data-testid="text"
-            >
-              <p
-                style="font-size: .75vw; margin-left: auto; margin-right: auto;"
-              >
-                GCSE's: 10 [A-C]
-              </p>
-            </div>
+              A-level's: Information technology, Geography
+              <br />
+              AS-level's: Business studies, Physical education
+              <br />
+              GCSE's: 10 [A-C]
+            </p>
           </div>
         </div>
       </div>

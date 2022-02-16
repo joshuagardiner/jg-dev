@@ -1,0 +1,35 @@
+.company {
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+
+.content {
+  display: inline-block;
+  font-size: 1.125vw;
+  line-height: 2.75vw;
+  position: relative;
+  width: 90%;
+}
+
+.role {
+  font-size: 1.125vw;
+  text-transform: uppercase;
+}
+
+.subContent {
+  display: inline-block;
+  font-size: 1vw;
+  line-height: 2.75vw;
+  position: relative;
+  width: 90%;
+}
+
+.tenure {
+  font-size: 0.75vw;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 2vw;
+  margin-top: 5%;
+}
