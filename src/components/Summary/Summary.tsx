@@ -52,13 +52,13 @@ export const Summary: React.FC = () => {
         fontSize={"1.125vw"}
         lineHeight={"2.5vw"}
         maxWidth={"75%"}
-        text={`An experienced software development engineer with a passion for developing web applications. Well-versed in a variety of technologies and writing code to create applications that are reliable and user-friendly.`}
+        text={`An experienced software development engineer with a passion for developing web applications. Well-versed in a variety of technologies to create applications that are reliable and user-friendly.`}
       />
       <Text
         fontSize={"1.125vw"}
         lineHeight={"2.5vw"}
         maxWidth={"75%"}
-        text={`A budding leader with a proven ability to mentor and motivate colleagues, who can communicate confidently, problem-solve effectively and utilise initiative to deliver applications that are tailored to organizational needs using best practices and the best tool for the job.`}
+        text={`A budding leader with a proven ability to mentor and motivate colleagues, who can communicate confidently, problem-solve effectively and use initiative to deliver applications tailored to organizational needs using best practices and the best tool for the job.`}
       />
     </div>
   );
