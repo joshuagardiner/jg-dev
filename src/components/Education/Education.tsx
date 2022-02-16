@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Card,
-  Text,
-  Title,
-  Title as Course,
-  Title as Tenure,
-  Title as University
-} from "@joshuagardiner/typescript-component-library";
+import { Card } from "@joshuagardiner/typescript-component-library";
 import styling from "./Education.module.css";
 
 /**
@@ -18,29 +11,30 @@ import styling from "./Education.module.css";
 export const Education: React.FC = () => {
   return (
     <div className={styling.container} data-testid={"education-component"}>
-      <Title fontSize={"2vw"} marginTop={"7.5%"} text={"Education"} />
+      <h2 className={styling.title} data-testid={"education-title"}>
+        Education
+      </h2>
       <Card width={"100%"}>
-        <Course fontSize={"1.25vw"} text={"BSc (Hons) COMPUTING"} />
-        <University
-          fontSize={"1vw"}
-          text={"Manchester Metropolitan University"}
-          textTransform={"uppercase"}
-        />
-        <Tenure fontSize={".75vw"} text={"September '11 - June '16"} textTransform={"uppercase"} />
+        <h3 className={styling.course} data-testid={"education-course"}>
+          BSc (Hons) COMPUTING
+        </h3>
+        <h4 className={styling.faculty} data-testid={"education-faculty"}>
+          Manchester Metropolitan University
+        </h4>
+        <h5 className={styling.tenure} data-testid={"education-tenure"}>
+          {`September '11 - June '16`}
+        </h5>
         <Card marginTop={"1vw"} width={"100%"}>
-          <University
-            fontSize={"1vw"}
-            text={"The Brooksbank School and Sixth Form"}
-            textTransform={"uppercase"}
-          />
-          <Tenure
-            fontSize={".75vw"}
-            text={"September '03 - June '10"}
-            textTransform={"uppercase"}
-          />
-          <Text fontSize={".75vw"} text={"A-level's: Information technology, Geography"} />
-          <Text fontSize={".75vw"} text={"AS-level's: Business studies, Physical education"} />
-          <Text fontSize={".75vw"} text={"GCSE's: 10 [A-C]"} />
+          <h4 className={styling.faculty} data-testid={"education-faculty"}>
+            The Brooksbank School and Sixth Form
+          </h4>
+          <h5 className={styling.tenure} data-testid={"education-tenure"}>
+            {`September '03 - June '10`}
+          </h5>
+          <p className={styling.grades} data-testid={"education-grades"}>
+            A-level&apos;s: Information technology, Geography<br></br>AS-level&apos;s: Business
+            studies, Physical education<br></br>GCSE&apos;s: 10 [A-C]
+          </p>
         </Card>
       </Card>
     </div>

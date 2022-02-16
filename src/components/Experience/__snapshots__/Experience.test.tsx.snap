@@ -5,16 +5,12 @@ exports[`Experience renders the Experience component unchanged. 1`] = `
   <div
     data-testid="experience-component"
   >
-    <div
-      class="tcl-title"
-      data-testid="title"
+    <h2
+      class="title"
+      data-testid="experience-title"
     >
-      <h1
-        style="font-size: 2vw; margin-top: 5%;"
-      >
-        Experience
-      </h1>
-    </div>
+      Experience
+    </h2>
     <div
       class="tcl-card"
       data-testid="card"
@@ -24,96 +20,45 @@ exports[`Experience renders the Experience component unchanged. 1`] = `
         class="tcl-card__content"
         data-testid="card-content"
       >
-        <div
-          class="tcl-title"
-          data-testid="title"
+        <h3
+          class="role"
+          data-testid="experience-role"
         >
-          <h1
-            style="font-size: 1.25vw; text-transform: uppercase;"
-          >
-            Software Development Engineer
-          </h1>
-        </div>
-        <div
-          class="tcl-title"
-          data-testid="title"
+          Software Development Engineer
+        </h3>
+        <h4
+          class="company"
+          data-testid="experience-company"
         >
-          <h1
-            style="font-size: 1vw; text-transform: uppercase;"
-          >
-            EMIS Health
-          </h1>
-        </div>
-        <div
-          class="tcl-title"
-          data-testid="title"
+          EMIS Health
+        </h4>
+        <h5
+          class="tenure"
+          data-testid="experience-tenure"
         >
-          <h1
-            style="font-size: .75vw; text-transform: uppercase;"
-          >
-            November '17 - Present
-          </h1>
-        </div>
-        <div
-          class="tcl-text"
-          data-testid="text"
+          November '17 - Present
+        </h5>
+        <p
+          class="content"
+          data-testid="experience-content"
         >
-          <p
-            style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-          >
-            I have enjoyed working with a wide-ranging, ever-changing tech stack during my time at the company beginning in C#, involving the refactoring of a legacy product alongside resolving priority SLA items.
-          </p>
-        </div>
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-          >
-            I was a member of the first set of engineers to begin coding the next generation of products for the business. Which allowed a great deal of flexibility and freedom as we identified new tools and services fit for use. Including learning exercises such as creating a Twitter bot (@motivationalboz) using Node.js and AWS Lambda to post a tweet on a CRON schedule.
-          </p>
-        </div>
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-          >
-            After this period of elaboration, I began to work exclusively in this space with Golang and the varying services AWS provide, inc. API Gateway, CloudFormation, CodePipeline and Lambda. Writing one of the first CloudFormation templates to deploy a CI/CD pipeline in the department.
-          </p>
-        </div>
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-          >
-            This has organically led to the consumption of API’s and a more front-end focus using React and TypeScript and allowed for more hands-on experience with Terraform and Docker through repository management and containerised applications.
-          </p>
-        </div>
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-          >
-            I began to contribute to our new and growing community initiatives before identifying an opportunity and leading on my own with the support of my peers, whilst actively looking for areas of improvement not only within the team but within the department by identifying new tools and best practices.
-          </p>
-        </div>
-        <div
-          class="tcl-text"
-          data-testid="text"
-        >
-          <p
-            style="font-size: 1vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-          >
-            I naturally undertook the mentoring of an apprentice developer and test engineer within my team, which led to a company-wide award in the inaugural EMIS Quarterly Heroes Q1 2021 for living the Supportive value of the business.
-          </p>
-        </div>
+          I have enjoyed working with a wide-ranging, ever-changing tech stack during my time at the company beginning in C#, involving the refactoring of a legacy product alongside resolving priority SLA items.
+          <br />
+          <br />
+          I was a member of the first set of engineers to begin coding the next generation of products for the business. Which allowed a great deal of flexibility and freedom as we identified new tools and services fit for use. Including learning exercises such as creating a Twitter bot (@motivationalboz) using Node.js and AWS Lambda to post a tweet on a CRON schedule.
+          <br />
+          <br />
+          After this period of elaboration, I began to work exclusively in this space with Golang and the varying services AWS provide, inc. API Gateway, CloudFormation, CodePipeline and Lambda. Writing one of the first CloudFormation templates to deploy a CI/CD pipeline in the department.
+          <br />
+          <br />
+          This has organically led to the consumption of API’s and a more front-end focus using React and TypeScript and allowed for more hands-on experience with Terraform and Docker through repository management and containerised applications.
+          <br />
+          <br />
+          I began to contribute to our new and growing community initiatives before identifying an opportunity and leading on my own with the support of my peers, whilst actively looking for areas of improvement not only within the team but within the department by identifying new tools and best practices.
+          <br />
+          <br />
+          I naturally undertook the mentoring of an apprentice developer and test engineer within my team, which led to a company-wide award in the inaugural EMIS Quarterly Heroes Q1 2021 for living the Supportive value of the business.
+        </p>
         <div
           class="tcl-card"
           data-testid="card"
@@ -132,46 +77,30 @@ exports[`Experience renders the Experience component unchanged. 1`] = `
                 class="tcl-card__content"
                 data-testid="card-content"
               >
-                <div
-                  class="tcl-title"
-                  data-testid="title"
+                <h3
+                  class="role"
+                  data-testid="experience-role"
                 >
-                  <h1
-                    style="font-size: 1.25vw; text-transform: uppercase;"
-                  >
-                    .NET Developer
-                  </h1>
-                </div>
-                <div
-                  class="tcl-title"
-                  data-testid="title"
+                  .NET Developer
+                </h3>
+                <h4
+                  class="company"
+                  data-testid="experience-company"
                 >
-                  <h1
-                    style="font-size: 1vw; text-transform: uppercase;"
-                  >
-                    FDM Group
-                  </h1>
-                </div>
-                <div
-                  class="tcl-title"
-                  data-testid="title"
+                  FDM Group
+                </h4>
+                <h4
+                  class="tenure"
+                  data-testid="experience-tenure"
                 >
-                  <h1
-                    style="font-size: .75vw; text-transform: uppercase;"
-                  >
-                    May '17 - October '17
-                  </h1>
-                </div>
-                <div
-                  class="tcl-text"
-                  data-testid="text"
+                  May '17 - October '17
+                </h4>
+                <p
+                  class="subContent"
+                  data-testid="experience-sub-content"
                 >
-                  <p
-                    style="font-size: .75vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-                  >
-                    I joined the award-winning training programme and undertook weekly modules such as SQL, Web Development and Professional Skills. Before a more concentrated .NET period focusing on the SOLID principles, Object-oriented programming and TDD, which concluded in a presentation to my peers and account managers focusing on the eCommerce project created during this time.
-                  </p>
-                </div>
+                  I joined the award-winning training programme and undertook weekly modules such as SQL, Web Development and Professional Skills. Before a more concentrated .NET period focusing on the SOLID principles, Object-oriented programming and TDD, which concluded in a presentation to my peers and account managers focusing on the eCommerce project created during this time.
+                </p>
               </div>
             </div>
             <div
@@ -183,46 +112,30 @@ exports[`Experience renders the Experience component unchanged. 1`] = `
                 class="tcl-card__content"
                 data-testid="card-content"
               >
-                <div
-                  class="tcl-title"
-                  data-testid="title"
+                <h3
+                  class="role"
+                  data-testid="experience-role"
                 >
-                  <h1
-                    style="font-size: 1.25vw; text-transform: uppercase;"
-                  >
-                    Customer Service Assistant
-                  </h1>
-                </div>
-                <div
-                  class="tcl-title"
-                  data-testid="title"
+                  Customer Service Assistant
+                </h3>
+                <h4
+                  class="company"
+                  data-testid="experience-company"
                 >
-                  <h1
-                    style="font-size: 1vw; text-transform: uppercase;"
-                  >
-                    Sainsbury's
-                  </h1>
-                </div>
-                <div
-                  class="tcl-title"
-                  data-testid="title"
+                  Sainsbury's
+                </h4>
+                <h4
+                  class="tenure"
+                  data-testid="experience-tenure"
                 >
-                  <h1
-                    style="font-size: .75vw; text-transform: uppercase;"
-                  >
-                    December '13 - June '15
-                  </h1>
-                </div>
-                <div
-                  class="tcl-text"
-                  data-testid="text"
+                  December '13 - June '15
+                </h4>
+                <p
+                  class="subContent"
+                  data-testid="experience-sub-content"
                 >
-                  <p
-                    style="font-size: .75vw; line-height: 2.5vw; margin-left: auto; margin-right: auto; max-width: 75%;"
-                  >
-                    Responsible for delivering first-class customer service in any capacity around the store. My role in the first instance was to operate the checkouts. Whilst during the busier period' I would become the focal point of the checkouts department. Ensuring all colleagues have everything they need to hand, answering any customer queries a colleague could not.
-                  </p>
-                </div>
+                  Responsible for delivering first-class customer service in any capacity around the store. My role in the first instance was to operate the checkouts. Whilst during the busier period' I would become the focal point of the checkouts department. Ensuring all colleagues have everything they need to hand, answering any customer queries a colleague could not.
+                </p>
               </div>
             </div>
           </div>

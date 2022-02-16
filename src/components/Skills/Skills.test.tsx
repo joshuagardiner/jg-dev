@@ -5,7 +5,7 @@ describe("Skills", () => {
   it("renders the Skills component correctly.", () => {
     render(<Skills />);
 
-    const skillsTitle = screen.getByTestId("title");
+    const skillsTitle = screen.getByTestId("skills-title");
     const skillsList = screen.getByTestId("skills-list");
     const technicalSkills = screen.getAllByTestId("technical-skill");
     const softSkills = screen.getAllByTestId("soft-skill");
