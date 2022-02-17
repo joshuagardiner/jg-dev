@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { getTitle } from "../../client/Client";
+import React from "react";
+import { Client } from "../../client/Client";
 import { Navigation } from "../Navigation/Navigation";
 import styling from "./Header.module.css";
 
@@ -10,24 +10,20 @@ import styling from "./Header.module.css";
  * @returns the Header component.
  */
 export const Header: React.FC = (): JSX.Element => {
-  const [error, setError] = useState("");
-  const [title, setTitle] = useState("");
-  useEffect(() => {
-    getTitle().then(
-      (result) => {
+  const [title, setTitle] = React.useState("");
+
+  React.useEffect(() => {
+    new Client()
+      .getTitle()
+      .then((result) => {
         setTitle(result.title);
-      },
-      (error) => {
-        setError("Error: " + error);
-      }
-    );
+      })
+      .catch((e) => {
+        setTitle("JG.dev");
+      });
   });
 
-  return error ? (
-    <div className={styling.container} data-testid={"header-component"}>
-      {error}
-    </div>
-  ) : (
+  return (
     <div className={styling.container} data-testid={"header-component"}>
       <Navigation title={title} />
     </div>

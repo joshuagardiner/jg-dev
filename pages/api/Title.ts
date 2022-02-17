@@ -6,9 +6,7 @@ import { response } from "./examples/Title";
  * The type of Data returned from the handler.
  */
 type Data = {
-  title: {
-    name: string;
-  };
+  title: string;
 };
 
 /**
