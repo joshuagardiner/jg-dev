@@ -3,8 +3,6 @@
  */
 export function response() {
   return {
-    title: {
-      name: "JG.dev"
-    }
+    title: "JG.dev"
   };
 }

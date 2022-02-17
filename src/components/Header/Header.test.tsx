@@ -4,14 +4,21 @@ import { act } from "react-dom/test-utils";
 import { Header } from "./Header";
 
 describe("Header", () => {
+  beforeEach(() => {
+    jest.spyOn(React, "useEffect");
+    jest.spyOn(React, "useState");
+  });
+
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
   it("renders the Header component correctly.", async () => {
     global.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({
         json: () =>
           Promise.resolve({
-            title: {
-              name: "TEST"
-            }
+            title: "TEST"
           })
       })
     );
@@ -20,15 +27,11 @@ describe("Header", () => {
       render(<Header />);
     });
 
-    const headerComponent = screen.getByTestId("header-component");
-    const navigationComponent = screen.getByTestId("navigation-component");
-    const navigationTitle = await screen.findByText("TEST");
-
+    expect(await screen.findByTestId("header-component")).toBeTruthy();
     expect(global.fetch).toHaveBeenCalledTimes(2);
     expect(global.fetch).toHaveBeenCalledWith("/api/Title");
-    expect(headerComponent).toBeDefined();
-    expect(navigationComponent).toBeDefined();
-    expect(navigationTitle).toBeTruthy();
+    expect(React.useEffect).toHaveBeenCalledTimes(3);
+    expect(React.useState).toHaveReturnedWith(["TEST", expect.any(Function)]);
   });
 
   it("renders an Error if the API has failed.", async () => {
@@ -38,11 +41,10 @@ describe("Header", () => {
       render(<Header />);
     });
 
-    const headerComponent = screen.getByTestId("header-component");
-    const navigationError = await screen.findByText("Error: API failed.");
-
+    expect(await screen.findByTestId("header-component")).toBeTruthy();
     expect(global.fetch).toHaveBeenCalledTimes(2);
-    expect(headerComponent).toBeDefined();
-    expect(navigationError).toBeTruthy();
+    expect(global.fetch).toHaveBeenCalledWith("/api/Title");
+    expect(React.useEffect).toHaveBeenCalledTimes(3);
+    expect(React.useState).toHaveReturnedWith(["JG.dev", expect.any(Function)]);
   });
 });
