@@ -1,5 +1,7 @@
 import React from "react";
 import { Card } from "@joshuagardiner/typescript-component-library";
+import { Client } from "../../client/Client";
+import { IContent } from "../../lib/models/IContent";
 import { Education } from "../Education/Education";
 import { Experience } from "../Experience/Experience";
 import { Skills } from "../Skills/Skills";
@@ -13,11 +15,19 @@ import styling from "./Body.module.css";
  * @returns the Body component.
  */
 export const Body: React.FC = () => {
+  const [content, setContent] = React.useState({} as IContent);
+
+  React.useEffect(() => {
+    new Client().getContent().then((result) => {
+      setContent(result.content);
+    });
+  }, []);
+
   return (
     <div className={styling.container} data-testid={"body-component"}>
       <div className={styling.content}>
         <Card marginTop={"-9.5vw"} width={"66%"}>
-          <Summary />
+          <Summary summary={content.summary} />
           <Skills />
           <Experience />
           <Education />

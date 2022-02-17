@@ -16,12 +16,12 @@ export const Header: React.FC = (): JSX.Element => {
     new Client()
       .getTitle()
       .then((result) => {
-        setTitle(result.title);
+        setTitle(result.title.name);
       })
       .catch((e) => {
         setTitle("JG.dev");
       });
-  });
+  }, []);
 
   return (
     <div className={styling.container} data-testid={"header-component"}>

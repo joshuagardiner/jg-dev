@@ -28,10 +28,11 @@ describe("Header", () => {
     });
 
     expect(await screen.findByTestId("header-component")).toBeTruthy();
-    expect(global.fetch).toHaveBeenCalledTimes(2);
+    expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(global.fetch).toHaveBeenCalledWith("/api/Title");
-    expect(React.useEffect).toHaveBeenCalledTimes(3);
-    expect(React.useState).toHaveReturnedWith(["TEST", expect.any(Function)]);
+    expect(React.useEffect).toHaveBeenCalledTimes(2);
+    expect(React.useState).toHaveNthReturnedWith(1, ["", expect.any(Function)]);
+    expect(React.useState).toHaveNthReturnedWith(2, ["TEST", expect.any(Function)]);
   });
 
   it("renders an Error if the API has failed.", async () => {
@@ -42,9 +43,10 @@ describe("Header", () => {
     });
 
     expect(await screen.findByTestId("header-component")).toBeTruthy();
-    expect(global.fetch).toHaveBeenCalledTimes(2);
+    expect(global.fetch).toHaveBeenCalledTimes(1);
     expect(global.fetch).toHaveBeenCalledWith("/api/Title");
-    expect(React.useEffect).toHaveBeenCalledTimes(3);
-    expect(React.useState).toHaveReturnedWith(["JG.dev", expect.any(Function)]);
+    expect(React.useEffect).toHaveBeenCalledTimes(2);
+    expect(React.useState).toHaveNthReturnedWith(1, ["", expect.any(Function)]);
+    expect(React.useState).toHaveNthReturnedWith(2, ["JG.dev", expect.any(Function)]);
   });
 });
