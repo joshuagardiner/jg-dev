@@ -1,11 +1,73 @@
 import { render, screen } from "@testing-library/react";
+import React from "react";
 import { Body } from "./Body";
 
 describe("Body", () => {
-  it("renders the Body component correctly.", () => {
+  beforeEach(() => {
+    jest.spyOn(React, "useEffect");
+    jest.spyOn(React, "useState");
+  });
+
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+
+  it("renders the Body component correctly.", async () => {
+    global.fetch = jest.fn().mockImplementation(() =>
+      Promise.resolve({
+        json: () =>
+          Promise.resolve({
+            education: [
+              {
+                course: "Politics",
+                faculty: "University of Edinburgh",
+                tenure: "September '00 - June '01"
+              },
+              {
+                faculty: "Hogwarts School of Witchcraft and Wizardry",
+                grades: ["OWL's", "Potions Mastery", "Treasure Hunting"],
+                tenure: "September '03 - June '10"
+              }
+            ],
+            experiences: [
+              {
+                role: "Minister for Magic",
+                company: "Ministry of Magic",
+                tenure: "May '05 - Present",
+                text: ["1", "2", "3", "4", "5", "6"]
+              },
+              {
+                role: "Auror",
+                company: "Ministry of Magic",
+                tenure: "Aug '97 - May '05",
+                text: ["1"]
+              },
+              {
+                role: "Horcrux Hunter",
+                company: "S/E",
+                tenure: "Jun '95 - Apr '97",
+                text: ["1"]
+              }
+            ],
+            skills: {
+              technical: ["Spellcasting"],
+              soft: ["Bravery"]
+            },
+            summary: {
+              name: "Harry Potter",
+              role: "Auror",
+              address: "4 Privet Drive, Little Whinging, Surrey",
+              email: "Harry.Potter@MoM.co.uk",
+              telephone: "+44 1234 567 890",
+              text: ["Test paragraph 1.", "Test paragraph 2."]
+            }
+          })
+      })
+    );
+
     render(<Body />);
 
-    const bodyComponent = screen.getByTestId("body-component");
+    const bodyComponent = await screen.findByTestId("body-component");
     const summaryComponent = screen.getByTestId("summary-component");
     const skillsComponent = screen.getByTestId("skills-component");
     const experienceComponent = screen.getByTestId("experience-component");
@@ -16,10 +78,5 @@ describe("Body", () => {
     expect(skillsComponent).toBeDefined();
     expect(experienceComponent).toBeDefined();
     expect(educationComponent).toBeDefined();
-  });
-
-  it("renders the Body component unchanged.", () => {
-    const { container } = render(<Body />);
-    expect(container).toMatchSnapshot();
   });
 });
