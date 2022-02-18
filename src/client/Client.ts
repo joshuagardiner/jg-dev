@@ -36,6 +36,12 @@ export class Client {
 
     return {
       content: {
+        education: data.education.map((education: any) => ({
+          courseOfStudy: education.course,
+          grades: education.grades,
+          placeOfStudy: education.faculty,
+          tenure: education.tenure
+        })),
         experiences: data.experiences.map((experience: any) => ({
           company: experience.company,
           content: experience.text,

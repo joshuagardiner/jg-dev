@@ -30,7 +30,7 @@ export const Body: React.FC = () => {
           <Summary summary={content.summary} />
           <Skills skills={content.skills} />
           <Experience experiences={content.experiences} />
-          <Education />
+          <Education education={content.education} />
         </Card>
       </div>
     </div>

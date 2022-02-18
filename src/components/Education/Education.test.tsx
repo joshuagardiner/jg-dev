@@ -1,9 +1,24 @@
 import { render, screen } from "@testing-library/react";
+import { IEducation } from "../../lib/models/IEducation";
 import { Education } from "./Education";
 
 describe("Education", () => {
   it("renders the Education component correctly.", () => {
-    render(<Education />);
+    const education: IEducation[] = [
+      {
+        courseOfStudy: "University",
+        grades: [],
+        placeOfStudy: "Bedroom under the stairs",
+        tenure: "6 weeks"
+      },
+      {
+        courseOfStudy: "School",
+        grades: ["A's", "B's", "C's"],
+        placeOfStudy: "Classroom",
+        tenure: "5 years"
+      }
+    ];
+    render(<Education education={education} />);
 
     const educationComponent = screen.getByTestId("education-component");
     const educationTitle = screen.getByTestId("education-title");
@@ -14,20 +29,13 @@ describe("Education", () => {
 
     expect(educationComponent).toBeDefined();
     expect(educationTitle.textContent).toEqual("Education");
-    expect(educationCourse.textContent).toEqual("BSc (Hons) COMPUTING");
+    expect(educationCourse.textContent).toEqual("University");
     expect(educationFaculties).toHaveLength(2);
     expect(educationTenures).toHaveLength(2);
-    expect(educationFaculties[0].textContent).toEqual("Manchester Metropolitan University");
-    expect(educationTenures[0].textContent).toEqual("September '11 - June '16");
-    expect(educationFaculties[1].textContent).toEqual("The Brooksbank School and Sixth Form");
-    expect(educationTenures[1].textContent).toEqual("September '03 - June '10");
-    expect(educationGrades.textContent).toEqual(
-      "A-level's: Information technology, GeographyAS-level's: Business studies, Physical educationGCSE's: 10 [A-C]"
-    );
-  });
-
-  it("renders the Education component unchanged.", () => {
-    const { container } = render(<Education />);
-    expect(container).toMatchSnapshot();
+    expect(educationFaculties[0].textContent).toEqual("Bedroom under the stairs");
+    expect(educationTenures[0].textContent).toEqual("6 weeks");
+    expect(educationFaculties[1].textContent).toEqual("Classroom");
+    expect(educationTenures[1].textContent).toEqual("5 years");
+    expect(educationGrades.textContent).toEqual("A'sB'sC's");
   });
 });

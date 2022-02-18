@@ -17,6 +17,18 @@ describe("Body", () => {
       Promise.resolve({
         json: () =>
           Promise.resolve({
+            education: [
+              {
+                course: "Politics",
+                faculty: "University of Edinburgh",
+                tenure: "September '00 - June '01"
+              },
+              {
+                faculty: "Hogwarts School of Witchcraft and Wizardry",
+                grades: ["OWL's", "Potions Mastery", "Treasure Hunting"],
+                tenure: "September '03 - June '10"
+              }
+            ],
             experiences: [
               {
                 role: "Minister for Magic",

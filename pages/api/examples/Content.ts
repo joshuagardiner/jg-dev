@@ -3,6 +3,22 @@
  */
 export function response() {
   return {
+    education: [
+      {
+        course: "BSc (Hons) COMPUTING",
+        faculty: "Manchester Metropolitan University",
+        tenure: "September '11 - June '16"
+      },
+      {
+        faculty: "The Brooksbank School and Sixth Form",
+        grades: [
+          "A-level's: Information technology, Geography",
+          "AS-level's: Business studies, Physical education",
+          "GCSE's: 10 [A-C]"
+        ],
+        tenure: "September '03 - June '10"
+      }
+    ],
     experiences: [
       {
         role: "Software Development Engineer",
