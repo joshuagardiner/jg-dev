@@ -29,7 +29,7 @@ export const Body: React.FC = () => {
         <Card marginTop={"-9.5vw"} width={"66%"}>
           <Summary summary={content.summary} />
           <Skills skills={content.skills} />
-          <Experience />
+          <Experience experiences={content.experiences} />
           <Education />
         </Card>
       </div>

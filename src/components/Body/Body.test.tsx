@@ -17,6 +17,26 @@ describe("Body", () => {
       Promise.resolve({
         json: () =>
           Promise.resolve({
+            experiences: [
+              {
+                role: "Minister for Magic",
+                company: "Ministry of Magic",
+                tenure: "May '05 - Present",
+                text: ["1", "2", "3", "4", "5", "6"]
+              },
+              {
+                role: "Auror",
+                company: "Ministry of Magic",
+                tenure: "Aug '97 - May '05",
+                text: ["1"]
+              },
+              {
+                role: "Horcrux Hunter",
+                company: "S/E",
+                tenure: "Jun '95 - Apr '97",
+                text: ["1"]
+              }
+            ],
             skills: {
               technical: ["Spellcasting"],
               soft: ["Bravery"]

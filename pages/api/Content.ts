@@ -1,11 +1,13 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
+import { IExperience } from "../../src/client/responses/IExperience";
 import { response } from "./examples/Content";
 
 /**
  * The type of Data returned from the handler.
  */
 type Data = {
+  experiences: IExperience[];
   skills: {
     technical: string[];
     soft: string[];
