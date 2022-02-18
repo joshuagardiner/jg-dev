@@ -17,6 +17,10 @@ describe("Body", () => {
       Promise.resolve({
         json: () =>
           Promise.resolve({
+            skills: {
+              technical: ["Spellcasting"],
+              soft: ["Bravery"]
+            },
             summary: {
               name: "Harry Potter",
               role: "Auror",

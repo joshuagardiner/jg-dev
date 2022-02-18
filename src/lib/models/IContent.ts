@@ -1,3 +1,4 @@
+import { ISkills } from "./ISkills";
 import { ISummary } from "./ISummary";
 
 /**
@@ -5,7 +6,12 @@ import { ISummary } from "./ISummary";
  */
 export interface IContent {
   /**
-   * The Summary content.
+   * The skills content.
+   */
+  skills: ISkills;
+
+  /**
+   * The summary content.
    */
   summary: ISummary;
 }

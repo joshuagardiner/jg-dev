@@ -36,6 +36,10 @@ export class Client {
 
     return {
       content: {
+        skills: {
+          technical: data.skills.technical,
+          soft: data.skills.soft
+        },
         summary: {
           address: data.summary.address,
           content: {

@@ -3,11 +3,29 @@
  */
 export function response() {
   return {
+    skills: {
+      technical: [
+        "React",
+        "TypeScript",
+        "CI/CD",
+        "AWS",
+        "Azure",
+        "TDD",
+        "GitHub",
+        "Jest",
+        "Cypress",
+        "Terraform",
+        "Docker",
+        "C#",
+        "Golang"
+      ],
+      soft: ["Communication", "Iniative", "Leadership", "Problem solving", "Teamwork"]
+    },
     summary: {
-      name: "Joshua Gardiner",
-      role: "Software Development Engineer",
       address: "37 Oakwood Gardens, Halifax, HX28HB",
       email: "joshuagardiner@live.com",
+      name: "Joshua Gardiner",
+      role: "Software Development Engineer",
       telephone: "+44 7947 633 294",
       text: [
         "An experienced software development engineer with a passion for developing web applications. Well-versed in a variety of technologies to create applications that are reliable and user-friendly.",

@@ -1,4 +1,5 @@
 import React from "react";
+import { ISkillsProps } from "./ISkillsProps";
 import styling from "./Skills.module.css";
 
 /**
@@ -7,54 +8,28 @@ import styling from "./Skills.module.css";
  *
  * @returns the Skills component.
  */
-export const Skills: React.FC = () => {
-  /**
-   * The technical skills.
-   */
-  const skillsArray: string[] = [
-    "React",
-    "TypeScript",
-    "CI/CD",
-    "AWS",
-    "Azure",
-    "TDD",
-    "GitHub",
-    "Jest",
-    "Cypress",
-    "Terraform",
-    "Docker",
-    "C#",
-    "Golang"
-  ];
+export const Skills: React.FC<ISkillsProps> = (props: ISkillsProps) => {
+  const { skills } = props;
 
-  /**
-   * The soft skills.
-   */
-  const softSkillsArray: string[] = [
-    "Communication",
-    "Iniative",
-    "Leadership",
-    "Problem solving",
-    "Teamwork"
-  ];
-
-  return (
+  return skills ? (
     <div data-testid={"skills-component"}>
       <h2 className={styling.title} data-testid={"skills-title"}>
         Skills
       </h2>
       <ul className={styling.skills} data-testid={"skills-list"}>
-        {skillsArray.map((skill) => (
+        {skills.technical.map((skill) => (
           <li data-testid={"technical-skill"} key={skill}>
             <p>{skill}</p>
           </li>
         ))}
-        {softSkillsArray.map((softSkill) => (
+        {skills.soft.map((softSkill) => (
           <li data-testid={"soft-skill"} key={softSkill}>
             <p>{softSkill}</p>
           </li>
         ))}
       </ul>
     </div>
+  ) : (
+    <></>
   );
 };

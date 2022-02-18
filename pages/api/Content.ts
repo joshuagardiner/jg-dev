@@ -6,6 +6,10 @@ import { response } from "./examples/Content";
  * The type of Data returned from the handler.
  */
 type Data = {
+  skills: {
+    technical: string[];
+    soft: string[];
+  };
   summary: {
     name: string;
     role: string;

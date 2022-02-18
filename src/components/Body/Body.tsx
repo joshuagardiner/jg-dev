@@ -28,7 +28,7 @@ export const Body: React.FC = () => {
       <div className={styling.content}>
         <Card marginTop={"-9.5vw"} width={"66%"}>
           <Summary summary={content.summary} />
-          <Skills />
+          <Skills skills={content.skills} />
           <Experience />
           <Education />
         </Card>
