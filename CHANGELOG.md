@@ -1,5 +1,33 @@
 # CHANGELOG
 
+## 1.1.0 [20-02-2022]
+
+- Configured Jest
+- Added tests to the Header component
+- Added tests to the Navigation component
+- Added tests to the Body component
+- Added tests to the Summary component
+- Added tests to the Skills component
+- Added tests to the Experience component
+- Added more linting packages
+- Added tests to the Education component
+- Added tests to the Footer component
+- Implemented Netlify functions to retrieve the Title
+- Removed console errors within Chrome `DevTools`
+- Created the JSON structure
+- Improved application content
+- Refactored the use of the `TCL`
+- Added Lighthouse report to the deployment
+- Increased the Header component coverage
+- Bumped `coverageThreshold`'s to 100
+- Implement functions
+- Improved Data types returned from the Handler
+- Removed deprecated `config` causing a console error
+- Added Husky Git hooks
+- Added CHANGELOG
+- Updated the README
+- Updated the CHANGELOG
+
 ## 1.0.0 [13-01-2022]
 
 - Updated the README
