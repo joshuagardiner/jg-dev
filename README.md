@@ -10,10 +10,10 @@ Tech used:
 - [Next.js](https://nextjs.org)
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org)
-- [`ESLint`](https://eslint.org)
+- [ESLint](https://eslint.org)
 - [Prettier](https://prettier.io)
 - [Husky](https://typicode.github.io/husky/#/)
-- [`GHA`](https://github.com/features/actions)
+- [GHA](https://github.com/features/actions)
 - [Netlify](https://www.netlify.com)
 
 ## Getting Started
