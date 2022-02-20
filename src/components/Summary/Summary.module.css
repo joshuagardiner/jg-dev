@@ -11,3 +11,22 @@
 .contactInformation {
   font-size: 1vw;
 }
+
+.description {
+  display: inline-block;
+  font-size: 1.125vw;
+  line-height: 2.75vw;
+  position: relative;
+  width: 75%;
+}
+
+.role {
+  font-size: 1.25vw;
+  margin-top: -1.75%;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 3.5vw;
+  margin-top: 7.5%;
+}

@@ -1,54 +1,50 @@
 import React from "react";
-import {
-  Card,
-  Text,
-  Title,
-  Title as Course,
-  Title as Tenure,
-  Title as University,
-} from "@joshuagardiner/typescript-component-library";
+import { Card } from "@joshuagardiner/typescript-component-library";
+import { IEducationProps } from "./IEducationProps";
 import styling from "./Education.module.css";
 
-export const Education: React.FC = () => {
-  return (
-    <>
-      <div className={styling.container}>
-        <Title fontSize={"2vw"} marginTop={"7.5%"} text={"Education"} />
-        <Card width={"100%"}>
-          <Course fontSize={"1.25vw"} text={"BSc (Hons) COMPUTING"} />
-          <University
-            fontSize={"1vw"}
-            text={"Manchester Metropolitan University"}
-            textTransform={"uppercase"}
-          />
-          <Tenure
-            fontSize={".75vw"}
-            text={"September '11 - June '16"}
-            textTransform={"uppercase"}
-          />
-          <Card marginTop={"1vw"} width={"100%"}>
-            <University
-              fontSize={"1vw"}
-              text={"The Brooksbank School and Sixth Form"}
-              textTransform={"uppercase"}
-            />
-            <Tenure
-              fontSize={".75vw"}
-              text={"September '03 - June '10"}
-              textTransform={"uppercase"}
-            />
-            <Text
-              fontSize={".75vw"}
-              text={"A-level's: Information technology, Geography"}
-            />
-            <Text
-              fontSize={".75vw"}
-              text={"AS-level's: Business studies, Physical education"}
-            />
-            <Text fontSize={".75vw"} text={"GCSE's: 10 [A-C]"} />
-          </Card>
+/**
+ * The Experience component is responsible for rendering content
+ * within the application Body.
+ *
+ * @returns the Education component.
+ */
+export const Education: React.FC<IEducationProps> = (props: IEducationProps) => {
+  const { education } = props;
+
+  return education ? (
+    <div className={styling.container} data-testid={"education-component"}>
+      <h2 className={styling.title} data-testid={"education-title"}>
+        Education
+      </h2>
+      <Card width={"100%"}>
+        <h3 className={styling.course} data-testid={"education-course"}>
+          {education[0].courseOfStudy}
+        </h3>
+        <h4 className={styling.faculty} data-testid={"education-faculty"}>
+          {education[0].placeOfStudy}
+        </h4>
+        <h5 className={styling.tenure} data-testid={"education-tenure"}>
+          {education[0].tenure}
+        </h5>
+        <Card marginTop={"1vw"} width={"100%"}>
+          <h4 className={styling.faculty} data-testid={"education-faculty"}>
+            {education[1].placeOfStudy}
+          </h4>
+          <h5 className={styling.tenure} data-testid={"education-tenure"}>
+            {education[1].tenure}
+          </h5>
+          <p className={styling.grades} data-testid={"education-grades"}>
+            {education[1].grades[0]}
+            <br></br>
+            {education[1].grades[1]}
+            <br></br>
+            {education[1].grades[2]}
+          </p>
         </Card>
-      </div>
-    </>
+      </Card>
+    </div>
+  ) : (
+    <></>
   );
 };

@@ -1,15 +1,19 @@
 import React from "react";
-import {
-  Text,
-  Title,
-  Title as Role,
-} from "@joshuagardiner/typescript-component-library";
 import Image from "next/image";
 import styling from "./Summary.module.css";
+import { ISummaryProps } from "./ISummaryProps";
 
-export const Summary: React.FC = () => {
-  return (
-    <>
+/**
+ * The Summary component is responsible for rendering content
+ * within the application Body.
+ *
+ * @returns the Summary component.
+ */
+export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
+  const { summary } = props;
+
+  return summary ? (
+    <div data-testid={"summary-component"}>
       <div
         style={{
           display: "inherit",
@@ -17,7 +21,7 @@ export const Summary: React.FC = () => {
           marginLeft: "auto",
           marginRight: "auto",
           position: "relative",
-          width: "17vw",
+          width: "17vw"
         }}
       >
         <Image
@@ -26,32 +30,33 @@ export const Summary: React.FC = () => {
           alt={"jg_avatar"}
           layout="fill"
           objectFit="contain"
+          priority={true}
         />
       </div>
-      <Title fontSize={"3.5vw"} marginTop={"7.5%"} text={"Joshua Gardiner"} />
-      <Role
-        fontSize={"1.25vw"}
-        marginTop={"-1.75%"}
-        text={"Software Development Engineer"}
-        textTransform={"uppercase"}
-      />
-      <div className={styling.contactInformation}>
-        <p>37 Oakwood Gardens, Halifax, HX28HB</p>
-        <p>joshuagardiner@live.com</p>
-        <p>+44 7947 633 294</p>
+      <h1 className={styling.title} data-testid={"summary-title"}>
+        {summary.name}
+      </h1>
+      <h3 className={styling.role} data-testid={"summary-role"}>
+        {summary.role}
+      </h3>
+      <div className={styling.content} data-testid={"summary-content"}>
+        <p className={styling.contactInformation} data-testid={"summary-contact-address"}>
+          {summary.address}
+        </p>
+        <p className={styling.contactInformation} data-testid={"summary-contact-email"}>
+          {summary.email}
+        </p>
+        <p className={styling.contactInformation} data-testid={"summary-contact-telephone"}>
+          {summary.telephone}
+        </p>
+        <p className={styling.description} data-testid={"summary-description"}>
+          <a data-testid={"summary-description-content"}>{summary.content.p1}</a>
+          <br></br>
+          <a data-testid={"summary-description-content"}>{summary.content.p2}</a>
+        </p>
       </div>
-      <Text
-        fontSize={"1.125vw"}
-        lineHeight={"2.5vw"}
-        maxWidth={"75%"}
-        text={`An experienced software development engineer with a passion for developing web applications. Well-versed in a variety of technologies and writing code to create applications that are reliable and user-friendly.`}
-      />
-      <Text
-        fontSize={"1.125vw"}
-        lineHeight={"2.5vw"}
-        maxWidth={"75%"}
-        text={`A budding leader with a proven ability to mentor and motivate colleagues, who can communicate confidently, problem-solve effectively and utilise initiative to deliver applications that are tailored to organizational needs using best practices and the best tool for the job.`}
-      />
-    </>
+    </div>
+  ) : (
+    <></>
   );
 };
