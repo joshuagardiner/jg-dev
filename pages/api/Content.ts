@@ -2,6 +2,8 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { IEducation } from "../../src/client/responses/IEducation";
 import { IExperience } from "../../src/client/responses/IExperience";
+import { ISkills } from "../../src/client/responses/ISkills";
+import { ISummary } from "../../src/client/responses/ISummary";
 import { response } from "./examples/Content";
 
 /**
@@ -10,18 +12,8 @@ import { response } from "./examples/Content";
 type Data = {
   education: IEducation[];
   experiences: IExperience[];
-  skills: {
-    technical: string[];
-    soft: string[];
-  };
-  summary: {
-    name: string;
-    role: string;
-    address: string;
-    email: string;
-    telephone: string;
-    text: string[];
-  };
+  skills: ISkills;
+  summary: ISummary;
 };
 
 /**
