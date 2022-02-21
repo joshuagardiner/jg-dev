@@ -1,7 +1,25 @@
 .container {
   background-color: #132138;
   color: #ffffff;
-  height: 30vw;
+  height: 20rem;
   overflow: hidden;
   width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    height: 8rem;
+  }
 }

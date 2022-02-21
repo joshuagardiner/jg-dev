@@ -1,10 +1,20 @@
 .skills {
-  font-size: 1.125vw;
+  font-size: 1.125rem;
   list-style: none;
   margin-top: -1.75%;
 }
 
 .title {
-  font-size: 2vw;
+  font-size: 2rem;
   margin-top: 7.5%;
+}
+
+@media screen and (max-width: 425px) {
+  .skills {
+    font-size: 0.75rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
 }
