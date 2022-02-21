@@ -52,6 +52,7 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
         <p className={styling.description} data-testid={"summary-description"}>
           <a data-testid={"summary-description-content"}>{summary.content.p1}</a>
           <br></br>
+          <br></br>
           <a data-testid={"summary-description-content"}>{summary.content.p2}</a>
         </p>
       </div>

@@ -3,25 +3,47 @@
 }
 
 .course {
-  font-size: 1.125vw;
+  font-size: 1.125rem;
   text-transform: uppercase;
 }
 
 .faculty {
-  font-size: 1vw;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
 .grades {
-  font-size: 0.75vw;
-  line-height: 1.75vw;
+  font-size: 0.75rem;
+  line-height: 1.75rem;
 }
 
 .tenure {
-  font-size: 0.75vw;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 .title {
-  font-size: 2vw;
+  font-size: 2rem;
   margin-top: 7.5%;
+}
+
+@media screen and (max-width: 425px) {
+  .course {
+    font-size: 0.75rem;
+  }
+
+  .faculty {
+    font-size: 0.66rem;
+  }
+
+  .grades {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .tenure {
+    font-size: 0.5rem;
+  }
+  .title {
+    font-size: 1.25rem;
+  }
 }
