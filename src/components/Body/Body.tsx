@@ -26,7 +26,7 @@ export const Body: React.FC = () => {
   return (
     <div className={styling.container} data-testid={"body-component"}>
       <div className={styling.content}>
-        <Card marginTop={"-9.5vw"} width={"80%"}>
+        <Card width={"80%"}>
           <Summary summary={content.summary} />
           <Skills skills={content.skills} />
           <Experience experiences={content.experiences} />

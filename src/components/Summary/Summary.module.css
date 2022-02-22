@@ -3,7 +3,8 @@
   display: "inherit";
   margin-left: "auto";
   margin-right: "auto";
-  position: "relative";
+  margin-top: -175px;
+  position: "absolute";
 }
 
 .contactInformation {
@@ -30,6 +31,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .avatar {
+    margin-top: -125px;
+  }
+
   .description {
     width: 100%;
   }
