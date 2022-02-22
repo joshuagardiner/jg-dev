@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.1 [22-02-2022]
+
+- Improved the responsiveness of the application
+
 ## 1.1.0 [20-02-2022]
 
 - Configured Jest

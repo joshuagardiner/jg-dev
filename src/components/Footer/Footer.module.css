@@ -1,7 +1,7 @@
 .container {
   color: #999999;
-  font-size: 0.9vw;
-  line-height: 1.5vw;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   margin-top: -5%;
   padding: 2.5%;
   width: 100%;
@@ -31,4 +31,20 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    line-height: 1rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0;
+  }
 }

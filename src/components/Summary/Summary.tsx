@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import styling from "./Summary.module.css";
 import { ISummaryProps } from "./ISummaryProps";
+import styling from "./Summary.module.css";
 
 /**
  * The Summary component is responsible for rendering content
@@ -14,25 +13,15 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
 
   return summary ? (
     <div data-testid={"summary-component"}>
-      <div
-        style={{
-          display: "inherit",
-          height: "17vw",
-          marginLeft: "auto",
-          marginRight: "auto",
-          position: "relative",
-          width: "17vw"
-        }}
-      >
-        <Image
-          className={styling.avatar}
-          src={"/avatar.jpg"}
-          alt={"jg_avatar"}
-          layout="fill"
-          objectFit="contain"
-          priority={true}
-        />
-      </div>
+      <img
+        className={styling.avatar}
+        srcSet="/avatar_250.jpg 425w,
+             /avatar_350.jpg 768w"
+        sizes="(max-width: 768px) 425px,
+            768px"
+        src="/avatar.jpg"
+        alt="jg_avatar"
+      />
       <h1 className={styling.title} data-testid={"summary-title"}>
         {summary.name}
       </h1>
@@ -51,6 +40,7 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
         </p>
         <p className={styling.description} data-testid={"summary-description"}>
           <a data-testid={"summary-description-content"}>{summary.content.p1}</a>
+          <br></br>
           <br></br>
           <a data-testid={"summary-description-content"}>{summary.content.p2}</a>
         </p>

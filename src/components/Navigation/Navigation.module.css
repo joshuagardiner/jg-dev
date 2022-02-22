@@ -6,26 +6,30 @@
 
 .navigationTitle {
   float: left;
-  font-size: 1.5vw;
-  line-height: 2vw;
+  font-size: 24px;
+  line-height: 2em;
 }
 
 .navigationIcons {
   display: inline-flex;
   flex-direction: row;
   float: right;
-  line-height: 2vw;
-}
-
-@media screen and (max-width: 425px) {
-  .navigationIcons {
-    margin-top: -1.25vw;
-  }
+  line-height: 1.75em;
 }
 
 .navigationIcon {
-  padding: 0.07vw 0.45vw;
+  padding: 0.5rem 0.5rem;
 }
 .navigationIcon:last-of-type {
   padding-right: none;
+}
+
+@media screen and (max-width: 425px) {
+  .navigationIcon {
+    padding: 0 0.1rem;
+  }
+
+  .navigationTitle {
+    font-size: 16px;
+  }
 }
