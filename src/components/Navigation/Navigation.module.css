@@ -17,15 +17,24 @@
   line-height: 1.75em;
 }
 
-.navigationIcon {
+.navigationIcon,
+.navigationIcon:hover {
+  background-color: inherit;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 35px;
   padding: 0.5rem 0.5rem;
 }
+
 .navigationIcon:last-of-type {
   padding-right: none;
 }
 
 @media screen and (max-width: 425px) {
   .navigationIcon {
+    font-size: 20px;
     padding: 0 0.1rem;
   }
 

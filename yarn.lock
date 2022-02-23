@@ -515,10 +515,10 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@joshuagardiner/typescript-component-library@^1.1.22":
-  version "1.1.22"
-  resolved "https://registry.yarnpkg.com/@joshuagardiner/typescript-component-library/-/typescript-component-library-1.1.22.tgz#a11ffd397d3b06e3660171048dd04f5d90163652"
-  integrity sha512-KnZDZjdGUCsuKrVbGqWQQg/OPEBFhNVElfDFgPxdkuzZvBpca9BffYNzB6x6wnpRRlrWGigHwgLezJ/iE3xdxw==
+"@joshuagardiner/typescript-component-library@^1.1.23":
+  version "1.1.23"
+  resolved "https://registry.yarnpkg.com/@joshuagardiner/typescript-component-library/-/typescript-component-library-1.1.23.tgz#f8fa13b51ff72d2c368b388c6ba08c7537c973e3"
+  integrity sha512-vz5OcWRZRVRuC/MgckR2qwC3oRv46PUuE4KvrKWqlt1GEqvgZoRwkOFgW4VxTA+swh9/aGLuC+QpX4g7klhZ9g==
   dependencies:
     next "^12.1.0"
     react "^17.0.2"

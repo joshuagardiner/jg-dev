@@ -17,28 +17,20 @@ export const Navigation: React.FC<INavigationProps> = ({ title }): JSX.Element =
         {title}
       </div>
       <div className={styling.navigationIcons}>
-        <div className={styling.navigationIcon}>
-          <IconButton
-            color="#FFFFFF"
-            data-testid="navigation-github"
-            external={true}
-            height="1.8vw"
-            href="https://github.com/joshuagardiner"
-            icon={IoLogoGithub}
-            width="1.8vw"
-          />
-        </div>
-        <div className={styling.navigationIcon}>
-          <IconButton
-            color="#FFFFFF"
-            data-testid="navigation-linkedin"
-            external={true}
-            height="1.8vw"
-            href="https://www.linkedin.com/in/joshua-gardiner"
-            icon={IoLogoLinkedin}
-            width="1.8vw"
-          />
-        </div>
+        <IconButton
+          className={styling.navigationIcon}
+          data-testid={"navigation-github-btn"}
+          external={true}
+          href={"https://github.com/joshuagardiner"}
+          icon={IoLogoGithub}
+        />
+        <IconButton
+          className={styling.navigationIcon}
+          data-testid="navigation-linkedin-btn"
+          external={true}
+          href="https://www.linkedin.com/in/joshua-gardiner"
+          icon={IoLogoLinkedin}
+        />
       </div>
     </div>
   );

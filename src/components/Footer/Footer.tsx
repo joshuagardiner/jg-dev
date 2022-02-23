@@ -24,22 +24,18 @@ export const Footer: React.FC = () => {
           </a>
           <div className={styling.authorSocials}>
             <IconButton
-              color="#132138"
-              data-testid="footer-github"
+              className={styling.authorSocial}
+              data-testid="footer-github-btn"
               external={true}
-              height="1.8vw"
               href="https://github.com/joshuagardiner"
               icon={IoLogoGithub}
-              width="1.8vw"
             />
             <IconButton
-              color="#132138"
-              data-testid="footer-linkedin"
+              className={styling.authorSocial}
+              data-testid="footer-linkedin-btn"
               external={true}
-              height="1.8vw"
               href="https://www.linkedin.com/in/joshua-gardiner"
               icon={IoLogoLinkedin}
-              width="1.8vw"
             />
           </div>
         </div>
