@@ -27,18 +27,10 @@ p {
   color: #999999;
 }
 
-.tcl-avatar__image {
-  border-radius: 50%;
-}
-
 .tcl-card {
   display: inline-flex;
   margin-left: auto;
   margin-right: auto;
-}
-
-.tcl-icon-btn:hover {
-  cursor: pointer;
 }
 
 ul,

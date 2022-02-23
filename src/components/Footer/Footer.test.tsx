@@ -22,8 +22,8 @@ describe("Footer", () => {
     const footerTelephone = screen.getByTestId("footer-contact-telephone");
     const footerAuthorInfo = screen.getByTestId("footer-author");
     const footerTitle = screen.getByTestId("footer-author-title");
-    const footerGitHubBtn = screen.getByTestId("icon-btn-footer-github");
-    const footerLinkedInBtn = screen.getByTestId("icon-btn-footer-linkedin");
+    const footerGitHubBtn = screen.getByTestId("footer-github-btn");
+    const footerLinkedInBtn = screen.getByTestId("footer-linkedin-btn");
 
     expect(footerContactInfo).toBeDefined();
     expect(footerAddress.textContent).toEqual("37 Oakwood Gardens, Halifax, HX28HB");
@@ -38,7 +38,7 @@ describe("Footer", () => {
   it("should open a new tab when clicking the GitHub IconButton.", () => {
     render(<Footer />);
 
-    const navigationGitHubBtn = screen.getByTestId("icon-btn-footer-github");
+    const navigationGitHubBtn = screen.getByTestId("footer-github-btn");
     fireEvent.click(navigationGitHubBtn);
 
     expect(global.open).toHaveBeenCalledWith("https://github.com/joshuagardiner", "_blank");
@@ -47,17 +47,12 @@ describe("Footer", () => {
   it("should open a new tab when clicking the LinkedIn IconButton.", () => {
     render(<Footer />);
 
-    const navigationLinkedInBtn = screen.getByTestId("icon-btn-footer-linkedin");
+    const navigationLinkedInBtn = screen.getByTestId("footer-linkedin-btn");
     fireEvent.click(navigationLinkedInBtn);
 
     expect(global.open).toHaveBeenCalledWith(
       "https://www.linkedin.com/in/joshua-gardiner",
       "_blank"
     );
-  });
-
-  it("renders the Footer component unchanged.", () => {
-    const { container } = render(<Footer />);
-    expect(container).toMatchSnapshot();
   });
 });

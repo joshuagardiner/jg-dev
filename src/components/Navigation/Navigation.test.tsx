@@ -18,8 +18,8 @@ describe("Navigation", () => {
     render(<Navigation title={"TEST"} />);
 
     const navigationTitle = screen.getByTestId("navigation-title");
-    const navigationGitHubBtn = screen.getByTestId("icon-btn-navigation-github");
-    const navigationLinkedInBtn = screen.getByTestId("icon-btn-navigation-linkedin");
+    const navigationGitHubBtn = screen.getByTestId("navigation-github-btn");
+    const navigationLinkedInBtn = screen.getByTestId("navigation-linkedin-btn");
 
     expect(navigationTitle.textContent).toEqual("TEST");
     expect(navigationGitHubBtn).toBeDefined();
@@ -29,7 +29,7 @@ describe("Navigation", () => {
   it("should open a new tab when clicking the GitHub IconButton.", () => {
     render(<Navigation title={"TEST"} />);
 
-    const navigationGitHubBtn = screen.getByTestId("icon-btn-navigation-github");
+    const navigationGitHubBtn = screen.getByTestId("navigation-github-btn");
     fireEvent.click(navigationGitHubBtn);
 
     expect(global.open).toHaveBeenCalledWith("https://github.com/joshuagardiner", "_blank");
@@ -38,7 +38,7 @@ describe("Navigation", () => {
   it("should open a new tab when clicking the LinkedIn IconButton.", () => {
     render(<Navigation title={"TEST"} />);
 
-    const navigationLinkedInBtn = screen.getByTestId("icon-btn-navigation-linkedin");
+    const navigationLinkedInBtn = screen.getByTestId("navigation-linkedin-btn");
     fireEvent.click(navigationLinkedInBtn);
 
     expect(global.open).toHaveBeenCalledWith(
