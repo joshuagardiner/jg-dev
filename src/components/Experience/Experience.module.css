@@ -1,3 +1,7 @@
+.cardColumnCollection {
+  display: inline-flex;
+}
+
 .company {
   font-size: 1rem;
   text-transform: uppercase;
@@ -16,15 +20,8 @@
   text-transform: uppercase;
 }
 
-.subCard {
-  display: inline-block;
-}
-
-.subContent {
-  font-size: 1rem;
-  line-height: 2.5rem;
-  position: relative;
-  width: 90%;
+.subExperience {
+  width: 50%;
 }
 
 .tenure {
@@ -35,6 +32,16 @@
 .title {
   font-size: 2rem;
   margin-top: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .cardColumnCollection {
+    display: grid;
+  }
+
+  .subExperience {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -50,12 +57,6 @@
 
   .role {
     font-size: 0.75rem;
-  }
-
-  .subContent {
-    font-size: 0.5rem;
-    line-height: 1.25rem;
-    width: 95%;
   }
 
   .tenure {

@@ -1,3 +1,7 @@
+.cardCollection {
+  display: grid;
+}
+
 .container {
   margin-bottom: 7.5%;
 }
