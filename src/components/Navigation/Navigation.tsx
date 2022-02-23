@@ -22,10 +22,10 @@ export const Navigation: React.FC<INavigationProps> = ({ title }): JSX.Element =
             color="#FFFFFF"
             data-testid="navigation-github"
             external={true}
-            height="1.8vw"
+            height="1.5rem"
             href="https://github.com/joshuagardiner"
             icon={IoLogoGithub}
-            width="1.8vw"
+            width="1.5rem"
           />
         </div>
         <div className={styling.navigationIcon}>
@@ -33,10 +33,10 @@ export const Navigation: React.FC<INavigationProps> = ({ title }): JSX.Element =
             color="#FFFFFF"
             data-testid="navigation-linkedin"
             external={true}
-            height="1.8vw"
+            height="1.5rem"
             href="https://www.linkedin.com/in/joshua-gardiner"
             icon={IoLogoLinkedin}
-            width="1.8vw"
+            width="1.5rem"
           />
         </div>
       </div>

@@ -55,9 +55,4 @@ describe("Footer", () => {
       "_blank"
     );
   });
-
-  it("renders the Footer component unchanged.", () => {
-    const { container } = render(<Footer />);
-    expect(container).toMatchSnapshot();
-  });
 });

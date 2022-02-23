@@ -34,7 +34,18 @@
   margin-top: 0.5rem;
 }
 
+.authorSocial {
+  padding: 0 0.5rem;
+}
+.authorSocial:last-of-type {
+  padding: 0 0;
+}
+
 @media screen and (max-width: 768px) {
+  .authorSocial {
+    padding: 0 0.1rem;
+  }
+
   .container {
     line-height: 1rem;
     margin-top: 0;

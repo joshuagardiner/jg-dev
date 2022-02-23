@@ -23,24 +23,28 @@ export const Footer: React.FC = () => {
             Joshua Gardiner, 2022
           </a>
           <div className={styling.authorSocials}>
-            <IconButton
-              color="#132138"
-              data-testid="footer-github"
-              external={true}
-              height="1.8vw"
-              href="https://github.com/joshuagardiner"
-              icon={IoLogoGithub}
-              width="1.8vw"
-            />
-            <IconButton
-              color="#132138"
-              data-testid="footer-linkedin"
-              external={true}
-              height="1.8vw"
-              href="https://www.linkedin.com/in/joshua-gardiner"
-              icon={IoLogoLinkedin}
-              width="1.8vw"
-            />
+            <div className={styling.authorSocial}>
+              <IconButton
+                color="#132138"
+                data-testid="footer-github"
+                external={true}
+                height="1rem"
+                href="https://github.com/joshuagardiner"
+                icon={IoLogoGithub}
+                width="1rem"
+              />
+            </div>
+            <div className={styling.authorSocial}>
+              <IconButton
+                color="#132138"
+                data-testid="footer-linkedin"
+                external={true}
+                height="1rem"
+                href="https://www.linkedin.com/in/joshua-gardiner"
+                icon={IoLogoLinkedin}
+                width="1rem"
+              />
+            </div>
           </div>
         </div>
       </div>
