@@ -15,6 +15,10 @@
   width: 90%;
 }
 
+.divider {
+  display: none;
+}
+
 .role {
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -37,6 +41,12 @@
 @media screen and (max-width: 768px) {
   .cardColumnCollection {
     display: grid;
+  }
+
+  .divider {
+    color: #3c4858;
+    display: block;
+    width: 5%;
   }
 
   .subExperience {
