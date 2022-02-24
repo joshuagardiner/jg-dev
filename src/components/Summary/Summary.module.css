@@ -25,6 +25,21 @@
   text-transform: uppercase;
 }
 
+.socialMediaIcons {
+  flex-direction: row;
+  line-height: 1.75em;
+}
+
+.socialMediaIcon,
+.socialMediaIcon:hover {
+  background-color: inherit;
+  border: none;
+  border-radius: 50%;
+  color: #3c4858;
+  cursor: pointer;
+  font-size: 35px;
+}
+
 .title {
   font-size: 3.5rem;
   margin-top: 7.5%;
@@ -35,8 +50,17 @@
     margin-top: -125px;
   }
 
+  .contactInformation {
+    font-size: 0.83rem;
+  }
+
   .description {
     width: 100%;
+  }
+
+  .socialMediaIcon,
+  .socialMediaIcon:hover {
+    font-size: 25px;
   }
 }
 
