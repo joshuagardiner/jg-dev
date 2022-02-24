@@ -11,6 +11,11 @@
   text-transform: uppercase;
 }
 
+.divider {
+  color: #3c4858;
+  width: 5%;
+}
+
 .faculty {
   font-size: 1rem;
   text-transform: uppercase;

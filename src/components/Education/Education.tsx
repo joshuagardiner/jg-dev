@@ -29,6 +29,7 @@ export const Education: React.FC<IEducationProps> = (props: IEducationProps) => 
             {education[0].tenure}
           </h5>
         </Card>
+        <hr className={styling.divider} />
         <Card>
           <h4 className={styling.faculty} data-testid={"education-faculty"}>
             {education[1].placeOfStudy}

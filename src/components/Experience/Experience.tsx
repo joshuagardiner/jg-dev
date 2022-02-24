@@ -47,6 +47,7 @@ export const Experience: React.FC<IExperienceProps> = (props: IExperienceProps) 
             {experiences[0].content[5]}
           </p>
         </Card>
+        <hr className={styling.divider} />
         <CollectionColumn className={styling.cardColumnCollection}>
           <Card className={styling.subExperience}>
             <h3 className={styling.role} data-testid={"experience-role"}>
@@ -62,6 +63,7 @@ export const Experience: React.FC<IExperienceProps> = (props: IExperienceProps) 
               {experiences[1].content[0]}
             </p>
           </Card>
+          <hr className={styling.divider} />
           <Card className={styling.subExperience}>
             <h3 className={styling.role} data-testid={"experience-role"}>
               {experiences[2].role}
