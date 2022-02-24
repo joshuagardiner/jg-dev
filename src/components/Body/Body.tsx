@@ -4,6 +4,7 @@ import { Client } from "../../client/Client";
 import { IContent } from "../../lib/models/IContent";
 import { Education } from "../Education/Education";
 import { Experience } from "../Experience/Experience";
+import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 import { Skills } from "../Skills/Skills";
 import { Summary } from "../Summary/Summary";
 import styling from "./Body.module.css";
@@ -15,24 +16,31 @@ import styling from "./Body.module.css";
  * @returns the Body component.
  */
 export const Body: React.FC = () => {
-  const [content, setContent] = React.useState({} as IContent);
+  const [contentState, setContentState] = React.useState({
+    content: {} as IContent,
+    loaded: false
+  });
 
   React.useEffect(() => {
     new Client().getContent().then((result) => {
-      setContent(result.content);
+      setContentState({ content: result.content, loaded: true });
     });
   }, []);
 
-  return (
-    <div className={styling.container} data-testid={"body-component"}>
-      <div className={styling.content}>
-        <Card width={"80%"}>
-          <Summary summary={content.summary} />
-          <Skills skills={content.skills} />
-          <Experience experiences={content.experiences} />
-          <Education education={content.education} />
-        </Card>
+  if (contentState.loaded) {
+    return (
+      <div className={styling.container} data-testid={"body-component"}>
+        <div className={styling.content}>
+          <Card width={"80%"}>
+            <Summary summary={contentState.content.summary} />
+            <Skills skills={contentState.content.skills} />
+            <Experience experiences={contentState.content.experiences} />
+            <Education education={contentState.content.education} />
+          </Card>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
+
+  return <LoadingSpinner text={"Loading.."} />;
 };

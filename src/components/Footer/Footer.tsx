@@ -1,6 +1,4 @@
 import React from "react";
-import { IconButton } from "@joshuagardiner/typescript-component-library";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import styling from "./Footer.module.css";
 
 /**
@@ -9,7 +7,7 @@ import styling from "./Footer.module.css";
  *
  * @returns the Footer component
  */
-export const Footer: React.FC = () => {
+export const Footer: React.FC = (): JSX.Element => {
   return (
     <>
       <div className={styling.container}>
