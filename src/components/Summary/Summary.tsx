@@ -1,4 +1,6 @@
 import React from "react";
+import { IconButton } from "@joshuagardiner/typescript-component-library";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { ISummaryProps } from "./ISummaryProps";
 import styling from "./Summary.module.css";
 
@@ -38,6 +40,22 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
         <p className={styling.contactInformation} data-testid={"summary-contact-telephone"}>
           {summary.telephone}
         </p>
+        <div className={styling.socialMediaIcons}>
+          <IconButton
+            className={styling.socialMediaIcon}
+            data-testid={"summary-github-btn"}
+            external={true}
+            href={"https://github.com/joshuagardiner"}
+            icon={IoLogoGithub}
+          />
+          <IconButton
+            className={styling.socialMediaIcon}
+            data-testid="summary-linkedin-btn"
+            external={true}
+            href="https://www.linkedin.com/in/joshua-gardiner"
+            icon={IoLogoLinkedin}
+          />
+        </div>
         <p className={styling.description} data-testid={"summary-description"}>
           <a data-testid={"summary-description-content"}>{summary.content.p1}</a>
           <br></br>
