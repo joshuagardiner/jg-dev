@@ -5,20 +5,40 @@ export interface IEducation {
   /**
    * The course studied.
    */
-  courseOfStudy: string;
+  course: string;
+
+  /**
+   * The faculty studied at.
+   */
+  faculty: string;
 
   /**
    * The grades achieved.
    */
-  grades: string[];
+  grades: IGrade[];
 
   /**
-   * The place of study.
+   * The identifier.
    */
-  placeOfStudy: string;
+  id: string;
 
   /**
    * The tenure of study.
    */
   tenure: string;
+}
+
+/**
+ * The Grade model.
+ */
+export interface IGrade {
+  /**
+   * The identifier.
+   */
+  id: string;
+
+  /**
+   * The value.
+   */
+  value: string;
 }

@@ -19,13 +19,15 @@ describe("Body", () => {
           Promise.resolve({
             education: [
               {
+                id: "1",
                 course: "Politics",
                 faculty: "University of Edinburgh",
                 tenure: "September '00 - June '01"
               },
               {
+                id: "2",
                 faculty: "Hogwarts School of Witchcraft and Wizardry",
-                grades: ["OWL's", "Potions Mastery", "Treasure Hunting"],
+                grades: [{ id: "1", value: "OWL's" }],
                 tenure: "September '03 - June '10"
               }
             ],

@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "@joshuagardiner/typescript-component-library";
 import { Client } from "../../client/Client";
 import { IContent } from "../../lib/models/IContent";
-import { Education } from "../Education/Education";
+import { EducationCollection } from "../EducationCollection/EducationCollection";
 import { Experience } from "../Experience/Experience";
 import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 import { Skills } from "../Skills/Skills";
@@ -35,7 +35,7 @@ export const Body: React.FC = () => {
             <Summary summary={contentState.content.summary} />
             <Skills skills={contentState.content.skills} />
             <Experience experiences={contentState.content.experiences} />
-            <Education education={contentState.content.education} />
+            <EducationCollection education={contentState.content.education} />
           </Card>
         </div>
       </div>
