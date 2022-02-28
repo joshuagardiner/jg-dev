@@ -1,5 +1,6 @@
 import { IContentResponse } from "./responses/IContent";
 import { IClient } from "./IClient";
+import { IEducation, IGrade } from "../lib/models/IEducation";
 
 /**
  * The API Client.
@@ -18,10 +19,15 @@ export class Client implements IClient {
 
     return {
       content: {
-        education: data.education.map((education: any) => ({
-          courseOfStudy: education.course,
-          grades: education.grades,
-          placeOfStudy: education.faculty,
+        education: data.education.map((education: IEducation) => ({
+          course: education.course,
+          faculty: education.faculty,
+          grades:
+            education.grades?.map((grade: IGrade) => ({
+              id: grade.id,
+              value: grade.value
+            })) || [],
+          id: education.id,
           tenure: education.tenure
         })),
         experiences: data.experiences.map((experience: any) => ({

@@ -4,8 +4,8 @@ import styles from "./LoadingSpinner.module.css";
 /**
  * Responsible for implementing the LoadingSpinner.
  *
- * @param props The properties that can be past to the component.
- * @returns The LoadingSpinner component.
+ * @param props the properties that can be passed to the component.
+ * @returns the LoadingSpinner component.
  */
 export const LoadingSpinner: React.FC<ILoadingSpinnerProps> = (
   props: ILoadingSpinnerProps

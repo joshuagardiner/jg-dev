@@ -7,15 +7,23 @@ export function response() {
       {
         course: "BSc (Hons) COMPUTING",
         faculty: "Manchester Metropolitan University",
+        id: "bf237edd-9a86-4303-81a3-24c1679df63d",
         tenure: "September '11 - June '16"
       },
       {
         faculty: "The Brooksbank School and Sixth Form",
         grades: [
-          "A-level's: Information technology, Geography",
-          "AS-level's: Business studies, Physical education",
-          "GCSE's: 10 [A-C]"
+          {
+            id: "45fa4124-05a0-4324-870e-343992093530",
+            value: "A-level's: Information technology, Geography"
+          },
+          {
+            id: "36b4bd13-2590-4e20-8633-2dcb0bf25b08",
+            value: "AS-level's: Business studies, Physical education"
+          },
+          { id: "0d6ecdc7-4551-4086-9272-2d6bc12cf6ef", value: "GCSE's: 10 [A-C]" }
         ],
+        id: "8c3568c7-ddff-4141-adae-616e2049544d",
         tenure: "September '03 - June '10"
       }
     ],

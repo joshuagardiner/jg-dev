@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { IEducation } from "../../src/client/responses/IEducation";
+import { IEducationResponse } from "../../src/client/responses/IEducation";
 import { IExperience } from "../../src/client/responses/IExperience";
 import { ISkills } from "../../src/client/responses/ISkills";
 import { ISummary } from "../../src/client/responses/ISummary";
@@ -10,7 +10,7 @@ import { response } from "./examples/Content";
  * The type of Data returned from the handler.
  */
 type Data = {
-  education: IEducation[];
+  education: IEducationResponse[];
   experiences: IExperience[];
   skills: ISkills;
   summary: ISummary;

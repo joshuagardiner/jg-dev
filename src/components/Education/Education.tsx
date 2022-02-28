@@ -1,53 +1,34 @@
-import React from "react";
-import { Card, Collection } from "@joshuagardiner/typescript-component-library";
 import { IEducationProps } from "./IEducationProps";
+import { IGrade } from "../../lib/models/IEducation";
 import styling from "./Education.module.css";
 
 /**
- * The Experience component is responsible for rendering content
- * within the application Body.
+ * The Education component is responsible for rendering academic
+ * details within the application Body.
  *
+ * @param props the properties that can be passed to the component.
  * @returns the Education component.
  */
 export const Education: React.FC<IEducationProps> = (props: IEducationProps) => {
-  const { education } = props;
+  const { course, faculty, grades, tenure } = props;
 
-  return education ? (
-    <div className={styling.container} data-testid={"education-component"}>
-      <h2 className={styling.title} data-testid={"education-title"}>
-        Education
-      </h2>
-      <Collection className={styling.cardCollection}>
-        <Card>
-          <h3 className={styling.course} data-testid={"education-course"}>
-            {education[0].courseOfStudy}
-          </h3>
-          <h4 className={styling.faculty} data-testid={"education-faculty"}>
-            {education[0].placeOfStudy}
-          </h4>
-          <h5 className={styling.tenure} data-testid={"education-tenure"}>
-            {education[0].tenure}
-          </h5>
-        </Card>
-        <hr className={styling.divider} />
-        <Card>
-          <h4 className={styling.faculty} data-testid={"education-faculty"}>
-            {education[1].placeOfStudy}
-          </h4>
-          <h5 className={styling.tenure} data-testid={"education-tenure"}>
-            {education[1].tenure}
-          </h5>
-          <p className={styling.grades} data-testid={"education-grades"}>
-            {education[1].grades[0]}
-            <br></br>
-            {education[1].grades[1]}
-            <br></br>
-            {education[1].grades[2]}
-          </p>
-        </Card>
-      </Collection>
+  return (
+    <div className={styling.education}>
+      <h3 className={styling.course} data-testid={"education-course"}>
+        {course}
+      </h3>
+      <h4 className={styling.faculty} data-testid={"education-faculty"}>
+        {faculty}
+      </h4>
+      <h5 className={styling.tenure} data-testid={"education-tenure"}>
+        {tenure}
+      </h5>
+      <hr className={styling.divider} />
+      {grades.map((grade: IGrade) => (
+        <p key={grade.id} className={styling.grade} data-testid={"education-grade"}>
+          {grade.value}
+        </p>
+      ))}
     </div>
-  ) : (
-    <></>
   );
 };
