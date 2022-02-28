@@ -3,7 +3,7 @@ import { Card } from "@joshuagardiner/typescript-component-library";
 import { Client } from "../../client/Client";
 import { IContent } from "../../lib/models/IContent";
 import { EducationCollection } from "../EducationCollection/EducationCollection";
-import { Experience } from "../Experience/Experience";
+import { ExperienceCollection } from "../ExperienceCollection/ExperienceCollection";
 import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 import { Skills } from "../Skills/Skills";
 import { Summary } from "../Summary/Summary";
@@ -34,7 +34,7 @@ export const Body: React.FC = () => {
           <Card width={"80%"}>
             <Summary summary={contentState.content.summary} />
             <Skills skills={contentState.content.skills} />
-            <Experience experiences={contentState.content.experiences} />
+            <ExperienceCollection experiences={contentState.content.experiences} />
             <EducationCollection education={contentState.content.education} />
           </Card>
         </div>
