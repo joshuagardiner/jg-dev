@@ -1,7 +1,3 @@
-.cardColumnCollection {
-  display: inline-flex;
-}
-
 .company {
   font-size: 1rem;
   text-transform: uppercase;
@@ -24,33 +20,16 @@
   text-transform: uppercase;
 }
 
-.subExperience {
-  width: 50%;
-}
-
 .tenure {
   font-size: 0.75rem;
   text-transform: uppercase;
 }
 
-.title {
-  font-size: 2rem;
-  margin-top: 5%;
-}
-
 @media screen and (max-width: 768px) {
-  .cardColumnCollection {
-    display: grid;
-  }
-
   .divider {
     color: #3c4858;
     display: block;
     width: 5%;
-  }
-
-  .subExperience {
-    width: 100%;
   }
 }
 
@@ -71,9 +50,5 @@
 
   .tenure {
     font-size: 0.5rem;
-  }
-
-  .title {
-    font-size: 1.25rem;
   }
 }

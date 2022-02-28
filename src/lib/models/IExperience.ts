@@ -10,7 +10,17 @@ export interface IExperience {
   /**
    * The content.
    */
-  content: string[];
+  content: IExperienceContent[];
+
+  /**
+   * The identifier.
+   */
+  id: string;
+
+  /**
+   * The content's priority.
+   */
+  priority: boolean;
 
   /**
    * The role.
@@ -21,4 +31,19 @@ export interface IExperience {
    * The tenure.
    */
   tenure: string;
+}
+
+/**
+ * The ExperienceContent model.
+ */
+export interface IExperienceContent {
+  /**
+   * The identifier.
+   */
+  id: string;
+
+  /**
+   * The value.
+   */
+  value: string;
 }

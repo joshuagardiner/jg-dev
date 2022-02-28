@@ -1,11 +1,23 @@
+import { IDetail } from "./common/IDetail";
+
 /**
  * The response object the API returns.
  */
-export interface IExperience {
+export interface IExperienceResponse {
   /**
    * The company.
    */
   company: string;
+
+  /**
+   * The identifier.
+   */
+  id: string;
+
+  /**
+   * The priority content.
+   */
+  priority: boolean;
 
   /**
    * The role.
@@ -18,7 +30,7 @@ export interface IExperience {
   tenure: string;
 
   /**
-   * The tenure.
+   * The content.
    */
-  text: string[];
+  text: IDetail[];
 }
