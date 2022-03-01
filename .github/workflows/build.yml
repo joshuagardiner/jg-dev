@@ -37,3 +37,8 @@ jobs:
 
       - name: Test
         run: yarn test
+
+      - name: Snyk
+        run: yarn test:snyk
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
