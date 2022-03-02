@@ -7,7 +7,7 @@ import { ExperienceCollection } from "../ExperienceCollection/ExperienceCollecti
 import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 import { Skills } from "../Skills/Skills";
 import { Summary } from "../Summary/Summary";
-import styling from "./Body.module.css";
+import styles from "./Body.module.scss";
 
 /**
  * The Body component is responsible for rendering the components
@@ -29,15 +29,13 @@ export const Body: React.FC = () => {
 
   if (contentState.loaded) {
     return (
-      <div className={styling.container} data-testid={"body-component"}>
-        <div className={styling.content}>
-          <Card width={"80%"}>
-            <Summary summary={contentState.content.summary} />
-            <Skills skills={contentState.content.skills} />
-            <ExperienceCollection experiences={contentState.content.experiences} />
-            <EducationCollection education={contentState.content.education} />
-          </Card>
-        </div>
+      <div className={styles.container} data-testid={"body-component"}>
+        <Card className={styles.content}>
+          <Summary summary={contentState.content.summary} />
+          <Skills skills={contentState.content.skills} />
+          <ExperienceCollection experiences={contentState.content.experiences} />
+          <EducationCollection education={contentState.content.education} />
+        </Card>
       </div>
     );
   }

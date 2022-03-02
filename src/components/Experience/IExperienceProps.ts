@@ -15,16 +15,6 @@ export interface IExperienceProps {
   content: IExperienceContent[];
 
   /**
-   * The identifier.
-   */
-  id: string;
-
-  /**
-   * The priority of the content.
-   */
-  priority: boolean;
-
-  /**
    * The role of employment.
    */
   role: string;

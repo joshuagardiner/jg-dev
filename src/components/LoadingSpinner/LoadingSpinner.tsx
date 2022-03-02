@@ -1,5 +1,5 @@
 import { ILoadingSpinnerProps } from "./ILoadingSpinnerProps";
-import styles from "./LoadingSpinner.module.css";
+import styles from "./LoadingSpinner.module.scss";
 
 /**
  * Responsible for implementing the LoadingSpinner.

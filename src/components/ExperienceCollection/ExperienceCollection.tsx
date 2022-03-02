@@ -1,8 +1,9 @@
 import React from "react";
 import { Card, CollectionColumn } from "@joshuagardiner/typescript-component-library";
-import { IExperienceCollectionProps } from "./IExperienceCollectionProps";
-import styling from "./ExperienceCollection.module.css";
+import { IExperience } from "../../lib/models/IExperience";
 import { Experience } from "../Experience/Experience";
+import { IExperienceCollectionProps } from "./IExperienceCollectionProps";
+import styles from "./ExperienceCollection.module.scss";
 
 /**
  * The ExperienceCollection component is responsible for rendering content
@@ -17,20 +18,13 @@ export const ExperienceCollection: React.FC<IExperienceCollectionProps> = (
 
   return experiences ? (
     <div data-testid={"experience-component"}>
-      <h2 className={styling.title} data-testid={"experience-title"}>
+      <h2 className={styles.title} data-testid={"experience-title"}>
         Experience
       </h2>
       <CollectionColumn>
-        {experiences.map((exp: any) => (
-          <Card key={exp.id} className={exp.priority ? styling.experience : styling.subExperience}>
-            <Experience
-              company={exp.company}
-              content={exp.content}
-              id={exp.id}
-              priority={exp.priority}
-              role={exp.role}
-              tenure={exp.tenure}
-            />
+        {experiences.map((e: IExperience) => (
+          <Card key={e.id} className={e.priority ? styles.experience : styles.subExperience}>
+            <Experience company={e.company} content={e.content} role={e.role} tenure={e.tenure} />
           </Card>
         ))}
       </CollectionColumn>

@@ -1,9 +1,7 @@
 .container {
   background-color: #132138;
-  color: #ffffff;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
   height: 20rem;
-  overflow: hidden;
-  width: 100%;
 }
 
 @media screen and (min-width: 1440px) {
