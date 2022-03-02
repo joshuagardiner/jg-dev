@@ -10,6 +10,7 @@ Tech used:
 - [Next.js](https://nextjs.org)
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org)
+- [Sass](https://sass-lang.com)
 - [ESLint](https://eslint.org)
 - [Prettier](https://prettier.io)
 - [Husky](https://typicode.github.io/husky/#/)
