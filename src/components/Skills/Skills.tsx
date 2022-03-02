@@ -1,6 +1,6 @@
 import React from "react";
 import { ISkillsProps } from "./ISkillsProps";
-import styling from "./Skills.module.css";
+import styles from "./Skills.module.scss";
 
 /**
  * The Skills component is reponsible for rendering content
@@ -13,17 +13,17 @@ export const Skills: React.FC<ISkillsProps> = (props: ISkillsProps) => {
 
   return skills ? (
     <div data-testid={"skills-component"}>
-      <h2 className={styling.title} data-testid={"skills-title"}>
+      <h2 className={styles.title} data-testid={"skills-title"}>
         Skills
       </h2>
-      <ul className={styling.skills} data-testid={"skills-list"}>
+      <ul className={styles.skills} data-testid={"skills-list"}>
         {skills.technical.map((skill) => (
-          <li data-testid={"technical-skill"} key={skill}>
+          <li className={styles.skill} data-testid={"technical-skill"} key={skill}>
             <p>{skill}</p>
           </li>
         ))}
         {skills.soft.map((softSkill) => (
-          <li data-testid={"soft-skill"} key={softSkill}>
+          <li className={styles.skill} data-testid={"soft-skill"} key={softSkill}>
             <p>{softSkill}</p>
           </li>
         ))}

@@ -7,8 +7,7 @@
   display: inline-block;
   font-size: 1.125rem;
   line-height: 2.75rem;
-  position: relative;
-  width: 90%;
+  width: 80%;
 }
 
 .divider {
@@ -26,6 +25,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+
   .divider {
     color: #3c4858;
     display: block;
@@ -41,7 +44,6 @@
   .content {
     font-size: 0.75rem;
     line-height: 1.5rem;
-    width: 95%;
   }
 
   .role {

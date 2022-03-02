@@ -1,10 +1,6 @@
 .avatar {
   border-radius: 50%;
-  display: "inherit";
-  margin-left: "auto";
-  margin-right: "auto";
   margin-top: -175px;
-  position: "absolute";
 }
 
 .contactInformation {
@@ -15,7 +11,6 @@
   display: inline-block;
   font-size: 1.125rem;
   line-height: 2.75rem;
-  position: relative;
   width: 80%;
 }
 
@@ -61,6 +56,7 @@
   .socialMediaIcon,
   .socialMediaIcon:hover {
     font-size: 25px;
+    padding: 1px 2px;
   }
 }
 
@@ -72,7 +68,6 @@
   .description {
     font-size: 0.75rem;
     line-height: 1.5rem;
-    width: 100%;
   }
 
   .role {

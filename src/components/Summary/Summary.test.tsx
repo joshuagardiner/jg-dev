@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react";
 import React from "react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { ISummary } from "../../lib/models/ISummary";
 import { Summary } from "./Summary";
 
@@ -30,7 +30,6 @@ describe("Summary", () => {
     const summaryImage = screen.getByAltText("jg_avatar");
     const summaryTitle = screen.getByTestId("summary-title");
     const summaryRole = screen.getByTestId("summary-role");
-    const summaryContent = screen.getByTestId("summary-content");
     const summaryAddress = screen.getByTestId("summary-contact-address");
     const summaryEmail = screen.getByTestId("summary-contact-email");
     const summaryTelephone = screen.getByTestId("summary-contact-telephone");
@@ -42,7 +41,6 @@ describe("Summary", () => {
     expect(summaryImage).toBeDefined();
     expect(summaryTitle.textContent).toEqual("Harry Potter");
     expect(summaryRole.textContent).toEqual("Auror");
-    expect(summaryContent).toBeDefined();
     expect(summaryAddress.textContent).toEqual("4 Privet Drive, Little Whinging, Surrey");
     expect(summaryEmail.textContent).toEqual("Harry.Potter@MoM.co.uk");
     expect(summaryTelephone.textContent).toEqual("+44 1234 567 890");

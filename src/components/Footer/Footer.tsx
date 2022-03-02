@@ -1,5 +1,5 @@
 import React from "react";
-import styling from "./Footer.module.css";
+import styles from "./Footer.module.scss";
 
 /**
  * The Footer component is responsible for rendering the components
@@ -10,8 +10,10 @@ import styling from "./Footer.module.css";
 export const Footer: React.FC = (): JSX.Element => {
   return (
     <>
-      <div className={styling.container}>
-        <p data-testid={"footer"}>Joshua Gardiner, 2022</p>
+      <div className={styles.container}>
+        <p className={styles.author} data-testid={"footer"}>
+          Joshua Gardiner, 2022
+        </p>
       </div>
     </>
   );

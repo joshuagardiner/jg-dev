@@ -1,5 +1,5 @@
 import React from "react";
-import styling from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 /**
  * The Header component is responsible for rendering the components
@@ -8,5 +8,5 @@ import styling from "./Header.module.css";
  * @returns the Header component.
  */
 export const Header: React.FC = (): JSX.Element => {
-  return <div className={styling.container} data-testid={"header-component"} />;
+  return <div className={styles.container} data-testid={"header-component"} />;
 };

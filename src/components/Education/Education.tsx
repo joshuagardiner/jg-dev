@@ -1,6 +1,6 @@
-import { IEducationProps } from "./IEducationProps";
 import { IGrade } from "../../lib/models/IEducation";
-import styling from "./Education.module.css";
+import { IEducationProps } from "./IEducationProps";
+import styles from "./Education.module.scss";
 
 /**
  * The Education component is responsible for rendering academic
@@ -14,18 +14,18 @@ export const Education: React.FC<IEducationProps> = (props: IEducationProps) => 
 
   return (
     <>
-      <h3 className={styling.course} data-testid={"education-course"}>
+      <h3 className={styles.course} data-testid={"education-course"}>
         {course}
       </h3>
-      <h4 className={styling.faculty} data-testid={"education-faculty"}>
+      <h4 className={styles.faculty} data-testid={"education-faculty"}>
         {faculty}
       </h4>
-      <h5 className={styling.tenure} data-testid={"education-tenure"}>
+      <h5 className={styles.tenure} data-testid={"education-tenure"}>
         {tenure}
       </h5>
-      <hr className={styling.divider} />
+      <hr className={styles.divider} />
       {grades.map((grade: IGrade) => (
-        <p key={grade.id} className={styling.grade} data-testid={"education-grade"}>
+        <p key={grade.id} className={styles.grade} data-testid={"education-grade"}>
           {grade.value}
         </p>
       ))}
