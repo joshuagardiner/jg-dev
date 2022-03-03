@@ -5,7 +5,7 @@ import { IContent } from "../../lib/models/IContent";
  */
 export interface IContentResponse {
   /**
-   * The Content.
+   * The content.
    */
   content: IContent;
 }

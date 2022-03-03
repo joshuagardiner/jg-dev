@@ -6,10 +6,10 @@ import { IClient } from "./IClient";
  */
 export class Client implements IClient {
   /**
-   * Responsible for getting the Content data and mapping into
-   * our Content model.
+   * Responsible for getting the content data and mapping into
+   * our model.
    *
-   * @returns the Content data.
+   * @returns the mapped data.
    */
   getContent = async (): Promise<IContentResponse> => {
     const url = `/api/Content`;

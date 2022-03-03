@@ -1,7 +1,7 @@
 import { IExperienceContent } from "../../lib/models/IExperience";
 
 /**
- * The properties available for the Experience component.
+ * The properties available to the Experience component.
  */
 export interface IExperienceProps {
   /**

@@ -3,9 +3,10 @@ import { ISkillsProps } from "./ISkillsProps";
 import styles from "./Skills.module.scss";
 
 /**
- * The Skills component is reponsible for rendering content
- * within the application Body.
+ * The Skills component is reponsible for rendering a list of technical
+ * and soft skills within the application body.
  *
+ * @props the properties that can be passed into the component.
  * @returns the Skills component.
  */
 export const Skills: React.FC<ISkillsProps> = (props: ISkillsProps) => {

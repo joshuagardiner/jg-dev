@@ -3,10 +3,10 @@ import { IEducationProps } from "./IEducationProps";
 import styles from "./Education.module.scss";
 
 /**
- * The Education component is responsible for rendering academic
- * details within the application Body.
+ * The Education component is responsible for rendering a single academic
+ * detail within the application body.
  *
- * @param props the properties that can be passed to the component.
+ * @param props the properties that can be passed into the component.
  * @returns the Education component.
  */
 export const Education: React.FC<IEducationProps> = (props: IEducationProps) => {

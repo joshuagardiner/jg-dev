@@ -1,7 +1,7 @@
 import { IEducation } from "../../lib/models/IEducation";
 
 /**
- * The properties available for the EducationCollection component.
+ * The properties available to the EducationCollection component.
  */
 export interface IEducationCollectionProps {
   /**
