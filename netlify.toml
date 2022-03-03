@@ -7,10 +7,10 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[[plugins]]
+[[context.production.plugins]]
   package = "@netlify/plugin-lighthouse"
 
-  [plugins.inputs]
+  [context.production.plugins.inputs]
   output_path = "reports/lighthouse.html"
 
 [[headers]]
