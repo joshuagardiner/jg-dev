@@ -6,9 +6,10 @@ import { IEducationCollectionProps } from "./IEducationCollectionProps";
 import styles from "./EducationCollection.module.scss";
 
 /**
- * The EducationCollection component is responsible for rendering content
- * within the application Body.
+ * The EducationCollection component is responsible for rendering multiple academic
+ * details the application body.
  *
+ * @props the properties that can be passed into the component.
  * @returns the EducationCollection component.
  */
 export const EducationCollection: React.FC<IEducationCollectionProps> = (

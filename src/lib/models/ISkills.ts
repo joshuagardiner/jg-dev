@@ -3,12 +3,12 @@
  */
 export interface ISkills {
   /**
-   * The technical skills.
-   */
-  technical: string[];
-
-  /**
    * The soft skills.
    */
   soft: string[];
+
+  /**
+   * The technical skills.
+   */
+  technical: string[];
 }

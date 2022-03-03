@@ -11,7 +11,7 @@ import styles from "./Body.module.scss";
 
 /**
  * The Body component is responsible for rendering the components
- * that sit within the application's main Body of content.
+ * that sit within the application's main body of content.
  *
  * @returns the Body component.
  */

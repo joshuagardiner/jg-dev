@@ -1,9 +1,9 @@
 /**
- * The properties available for the LoadingSpinner component.
+ * The properties available to the LoadingSpinner component.
  */
 export interface ILoadingSpinnerProps {
   /**
-   * The text of the message displayed by the LoadingSpinner.
+   * The text displayed.
    */
   text: string;
 }

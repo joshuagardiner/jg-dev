@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 
 /**
  * The Header component is responsible for rendering the components
- * that sit within the application Header.
+ * that sit within the application header.
  *
  * @returns the Header component.
  */

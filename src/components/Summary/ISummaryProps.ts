@@ -1,7 +1,7 @@
 import { ISummary } from "../../lib/models/ISummary";
 
 /**
- * The properties available for the Summary component.
+ * The properties available to the Summary component.
  */
 export interface ISummaryProps {
   /**

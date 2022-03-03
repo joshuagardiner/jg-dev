@@ -1,7 +1,7 @@
 import { IExperience } from "../../lib/models/IExperience";
 
 /**
- * The properties available for the ExperienceCollection component.
+ * The properties available to the ExperienceCollection component.
  */
 export interface IExperienceCollectionProps {
   /**

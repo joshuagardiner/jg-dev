@@ -1,7 +1,7 @@
 import { ISkills } from "../../lib/models/ISkills";
 
 /**
- * The properties available for the Skills component.
+ * The properties available to the Skills component.
  */
 export interface ISkillsProps {
   /**
