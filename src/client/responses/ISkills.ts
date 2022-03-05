@@ -1,7 +1,7 @@
 /**
  * The response object the API returns.
  */
-export interface ISkills {
+export interface ISkillsResponse {
   /**
    * The soft skills.
    */

@@ -5,7 +5,7 @@ import { IContent } from "../../lib/models/IContent";
 import { EducationCollection } from "../EducationCollection/EducationCollection";
 import { ExperienceCollection } from "../ExperienceCollection/ExperienceCollection";
 import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
-import { Skills } from "../Skills/Skills";
+import { SkillsCollection } from "../SkillsCollection/SkillsCollection";
 import { Summary } from "../Summary/Summary";
 import styles from "./Body.module.scss";
 
@@ -32,7 +32,7 @@ export const Body: React.FC = () => {
       <div className={styles.container} data-testid={"body-component"}>
         <Card className={styles.content}>
           <Summary summary={contentState.content.summary} />
-          <Skills skills={contentState.content.skills} />
+          <SkillsCollection skills={contentState.content.skills} />
           <ExperienceCollection experiences={contentState.content.experiences} />
           <EducationCollection education={contentState.content.education} />
         </Card>

@@ -6,7 +6,7 @@ import { IExperienceCollectionProps } from "./IExperienceCollectionProps";
 import styles from "./ExperienceCollection.module.scss";
 
 /**
- * The ExperienceCollection component is responsible for rendering  multuple employment
+ * The ExperienceCollection component is responsible for rendering multiple employment
  * experiences within the application body.
  *
  * @props the properties that can be passed into the component.
