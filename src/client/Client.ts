@@ -46,10 +46,10 @@ export class Client implements IClient {
         },
         summary: {
           address: data.summary.address,
-          content: {
-            p1: data.summary.text[0],
-            p2: data.summary.text[1]
-          },
+          content: data.summary.text.map((summary: any) => ({
+            id: summary.id,
+            value: summary.value
+          })),
           email: data.summary.email,
           name: data.summary.name,
           role: data.summary.role,

@@ -10,7 +10,7 @@ export interface ISummary {
   /**
    * The content.
    */
-  content: IContent;
+  content: ISummaryContent[];
 
   /**
    * The email.
@@ -34,16 +34,16 @@ export interface ISummary {
 }
 
 /**
- * The Content model.
+ * The ISummaryContent model.
  */
-interface IContent {
+export interface ISummaryContent {
   /**
-   * Paragraph one.
+   * The identifier.
    */
-  p1: string;
+  id: string;
 
   /**
-   * Paragraph two.
+   * The value.
    */
-  p2: string;
+  value: string;
 }

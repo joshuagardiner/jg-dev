@@ -51,7 +51,10 @@ describe("Body", () => {
               address: "4 Privet Drive, Little Whinging, Surrey",
               email: "Harry.Potter@MoM.co.uk",
               telephone: "+44 1234 567 890",
-              text: ["Test paragraph 1.", "Test paragraph 2."]
+              text: [
+                { id: "1", value: "Test paragraph 1." },
+                { id: "2", value: "Test paragraph 2." }
+              ]
             }
           })
       })
