@@ -1,6 +1,7 @@
 import React from "react";
 import { IconButton } from "@joshuagardiner/typescript-component-library";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { ISummaryContent } from "../../lib/models/ISummary";
 import { ISummaryProps } from "./ISummaryProps";
 import styles from "./Summary.module.scss";
 
@@ -56,12 +57,15 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
           icon={IoLogoLinkedin}
         />
       </div>
-      <p className={styles.description} data-testid={"summary-description"}>
-        <a data-testid={"summary-description-content"}>{summary.content.p1}</a>
-        <br></br>
-        <br></br>
-        <a data-testid={"summary-description-content"}>{summary.content.p2}</a>
-      </p>
+      <div className={styles.description} data-testid={"summary-description"}>
+        {summary.content.map((c: ISummaryContent) => {
+          return (
+            <p key={c.id} data-testid={"summary-description-content"}>
+              {c.value}
+            </p>
+          );
+        })}
+      </div>
     </div>
   ) : (
     <></>

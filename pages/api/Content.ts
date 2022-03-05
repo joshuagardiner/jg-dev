@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { IEducationResponse } from "../../src/client/responses/IEducation";
 import { IExperienceResponse } from "../../src/client/responses/IExperience";
 import { ISkills } from "../../src/client/responses/ISkills";
-import { ISummary } from "../../src/client/responses/ISummary";
+import { ISummaryResponse } from "../../src/client/responses/ISummary";
 import { response } from "./examples/Content";
 
 /**
@@ -13,7 +13,7 @@ type Data = {
   education: IEducationResponse[];
   experiences: IExperienceResponse[];
   skills: ISkills;
-  summary: ISummary;
+  summary: ISummaryResponse;
 };
 
 /**

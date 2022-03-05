@@ -1,7 +1,9 @@
+import { IDetail } from "./common/IDetail";
+
 /**
  * The response object the API returns.
  */
-export interface ISummary {
+export interface ISummaryResponse {
   /**
    * The address.
    */
@@ -30,5 +32,5 @@ export interface ISummary {
   /**
    * The text.
    */
-  text: string[];
+  text: IDetail[];
 }
