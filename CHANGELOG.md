@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## 1.2.0 [06-03-2022]
+
+- Restructured Experience Cards when viewing on mobile/tablet
+- Implemented 1.1.23 `TCL` IconButton changes
+- Added dividers to Experience (m) and Education
+- Removed Navigation and placed IconButton' within the Summary
+- Implemented the `LoadingSpinner` component
+- Introduced an `EducationCollection` / refactored Education
+- Introduced an `ExperienceCollection` / refactored Experience
+- Added Sass
+- Refined the component's styling
+- Added a `CSP` Policy and other Lighthouse improvements
+- Only run Lighthouse against production
+- Standardised code comments across the application
+- Reduced the avatar' margin for mobile view-port'
+- Increased the IconButton' padding
+- Refactored Summary to map the content
+- Introduced a `SkillCollection`
+
 ## 1.1.1 [22-02-2022]
 
 - Improved the responsiveness of the application
