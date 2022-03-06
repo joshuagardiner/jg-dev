@@ -7,16 +7,16 @@ describe("EducationCollection", () => {
     const education: IEducation[] = [
       {
         id: "1",
-        courseOfStudy: "University",
+        course: "University",
         grades: [],
-        placeOfStudy: "Bedroom under the stairs",
+        faculty: "Bedroom under the stairs",
         tenure: "6 weeks"
       },
       {
         id: "2",
-        courseOfStudy: "School",
+        course: "School",
         grades: [{ id: "1", value: "10 A's" }],
-        placeOfStudy: "Classroom",
+        faculty: "Classroom",
         tenure: "5 years"
       }
     ];
