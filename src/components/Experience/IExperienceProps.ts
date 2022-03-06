@@ -1,11 +1,26 @@
-import { IExperience } from "../../lib/models/IExperience";
+import { IExperienceContent } from "../../lib/models/IExperience";
 
 /**
- * The properties available for the Experience component.
+ * The properties available to the Experience component.
  */
 export interface IExperienceProps {
   /**
-   * The experience content.
+   * The company of employment.
    */
-  experiences: IExperience[];
+  company: string;
+
+  /**
+   * The experiences gained.
+   */
+  content: IExperienceContent[];
+
+  /**
+   * The role of employment.
+   */
+  role: string;
+
+  /**
+   * The timeframe of employment.
+   */
+  tenure: string;
 }

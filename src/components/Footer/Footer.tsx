@@ -1,49 +1,18 @@
 import React from "react";
-import { IconButton } from "@joshuagardiner/typescript-component-library";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
-import styling from "./Footer.module.css";
+import styles from "./Footer.module.scss";
 
 /**
  * The Footer component is responsible for rendering the components
- * that sit within the application Footer.
+ * that sit within the application footer.
  *
  * @returns the Footer component
  */
-export const Footer: React.FC = () => {
+export const Footer: React.FC = (): JSX.Element => {
   return (
-    <>
-      <div className={styling.container}>
-        <div className={styling.contactInfo} data-testid={"footer-contact"}>
-          <p data-testid={"footer-contact-address"}>37 Oakwood Gardens, Halifax, HX28HB</p>
-          <p data-testid={"footer-contact-email"}>joshuagardiner@live.com</p>
-          <p data-testid={"footer-contact-telephone"}>+44 7947 633 294</p>
-        </div>
-        <div className={styling.authorInfo} data-testid={"footer-author"}>
-          <a className={styling.authorText} data-testid={"footer-author-title"}>
-            Joshua Gardiner, 2022
-          </a>
-          <div className={styling.authorSocials}>
-            <IconButton
-              color="#132138"
-              data-testid="footer-github"
-              external={true}
-              height="1.8vw"
-              href="https://github.com/joshuagardiner"
-              icon={IoLogoGithub}
-              width="1.8vw"
-            />
-            <IconButton
-              color="#132138"
-              data-testid="footer-linkedin"
-              external={true}
-              height="1.8vw"
-              href="https://www.linkedin.com/in/joshua-gardiner"
-              icon={IoLogoLinkedin}
-              width="1.8vw"
-            />
-          </div>
-        </div>
-      </div>
-    </>
+    <div className={styles.container}>
+      <p className={styles.author} data-testid={"footer"}>
+        Joshua Gardiner, 2022
+      </p>
+    </div>
   );
 };

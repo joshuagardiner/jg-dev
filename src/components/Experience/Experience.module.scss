@@ -7,8 +7,11 @@
   display: inline-block;
   font-size: 1.125rem;
   line-height: 2.75rem;
-  position: relative;
-  width: 90%;
+  width: 80%;
+}
+
+.divider {
+  display: none;
 }
 
 .role {
@@ -16,25 +19,21 @@
   text-transform: uppercase;
 }
 
-.subCard {
-  display: inline-block;
-}
-
-.subContent {
-  font-size: 1rem;
-  line-height: 2.5rem;
-  position: relative;
-  width: 90%;
-}
-
 .tenure {
   font-size: 0.75rem;
   text-transform: uppercase;
 }
 
-.title {
-  font-size: 2rem;
-  margin-top: 5%;
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+
+  .divider {
+    color: #3c4858;
+    display: block;
+    width: 5%;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -45,24 +44,13 @@
   .content {
     font-size: 0.75rem;
     line-height: 1.5rem;
-    width: 95%;
   }
 
   .role {
     font-size: 0.75rem;
   }
 
-  .subContent {
-    font-size: 0.5rem;
-    line-height: 1.25rem;
-    width: 95%;
-  }
-
   .tenure {
     font-size: 0.5rem;
-  }
-
-  .title {
-    font-size: 1.25rem;
   }
 }

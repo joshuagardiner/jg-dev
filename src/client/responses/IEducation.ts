@@ -1,7 +1,9 @@
+import { IDetail } from "./common/IDetail";
+
 /**
  * The response object the API returns.
  */
-export interface IEducation {
+export interface IEducationResponse {
   /**
    * The course studied.
    */
@@ -15,7 +17,12 @@ export interface IEducation {
   /**
    * The grades achieved.
    */
-  grades?: string[];
+  grades?: IDetail[];
+
+  /**
+   * The identifier.
+   */
+  id: string;
 
   /**
    * The tenure of study.

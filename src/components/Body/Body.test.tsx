@@ -19,34 +19,26 @@ describe("Body", () => {
           Promise.resolve({
             education: [
               {
+                id: "1",
                 course: "Politics",
                 faculty: "University of Edinburgh",
                 tenure: "September '00 - June '01"
               },
               {
+                id: "2",
                 faculty: "Hogwarts School of Witchcraft and Wizardry",
-                grades: ["OWL's", "Potions Mastery", "Treasure Hunting"],
+                grades: [{ id: "1", value: "OWL's" }],
                 tenure: "September '03 - June '10"
               }
             ],
             experiences: [
               {
+                id: "1",
+                priority: true,
                 role: "Minister for Magic",
                 company: "Ministry of Magic",
                 tenure: "May '05 - Present",
-                text: ["1", "2", "3", "4", "5", "6"]
-              },
-              {
-                role: "Auror",
-                company: "Ministry of Magic",
-                tenure: "Aug '97 - May '05",
-                text: ["1"]
-              },
-              {
-                role: "Horcrux Hunter",
-                company: "S/E",
-                tenure: "Jun '95 - Apr '97",
-                text: ["1"]
+                text: [{ id: "1", value: "Blah" }]
               }
             ],
             skills: {
@@ -59,7 +51,10 @@ describe("Body", () => {
               address: "4 Privet Drive, Little Whinging, Surrey",
               email: "Harry.Potter@MoM.co.uk",
               telephone: "+44 1234 567 890",
-              text: ["Test paragraph 1.", "Test paragraph 2."]
+              text: [
+                { id: "1", value: "Test paragraph 1." },
+                { id: "2", value: "Test paragraph 2." }
+              ]
             }
           })
       })

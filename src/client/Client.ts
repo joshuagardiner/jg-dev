@@ -1,33 +1,15 @@
 import { IContentResponse } from "./responses/IContent";
-import { ITitleResponse } from "./responses/ITitle";
+import { IClient } from "./IClient";
 
 /**
  * The API Client.
  */
-export class Client {
+export class Client implements IClient {
   /**
-   * Responsible for getting the Title data and mapping into
-   * our Title model.
+   * Responsible for getting the content data and mapping into
+   * our model.
    *
-   * @returns the Title data.
-   */
-  getTitle = async (): Promise<ITitleResponse> => {
-    const url = `/api/Title`;
-    const response = await fetch(url);
-    const data = await response.json();
-
-    return {
-      title: {
-        name: data.title
-      }
-    };
-  };
-
-  /**
-   * Responsible for getting the Content data and mapping into
-   * our Content model.
-   *
-   * @returns the Content data.
+   * @returns the mapped data.
    */
   getContent = async (): Promise<IContentResponse> => {
     const url = `/api/Content`;
@@ -37,14 +19,24 @@ export class Client {
     return {
       content: {
         education: data.education.map((education: any) => ({
-          courseOfStudy: education.course,
-          grades: education.grades,
-          placeOfStudy: education.faculty,
+          course: education.course,
+          faculty: education.faculty,
+          grades:
+            education.grades?.map((grade: any) => ({
+              id: grade.id,
+              value: grade.value
+            })) || [],
+          id: education.id,
           tenure: education.tenure
         })),
         experiences: data.experiences.map((experience: any) => ({
           company: experience.company,
-          content: experience.text,
+          content: experience.text.map((content: any) => ({
+            id: content.id,
+            value: content.value
+          })),
+          id: experience.id,
+          priority: experience.priority,
           role: experience.role,
           tenure: experience.tenure
         })),
@@ -54,10 +46,10 @@ export class Client {
         },
         summary: {
           address: data.summary.address,
-          content: {
-            p1: data.summary.text[0],
-            p2: data.summary.text[1]
-          },
+          content: data.summary.text.map((summary: any) => ({
+            id: summary.id,
+            value: summary.value
+          })),
           email: data.summary.email,
           name: data.summary.name,
           role: data.summary.role,

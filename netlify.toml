@@ -7,8 +7,17 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[[plugins]]
+[[context.production.plugins]]
   package = "@netlify/plugin-lighthouse"
 
-  [plugins.inputs]
+  [context.production.plugins.inputs]
   output_path = "reports/lighthouse.html"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; connect-src 'self' *.netlify.app; font-src 'self'; frame-ancestors 'none'; frame-src 'self' *.netlify.com; img-src 'self' *.netlify.app data:; script-src 'self' *.netlify.app https://cdn.jsdelivr.net 'unsafe-inline'; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';"
+    Referrer-Policy = "same-origin"
+    Strict-Transport-Security = "max-age=63072000; includeSubdomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"

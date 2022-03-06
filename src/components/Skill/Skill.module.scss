@@ -1,0 +1,12 @@
+.skill {
+  display: inline-block;
+  font-size: 1.125rem;
+  list-style: none;
+  padding: 0 1.5vw 0 1.5vw;
+}
+
+@media screen and (max-width: 425px) {
+  .skill {
+    font-size: 0.75rem;
+  }
+}

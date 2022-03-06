@@ -2,37 +2,43 @@ import React from "react";
 import { Card } from "@joshuagardiner/typescript-component-library";
 import { Client } from "../../client/Client";
 import { IContent } from "../../lib/models/IContent";
-import { Education } from "../Education/Education";
-import { Experience } from "../Experience/Experience";
-import { Skills } from "../Skills/Skills";
+import { EducationCollection } from "../EducationCollection/EducationCollection";
+import { ExperienceCollection } from "../ExperienceCollection/ExperienceCollection";
+import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
+import { SkillsCollection } from "../SkillsCollection/SkillsCollection";
 import { Summary } from "../Summary/Summary";
-import styling from "./Body.module.css";
+import styles from "./Body.module.scss";
 
 /**
  * The Body component is responsible for rendering the components
- * that sit within the application's main Body of content.
+ * that sit within the application's main body of content.
  *
  * @returns the Body component.
  */
 export const Body: React.FC = () => {
-  const [content, setContent] = React.useState({} as IContent);
+  const [contentState, setContentState] = React.useState({
+    content: {} as IContent,
+    loaded: false
+  });
 
   React.useEffect(() => {
     new Client().getContent().then((result) => {
-      setContent(result.content);
+      setContentState({ content: result.content, loaded: true });
     });
   }, []);
 
-  return (
-    <div className={styling.container} data-testid={"body-component"}>
-      <div className={styling.content}>
-        <Card width={"80%"}>
-          <Summary summary={content.summary} />
-          <Skills skills={content.skills} />
-          <Experience experiences={content.experiences} />
-          <Education education={content.education} />
+  if (contentState.loaded) {
+    return (
+      <div className={styles.container} data-testid={"body-component"}>
+        <Card className={styles.content}>
+          <Summary summary={contentState.content.summary} />
+          <SkillsCollection skills={contentState.content.skills} />
+          <ExperienceCollection experiences={contentState.content.experiences} />
+          <EducationCollection education={contentState.content.education} />
         </Card>
       </div>
-    </div>
-  );
+    );
+  }
+
+  return <LoadingSpinner text={"Loading.."} />;
 };
