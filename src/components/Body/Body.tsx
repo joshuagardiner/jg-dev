@@ -1,10 +1,9 @@
 import React from "react";
-import { Card } from "@joshuagardiner/typescript-component-library";
+import { Card, LoadingSpinner } from "@joshuagardiner/typescript-component-library";
 import { Client } from "../../client/Client";
 import { IContent } from "../../lib/models/IContent";
 import { EducationCollection } from "../EducationCollection/EducationCollection";
 import { ExperienceCollection } from "../ExperienceCollection/ExperienceCollection";
-import { LoadingSpinner } from "../LoadingSpinner/LoadingSpinner";
 import { SkillsCollection } from "../SkillsCollection/SkillsCollection";
 import { Summary } from "../Summary/Summary";
 import styles from "./Body.module.scss";
@@ -40,5 +39,5 @@ export const Body: React.FC = () => {
     );
   }
 
-  return <LoadingSpinner text={"Loading.."} />;
+  return <LoadingSpinner className={styles.text} text={"Loading.."} />;
 };
