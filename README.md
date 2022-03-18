@@ -19,6 +19,7 @@ Tech used:
 
 ## Reports
 
+[Lighthouse](https://joshuagardiner.dev/reports/lighthouse)
 [Mozilla Observatory](https://observatory.mozilla.org/analyze/joshuagardiner.dev)
 
 ## Getting Started
