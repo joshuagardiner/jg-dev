@@ -17,6 +17,11 @@ Tech used:
 - [GHA](https://github.com/features/actions)
 - [Netlify](https://www.netlify.com)
 
+## Reports
+
+[Lighthouse](https://joshuagardiner.dev/reports/lighthouse)
+[Mozilla Observatory](https://observatory.mozilla.org/analyze/joshuagardiner.dev)
+
 ## Getting Started
 
 First, clone the repository and install the dependencies:
