@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 1.2.1 [21-03-2022]
+
+- Enhanced the Content-Security-Policy
+- Switched `LoadingSpinner` to the component-library implementation
+- Added the Mozilla Observatory report to the README
+- Added the Lighthouse report to the README
+- Added the Permissions-Policy Security Header
+
 ## 1.2.0 [06-03-2022]
 
 - Restructured Experience Cards when viewing on mobile/tablet
