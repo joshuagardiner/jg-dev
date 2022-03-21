@@ -1,7 +1,6 @@
 ## More info on configuring this file: https://www.netlify.com/docs/netlify-toml-reference/
 [build]
   command = "yarn build"
-
   publish = ".next"
 
 [[plugins]]
@@ -11,6 +10,12 @@
   package = "@netlify/plugin-lighthouse"
 
   [context.production.plugins.inputs]
+  output_path = "reports/lighthouse.html"
+
+[[context.branch-deploy.plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  [context.branch-deploy.plugins.inputs]
   output_path = "reports/lighthouse.html"
 
 [[headers]]
