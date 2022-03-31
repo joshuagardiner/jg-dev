@@ -21,7 +21,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@joshuagardiner/typescript-component-library": "^1.1.32-alpha.1",
+    "@joshuagardiner/typescript-component-library": "^1.0.0-alpha.1",
     "@netlify/plugin-nextjs": "^4.3.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
