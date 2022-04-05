@@ -16,8 +16,8 @@ import styles from "./Summary.module.scss";
 export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
   const { summary } = props;
 
-  return summary ? (
-    <div data-testid={"summary-component"}>
+  return (
+    <div data-testid={"summary"}>
       <div className={styles.avatarContainer}>
         <Image
           className={styles.avatar}
@@ -70,7 +70,5 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
         })}
       </div>
     </div>
-  ) : (
-    <></>
   );
 };

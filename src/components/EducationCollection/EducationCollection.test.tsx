@@ -23,18 +23,15 @@ describe("EducationCollection", () => {
 
     render(<EducationCollection education={education} />);
 
-    const educationComponent = screen.getByTestId("education-component");
-    const educationTitle = screen.getByTestId("education-title");
-    const educationCourses = screen.getAllByTestId("education-course");
-    const educationFaculties = screen.getAllByTestId("education-faculty");
-    const educationTenures = screen.getAllByTestId("education-tenure");
-    const educationGrades = screen.getAllByTestId("education-grade");
+    expect(screen.getByTestId("education-collection")).toBeDefined();
+    expect(screen.getByTestId("education-collection-title").textContent).toEqual("Education");
+    expect(screen.queryByTestId("education-collection-no-results")).not.toBeInTheDocument;
+  });
 
-    expect(educationComponent).toBeDefined();
-    expect(educationTitle.textContent).toEqual("Education");
-    expect(educationCourses).toHaveLength(2);
-    expect(educationFaculties).toHaveLength(2);
-    expect(educationTenures).toHaveLength(2);
-    expect(educationGrades).toHaveLength(1);
+  it("renders no results when there are no Education passed to the EducationCollection component.", () => {
+    const education: IEducation[] = [];
+    render(<EducationCollection education={education} />);
+    expect(screen.queryByTestId("education-collection")).not.toBeInTheDocument;
+    expect(screen.getByTestId("education-collection-no-results")).toBeDefined();
   });
 });

@@ -28,7 +28,7 @@ export const Body: React.FC = () => {
 
   if (contentState.loaded) {
     return (
-      <div className={styles.container} data-testid={"body-component"}>
+      <div className={styles.container} data-testid={"body"}>
         <Card className={styles.content}>
           <Summary summary={contentState.content.summary} />
           <SkillsCollection skills={contentState.content.skills} />

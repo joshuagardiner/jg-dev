@@ -11,15 +11,8 @@ describe("SkillsCollection", () => {
 
     render(<SkillsCollection skills={skills} />);
 
-    const skillsTitle = screen.getByTestId("skills-title");
-    const skillsList = screen.getByTestId("skills-list");
-    const technicalSkills = screen.getAllByTestId("technical-skill");
-    const softSkills = screen.getAllByTestId("soft-skill");
-
-    expect(skillsTitle).toBeDefined();
-    expect(skillsTitle.textContent).toEqual("Skills");
-    expect(skillsList).toBeDefined();
-    expect(technicalSkills).toHaveLength(3);
-    expect(softSkills).toHaveLength(1);
+    expect(screen.getByTestId("skills-collection")).toBeDefined();
+    expect(screen.getByTestId("skills-collection-title").textContent).toEqual("Skills");
+    expect(screen.getByTestId("skills")).toBeDefined();
   });
 });

@@ -16,12 +16,12 @@ export const SkillsCollection: React.FC<ISkillsCollectionProps> = (
 ) => {
   const { skills } = props;
 
-  return skills ? (
-    <div data-testid={"skills-component"}>
-      <h2 className={styles.title} data-testid={"skills-title"}>
+  return (
+    <div data-testid={"skills-collection"}>
+      <h2 className={styles.title} data-testid={"skills-collection-title"}>
         Skills
       </h2>
-      <ul className={styles.skills} data-testid={"skills-list"}>
+      <ul className={styles.skills} data-testid={"skills"}>
         {skills.technical.map((skill) => (
           <Skill key={skill} skill={skill} type={SkillType.Technical} />
         ))}
@@ -30,7 +30,5 @@ export const SkillsCollection: React.FC<ISkillsCollectionProps> = (
         ))}
       </ul>
     </div>
-  ) : (
-    <></>
   );
 };
