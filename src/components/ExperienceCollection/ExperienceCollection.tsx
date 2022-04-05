@@ -17,9 +17,9 @@ export const ExperienceCollection: React.FC<IExperienceCollectionProps> = (
 ) => {
   const { experiences } = props;
 
-  return experiences ? (
-    <div data-testid={"experience-component"}>
-      <h2 className={styles.title} data-testid={"experience-title"}>
+  return experiences.length > 0 ? (
+    <div data-testid={"experience-collection"}>
+      <h2 className={styles.title} data-testid={"experience-collection-title"}>
         Experience
       </h2>
       <CollectionColumn>
@@ -31,6 +31,6 @@ export const ExperienceCollection: React.FC<IExperienceCollectionProps> = (
       </CollectionColumn>
     </div>
   ) : (
-    <></>
+    <div data-testid={"experience-collection-no-results"} />
   );
 };

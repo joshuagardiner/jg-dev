@@ -24,16 +24,11 @@ describe("Experience", () => {
       />
     );
 
-    const experienceRole = screen.getByTestId("experience-role");
-    const experienceCompany = screen.getByTestId("experience-company");
-    const experienceTenure = screen.getByTestId("experience-tenure");
-    const experienceContent = screen.getAllByTestId("experience-content");
-
-    expect(experienceRole.textContent).toEqual("Minister for Magic");
-    expect(experienceCompany.textContent).toEqual("Ministry of Magic");
-    expect(experienceTenure.textContent).toEqual("May '05 - Present");
-    expect(experienceContent).toHaveLength(1);
-    expect(experienceContent[0].textContent).toEqual(
+    expect(screen.getByTestId("experience-role").textContent).toEqual("Minister for Magic");
+    expect(screen.getByTestId("experience-company").textContent).toEqual("Ministry of Magic");
+    expect(screen.getByTestId("experience-tenure").textContent).toEqual("May '05 - Present");
+    expect(screen.getAllByTestId("experience-content")).toHaveLength(1);
+    expect(screen.getAllByTestId("experience-content")[0].textContent).toEqual(
       "The Minister for Magic across the Wizarding World."
     );
   });

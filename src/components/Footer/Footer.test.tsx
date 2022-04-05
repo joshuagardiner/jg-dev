@@ -4,7 +4,7 @@ import { Footer } from "./Footer";
 describe("Footer", () => {
   it("renders the Footer component correctly.", () => {
     render(<Footer />);
-    const footer = screen.getByTestId("footer");
-    expect(footer.textContent).toEqual("Joshua Gardiner, 2022");
+    expect(screen.getByTestId("footer")).toBeDefined();
+    expect(screen.getByTestId("footer").textContent).toEqual("Joshua Gardiner, 2022");
   });
 });

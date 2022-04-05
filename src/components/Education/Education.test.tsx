@@ -13,16 +13,12 @@ describe("Education", () => {
 
     render(<Education course={course} faculty={faculty} grades={grades} tenure={tenure} />);
 
-    const expectedCourse = screen.getByTestId("education-course");
-    const expectedFaculty = screen.getByTestId("education-faculty");
-    const expectedTenure = screen.getByTestId("education-tenure");
-    const expectedGrades = screen.getAllByTestId("education-grade");
-
-    expect(expectedCourse.textContent).toEqual("TEST");
-    expect(expectedFaculty.textContent).toEqual("WFH");
-    expect(expectedGrades).toHaveLength(2);
-    expect(expectedGrades[0].textContent).toEqual("PASS");
-    expect(expectedGrades[1].textContent).toEqual("FAIL");
-    expect(expectedTenure.textContent).toEqual("Jan - Feb");
+    expect(screen.getByTestId("education")).toBeDefined();
+    expect(screen.getByTestId("education-course").textContent).toEqual("TEST");
+    expect(screen.getByTestId("education-faculty").textContent).toEqual("WFH");
+    expect(screen.getByTestId("education-tenure").textContent).toEqual("Jan - Feb");
+    expect(screen.getAllByTestId("education-grade")).toHaveLength(2);
+    expect(screen.getAllByTestId("education-grade")[0].textContent).toEqual("PASS");
+    expect(screen.getAllByTestId("education-grade")[1].textContent).toEqual("FAIL");
   });
 });

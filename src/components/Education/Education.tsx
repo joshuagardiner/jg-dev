@@ -13,7 +13,7 @@ export const Education: React.FC<IEducationProps> = (props: IEducationProps) => 
   const { course, faculty, grades, tenure } = props;
 
   return (
-    <>
+    <div data-testid={"education"}>
       <h3 className={styles.course} data-testid={"education-course"}>
         {course}
       </h3>
@@ -29,6 +29,6 @@ export const Education: React.FC<IEducationProps> = (props: IEducationProps) => 
           {grade.value}
         </p>
       ))}
-    </>
+    </div>
   );
 };

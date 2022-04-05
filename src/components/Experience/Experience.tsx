@@ -13,7 +13,7 @@ export const Experience: React.FC<IExperienceProps> = (props: IExperienceProps) 
   const { company, content, role, tenure } = props;
 
   return (
-    <>
+    <div data-testid={"experience"}>
       <h3 className={styles.role} data-testid={"experience-role"}>
         {role}
       </h3>
@@ -29,6 +29,6 @@ export const Experience: React.FC<IExperienceProps> = (props: IExperienceProps) 
         </p>
       ))}
       <hr className={styles.divider} />
-    </>
+    </div>
   );
 };
