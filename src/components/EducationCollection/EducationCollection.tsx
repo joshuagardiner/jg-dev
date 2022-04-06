@@ -17,9 +17,9 @@ export const EducationCollection: React.FC<IEducationCollectionProps> = (
 ) => {
   const { education } = props;
 
-  return education ? (
-    <div data-testid={"education-component"}>
-      <h2 className={styles.title} data-testid={"education-title"}>
+  return education.length > 0 ? (
+    <div data-testid={"education-collection"}>
+      <h2 className={styles.title} data-testid={"education-collection-title"}>
         Education
       </h2>
       <Collection className={styles.content}>
@@ -31,6 +31,6 @@ export const EducationCollection: React.FC<IEducationCollectionProps> = (
       </Collection>
     </div>
   ) : (
-    <></>
+    <div data-testid={"education-collection-no-results"} />
   );
 };

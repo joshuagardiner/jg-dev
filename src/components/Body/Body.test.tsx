@@ -62,16 +62,10 @@ describe("Body", () => {
 
     render(<Body />);
 
-    const bodyComponent = await screen.findByTestId("body-component");
-    const summaryComponent = screen.getByTestId("summary-component");
-    const skillsComponent = screen.getByTestId("skills-component");
-    const experienceComponent = screen.getByTestId("experience-component");
-    const educationComponent = screen.getByTestId("education-component");
-
-    expect(bodyComponent).toBeDefined();
-    expect(summaryComponent).toBeDefined();
-    expect(skillsComponent).toBeDefined();
-    expect(experienceComponent).toBeDefined();
-    expect(educationComponent).toBeDefined();
+    expect(await screen.findByTestId("body")).toBeDefined();
+    expect(screen.getByTestId("summary")).toBeDefined();
+    expect(screen.getByTestId("skills-collection")).toBeDefined();
+    expect(screen.getByTestId("experience-collection")).toBeDefined();
+    expect(screen.getByTestId("education-collection")).toBeDefined();
   });
 });

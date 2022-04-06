@@ -5,6 +5,6 @@ import { Header } from "./Header";
 describe("Header", () => {
   it("renders the Header component correctly.", () => {
     render(<Header />);
-    expect(screen.getByTestId("header-component")).toBeTruthy();
+    expect(screen.getByTestId("header")).toBeDefined();
   });
 });

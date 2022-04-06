@@ -8,5 +8,5 @@ import styles from "./Header.module.scss";
  * @returns the Header component.
  */
 export const Header: React.FC = (): JSX.Element => {
-  return <div className={styles.container} data-testid={"header-component"} />;
+  return <div className={styles.container} data-testid={"header"} />;
 };

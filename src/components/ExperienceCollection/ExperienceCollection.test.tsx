@@ -33,10 +33,15 @@ describe("ExperienceCollection", () => {
 
     render(<ExperienceCollection experiences={experiences} />);
 
-    const experienceComponent = screen.getByTestId("experience-component");
-    const experienceTitle = screen.getByTestId("experience-title");
+    expect(screen.getByTestId("experience-collection")).toBeDefined();
+    expect(screen.getByTestId("experience-collection-title").textContent).toEqual("Experience");
+    expect(screen.queryByTestId("experience-collection-no-results")).not.toBeInTheDocument;
+  });
 
-    expect(experienceComponent).toBeDefined();
-    expect(experienceTitle.textContent).toEqual("Experience");
+  it("renders no results when there are no Experiences passed to the ExperienceCollection component.", () => {
+    const experiences: IExperience[] = [];
+    render(<ExperienceCollection experiences={experiences} />);
+    expect(screen.queryByTestId("experience-collection")).not.toBeInTheDocument;
+    expect(screen.getByTestId("experience-collection-no-results")).toBeDefined();
   });
 });

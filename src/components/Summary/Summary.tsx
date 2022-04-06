@@ -1,5 +1,6 @@
 import React from "react";
 import { IconButton } from "@joshuagardiner/typescript-component-library";
+import Image from "next/image";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 import { ISummaryContent } from "../../lib/models/ISummary";
 import { ISummaryProps } from "./ISummaryProps";
@@ -15,17 +16,19 @@ import styles from "./Summary.module.scss";
 export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
   const { summary } = props;
 
-  return summary ? (
-    <div data-testid={"summary-component"}>
-      <img
-        className={styles.avatar}
-        srcSet="/avatar_250.jpg 425w,
-             /avatar_350.jpg 768w"
-        sizes="(max-width: 768px) 425px,
-            768px"
-        src="/avatar.jpg"
-        alt="jg_avatar"
-      />
+  return (
+    <div data-testid={"summary"}>
+      <div className={styles.avatarContainer}>
+        <Image
+          className={styles.avatar}
+          src="/avatar.jpg"
+          alt="jg_avatar"
+          height={0}
+          layout="responsive"
+          priority={true}
+          width={0}
+        />
+      </div>
       <h1 className={styles.title} data-testid={"summary-title"}>
         {summary.name}
       </h1>
@@ -67,7 +70,5 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
         })}
       </div>
     </div>
-  ) : (
-    <></>
   );
 };
