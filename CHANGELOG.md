@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.2.2 [06-04-2022]
+
+- Reintroduced the `next/image` component
+- Improved unit test efficiency
+- Generated the `Content-Security-Policy` dynamically
+- Run `@netlify/plugin-lighthouse` in all contexts
+
 ## 1.2.1 [21-03-2022]
 
 - Enhanced the Content-Security-Policy
