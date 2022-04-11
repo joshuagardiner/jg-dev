@@ -12,15 +12,10 @@
   [plugins.inputs]
     output_path = "reports/lighthouse.html"
 
-[[context.branch-deploy.plugins]]
-  package = "@netlify/plugin-lighthouse"
-
-  [context.branch-deploy.plugins.inputs]
-  output_path = "reports/lighthouse.html"
-
 [[headers]]
   for = "/*"
   [headers.values]
+    Content-Security-Policy = "base-uri 'none'; connect-src 'self' *.netlify.app; default-src 'none'; font-src 'self'; form-action 'none'; frame-ancestors 'none'; frame-src 'self' *.netlify.com; img-src 'self' *.netlify.app data:; require-trusted-types-for 'script'; script-src 'self' *.netlify.app; style-src 'self' 'unsafe-inline';"
     Permissions-Policy = "camera=(), microphone=()"
     Referrer-Policy = "same-origin"
     Strict-Transport-Security = "max-age=63072000; includeSubdomains; preload"
