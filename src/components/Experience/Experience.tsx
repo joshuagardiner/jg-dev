@@ -6,7 +6,7 @@ import styles from "./Experience.module.scss";
  * The Experience component is responsible for rendering a single employment
  * experience within the application body.
  *
- * @props the properties that can be passed into the component.
+ * @param props the properties that can be passed into the component.
  * @returns the Experience component.
  */
 export const Experience: React.FC<IExperienceProps> = (props: IExperienceProps) => {

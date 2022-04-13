@@ -19,9 +19,9 @@ type Data = {
 /**
  * Responsible for handling the API Route.
  *
- * @param req an instance of http.IncomingMessage, plus some pre-built middlewares.
+ * @param _req an instance of http.IncomingMessage, plus some pre-built middlewares.
  * @param res an instance of http.ServerResponse, plus some helper functions.
  */
-export default function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
+export default function handler(_req: NextApiRequest, res: NextApiResponse<Data>) {
   res.status(200).json(response());
 }

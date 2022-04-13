@@ -9,7 +9,7 @@ import styles from "./EducationCollection.module.scss";
  * The EducationCollection component is responsible for rendering multiple academic
  * details the application body.
  *
- * @props the properties that can be passed into the component.
+ * @param props the properties that can be passed into the component.
  * @returns the EducationCollection component.
  */
 export const EducationCollection: React.FC<IEducationCollectionProps> = (
