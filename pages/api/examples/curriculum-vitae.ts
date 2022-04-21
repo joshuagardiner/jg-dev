@@ -1,5 +1,5 @@
 /**
- * @returns an example of a Content response.
+ * @returns an example of a curriculum vitae response.
  */
 export function response() {
   return {
