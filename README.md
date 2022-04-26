@@ -6,7 +6,7 @@ A learning exercise to implement something using [Next.js](https://nextjs.org).
 
 Tech used:
 
-- [Node 16+](https://nodejs.org/en/)
+- [NVM](https://github.com/nvm-sh/nvm)
 - [Next.js](https://nextjs.org)
 - [React](https://reactjs.org)
 - [TypeScript](https://www.typescriptlang.org)
@@ -21,7 +21,12 @@ Tech used:
 
 [Mozilla Observatory](https://observatory.mozilla.org/analyze/joshuagardiner.dev)
 
-## Getting Started
+## Prerequisites
+
+- The [Node](https://nodejs.org/en/) version is documented in the `.nvmrc` file. If you are using [nvm](https://github.com/nvm-sh/nvm), run `nvm use` to get the correct version of Node.
+- [npm](https://www.npmjs.com) by using `nvm` this will keep these versions in synchronised.
+
+## Installation
 
 First, clone the repository and install the dependencies:
 
