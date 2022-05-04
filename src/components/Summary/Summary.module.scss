@@ -44,7 +44,7 @@
 
 .title {
   font-size: 3.5rem;
-  margin-top: 7.5%;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,6 +70,12 @@
 }
 
 @media screen and (max-width: 425px) {
+  .avatarContainer {
+    height: 7.813rem;
+    margin-top: -3.907rem;
+    width: 7.813rem;
+  }
+
   .contactInformation {
     font-size: 0.66rem;
   }

@@ -1,4 +1,9 @@
+#__next {
+  background-color: #fff;
+}
+
 body {
+  background-color: #132138;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -11,6 +16,7 @@ body {
     "Droid Sans",
     "Helvetica Neue",
     sans-serif;
+  margin: 0;
 }
 
 h1,

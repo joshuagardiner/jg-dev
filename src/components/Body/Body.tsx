@@ -47,5 +47,5 @@ export const Body: React.FC = () => {
     );
   }
 
-  return <LoadingSpinner className={styles.text} text={"Loading.."} />;
+  return <LoadingSpinner className={styles.spinner} text={"Loading.."} />;
 };
