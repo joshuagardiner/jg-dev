@@ -1,5 +1,5 @@
 .author {
-  bottom: 1.5625rem;
+  bottom: 0;
   color: #fff;
   font-size: 0.75rem;
   position: absolute;
@@ -11,28 +11,19 @@
   display: flex;
   height: auto;
   justify-content: center;
-  min-height: 15.625rem;
+  min-height: 7.813rem;
   position: relative;
 }
 
 .separator {
-  height: 15.625rem;
+  height: 7.813rem;
   position: absolute;
-  width: 100%;
+  transform: rotate(180deg);
+  width: calc(100% + 1.3px);
 }
 
 .wave {
   fill: #132138;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    min-height: 10.938rem;
-  }
-
-  .separator {
-    height: 10.938rem;
-  }
 }
 
 @media screen and (max-width: 425px) {
@@ -41,10 +32,10 @@
   }
 
   .container {
-    min-height: 6.25rem;
+    min-height: 4.688rem;
   }
 
   .separator {
-    height: 6.25rem;
+    height: 4.688rem;
   }
 }
