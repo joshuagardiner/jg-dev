@@ -1,11 +1,10 @@
 .container {
   background-color: #fff;
-  height: 21.875rem;
+  height: 15.625rem;
 }
 
 .separator {
-  height: 21.875rem;
-  transform: rotate(180deg);
+  height: 15.625rem;
   width: calc(100% + 1.3px);
 }
 
@@ -13,22 +12,12 @@
   fill: #132138;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    height: 15.625rem;
-  }
-
-  .separator {
-    height: 15.625rem;
-  }
-}
-
 @media screen and (max-width: 425px) {
   .container {
-    height: 7.813rem;
+    height: 6.25rem;
   }
 
   .separator {
-    height: 7.813rem;
+    height: 6.25rem;
   }
 }
