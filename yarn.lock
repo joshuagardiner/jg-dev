@@ -5015,10 +5015,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-snyk@^1.924.0:
-  version "1.924.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.924.0.tgz#060e37e4e98449f202efd7ee6bc4181b3294b985"
-  integrity sha512-2LOx+raw2WkrXLlZeGKkNFgc57TzJ/NURr8ozo2DV5wFuln2+0gB3TN5R4WNWmPxBmDmNBTLxL9V/QF0IXtTKg==
+snyk@^1.927.0:
+  version "1.927.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.927.0.tgz#cac6e509754d1e2672a6cf377e1cf4ca2b1745e4"
+  integrity sha512-1OERBLqEQ0yyZxDNQK5fJRJf89J0vos5JnypziEzi+ZXfejVrXBjQzqp9svOefXOJ8/sSxog1b8hkCzJMkSobQ==
 
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
