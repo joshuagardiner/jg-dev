@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## Release
+
 ## 1.2.2 [06-04-2022]
 
 - Reintroduced the `next/image` component
