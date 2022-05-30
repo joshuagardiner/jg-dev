@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## 1.3.0 (30-05-2022)
+
+## 1.3.0 (30-05-2022)
+
+- Removed redundant call to Netlify function
+- Containerized the application for use within Docker
+- Added `nvm` support
+- Added `svg` separator to the Footer component
+- Standardized the CSS units across the application
+- Added `svg` separtor to the Header component
+
 ## 1.2.2 [06-04-2022]
 
 - Reintroduced the `next/image` component
