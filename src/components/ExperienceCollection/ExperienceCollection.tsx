@@ -9,7 +9,7 @@ import styles from "./ExperienceCollection.module.scss";
  * The ExperienceCollection component is responsible for rendering multiple employment
  * experiences within the application body.
  *
- * @props the properties that can be passed into the component.
+ * @param props the properties that can be passed into the component.
  * @returns the ExperienceCollection component.
  */
 export const ExperienceCollection: React.FC<IExperienceCollectionProps> = (

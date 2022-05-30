@@ -8,7 +8,7 @@ import styles from "./SkillsCollection.module.scss";
  * The SkillsCollection component is reponsible for rendering a list of technical
  * and soft skills within the application body.
  *
- * @props the properties that can be passed into the component.
+ * @param props the properties that can be passed into the component.
  * @returns the SkillsCollection component.
  */
 export const SkillsCollection: React.FC<ISkillsCollectionProps> = (

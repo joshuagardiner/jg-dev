@@ -1,23 +1,23 @@
 .container {
-  background-color: #132138;
-  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
-  height: 20rem;
+  background-color: #fff;
+  height: 15.625rem;
 }
 
-@media screen and (min-width: 1440px) {
-  .container {
-    height: 25rem;
-  }
+.separator {
+  height: 15.625rem;
+  width: calc(100% + 1.3px);
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    height: 15rem;
-  }
+.wave {
+  fill: #132138;
 }
 
 @media screen and (max-width: 425px) {
   .container {
-    height: 8rem;
+    height: 6.25rem;
+  }
+
+  .separator {
+    height: 6.25rem;
   }
 }

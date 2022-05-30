@@ -3,15 +3,6 @@ import React from "react";
 import { Body } from "./Body";
 
 describe("Body", () => {
-  beforeEach(() => {
-    jest.spyOn(React, "useEffect");
-    jest.spyOn(React, "useState");
-  });
-
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
-
   it("renders the Body component correctly.", async () => {
     global.fetch = jest.fn().mockImplementation(() =>
       Promise.resolve({

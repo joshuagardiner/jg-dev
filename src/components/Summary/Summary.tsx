@@ -10,7 +10,7 @@ import styles from "./Summary.module.scss";
  * The Summary component is responsible for rendering author information
  * and brief background within the application body.
  *
- * @props the properties that can be passed into the component.
+ * @param props the properties that can be passed into the component.
  * @returns the Summary component.
  */
 export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {

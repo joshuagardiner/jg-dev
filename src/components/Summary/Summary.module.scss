@@ -3,11 +3,11 @@
 }
 
 .avatarContainer {
-  height: 350px;
+  height: 15.625rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -175px;
-  width: 350px;
+  margin-top: -11.7188rem;
+  width: 15.625rem;
 }
 
 .contactInformation {
@@ -39,21 +39,15 @@
   border-radius: 50%;
   color: #3c4858;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 2.188rem;
 }
 
 .title {
   font-size: 3.5rem;
-  margin-top: 7.5%;
+  margin-top: 5%;
 }
 
 @media screen and (max-width: 768px) {
-  .avatarContainer {
-    height: 250px;
-    margin-top: -125px;
-    width: 250px;
-  }
-
   .contactInformation {
     font-size: 0.83rem;
   }
@@ -64,12 +58,18 @@
 
   .socialMediaIcon,
   .socialMediaIcon:hover {
-    font-size: 25px;
-    padding: 3px 3px;
+    font-size: 1.563rem;
+    padding: 0.188rem;
   }
 }
 
 @media screen and (max-width: 425px) {
+  .avatarContainer {
+    height: 6.25rem;
+    margin-top: -4.6875rem;
+    width: 6.25rem;
+  }
+
   .contactInformation {
     font-size: 0.66rem;
   }

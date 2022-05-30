@@ -1,15 +1,41 @@
 .author {
-  color: #999999;
+  bottom: 0;
+  color: #fff;
   font-size: 0.75rem;
+  position: absolute;
 }
 
 .container {
-  margin-top: 7.5%;
-  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  min-height: 7.813rem;
+  position: relative;
+}
+
+.separator {
+  height: 7.813rem;
+  position: absolute;
+  transform: rotate(180deg);
+  width: calc(100% + 1.3px);
+}
+
+.wave {
+  fill: #132138;
 }
 
 @media screen and (max-width: 425px) {
   .author {
     font-size: 0.5rem;
+  }
+
+  .container {
+    min-height: 4.688rem;
+  }
+
+  .separator {
+    height: 4.688rem;
   }
 }
