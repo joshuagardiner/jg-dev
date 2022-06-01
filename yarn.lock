@@ -970,10 +970,10 @@
     jest-matcher-utils "^27.0.0"
     pretty-format "^27.0.0"
 
-"@types/jest@^27.5.1":
-  version "27.5.1"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.5.1.tgz#2c8b6dc6ff85c33bcd07d0b62cb3d19ddfdb3ab9"
-  integrity sha512-fUy7YRpT+rHXto1YlL+J9rs0uLGyiqVt3ZOTQR+4ROc47yNl8WLdVLgUloBRhOxP1PZvguHl44T3H0wAWxahYQ==
+"@types/jest@^27.5.2":
+  version "27.5.2"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.5.2.tgz#ec49d29d926500ffb9fd22b84262e862049c026c"
+  integrity sha512-mpT8LJJ4CMeeahobofYWIjFo0xonRS/HfxnVEPMPFSQdGUt1uHCnoPT7Zhb+sjDU2wz0oKV0OLUR0WzrHNgfeA==
   dependencies:
     jest-matcher-utils "^27.0.0"
     pretty-format "^27.0.0"
@@ -1002,10 +1002,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.34.tgz#3b0b6a50ff797280b8d000c6281d229f9c538cef"
   integrity sha512-XImEz7XwTvDBtzlTnm8YvMqGW/ErMWBsKZ+hMTvnDIjGCKxwK5Xpc+c/oQjOauwq8M4OS11hEkpjX8rrI/eEgA==
 
-"@types/node@^17.0.36":
-  version "17.0.36"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.36.tgz#c0d5f2fe76b47b63e0e0efc3d2049a9970d68794"
-  integrity sha512-V3orv+ggDsWVHP99K3JlwtH20R7J4IhI1Kksgc+64q5VxgfRkQG8Ws3MFm/FZOKDYGy9feGFlZ70/HpCNe9QaA==
+"@types/node@^17.0.38":
+  version "17.0.38"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.38.tgz#f8bb07c371ccb1903f3752872c89f44006132947"
+  integrity sha512-5jY9RhV7c0Z4Jy09G+NIDTsCZ5G0L5n+Z+p+Y7t5VJHM30bgwzSjVtlcBxqAj+6L/swIlvtOSzr8rBk/aNyV2g==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -1055,10 +1055,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.0.9":
-  version "18.0.9"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.9.tgz#d6712a38bd6cd83469603e7359511126f122e878"
-  integrity sha512-9bjbg1hJHUm4De19L1cHiW0Jvx3geel6Qczhjd0qY5VKVE2X5+x77YxAepuCwVh4vrgZJdgEJw48zrhRIeF4Nw==
+"@types/react@^18.0.10":
+  version "18.0.10"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.10.tgz#5692944d4a45e204fb7a981eb1388afe919cf4d0"
+  integrity sha512-dIugadZuIPrRzvIEevIu7A1smqOAjkSMv8qOfwPt9Ve6i6JT/FQcCHyk2qIAxwsQNKZt5/oGR0T4z9h2dXRAkg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -4670,10 +4670,10 @@ react-dom@^18.0.0, react-dom@^18.1.0:
     loose-envify "^1.1.0"
     scheduler "^0.22.0"
 
-react-icons@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.3.1.tgz#2fa92aebbbc71f43d2db2ed1aed07361124e91ca"
-  integrity sha512-cB10MXLTs3gVuXimblAdI71jrJx8njrJZmNMEMC+sQu5B/BIOmlsAjskdqpn81y8UBVEGuHODd7/ci5DvoSzTQ==
+react-icons@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.4.0.tgz#a13a8a20c254854e1ec9aecef28a95cdf24ef703"
+  integrity sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
@@ -5020,10 +5020,10 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
-snyk@^1.940.0:
-  version "1.940.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.940.0.tgz#a86ae6a3630e9fee32c7fbf9df33b2b343d00a3a"
-  integrity sha512-WdmsbdJq63Db5p4rC2HWW/qZaYjc8Kv1kEqYYBGApnAeSXMZxqjuqlHJP3DLFiNx/xXup9ruhQfeAXnpiGi0cw==
+snyk@^1.945.0:
+  version "1.945.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.945.0.tgz#c0a84dd0bd00cf4f858f230bf4204cba00058398"
+  integrity sha512-l+DM5Jcgrxy+0Iuh6IHSrl/+0ubJ8pqkS6HvyXOIkydyCWSik9XZAoK+EMKV9swpZKLtJOjCj6yxGNyl4HBZhQ==
 
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.1, source-map-js@^1.0.2:
   version "1.0.2"
