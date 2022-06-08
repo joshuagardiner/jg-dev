@@ -39,7 +39,7 @@
     "eslint-plugin-jsdoc": "^39.3.2",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^8.0.1",
-    "jest": "^28.1.0",
+    "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.0",
     "prettier": "^2.6.2",
     "react-icons": "^4.4.0",
