@@ -43,7 +43,7 @@
     "jest-environment-jsdom": "^28.1.1",
     "prettier": "^2.6.2",
     "react-icons": "^4.4.0",
-    "sass": "^1.52.2",
+    "sass": "^1.52.3",
     "snyk": "^1.947.0",
     "styled-components": "^5.3.5",
     "stylelint": "^14.9.0",
