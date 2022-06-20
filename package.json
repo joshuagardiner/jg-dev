@@ -41,7 +41,7 @@
     "husky": "^8.0.1",
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
-    "prettier": "^2.7.0",
+    "prettier": "^2.7.1",
     "react-icons": "^4.4.0",
     "sass": "^1.52.3",
     "snyk": "^1.950.0",
