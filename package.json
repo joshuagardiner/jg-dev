@@ -45,7 +45,7 @@
     "prettier": "^2.7.1",
     "react-icons": "^4.4.0",
     "sass": "^1.54.9",
-    "snyk": "^1.1009.0",
+    "snyk": "^1.1012.0",
     "styled-components": "^5.3.5",
     "stylelint": "^14.12.1",
     "stylelint-config-standard-scss": "^5.0.0",
