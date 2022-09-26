@@ -864,10 +864,10 @@
     ufo "^0.8.0"
     unstorage "^0.2.8"
 
-"@netlify/plugin-lighthouse@^3.4.0":
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/@netlify/plugin-lighthouse/-/plugin-lighthouse-3.4.0.tgz#5fe8f89e085bbc8e64f681695143072b71313a44"
-  integrity sha512-yx5XGkgNgA3dVaqo690YLTK2XRgxS7iUtv8HTioheEVxxPJFX8mxvkLL7dniNuVBYgoRzIk+JHrtjebV0hiFLg==
+"@netlify/plugin-lighthouse@^3.4.1":
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-lighthouse/-/plugin-lighthouse-3.4.1.tgz#e0eca0eae6550aac88eedd3e1773535cb513d7d4"
+  integrity sha512-5+ftm4M1h/A3rpnKMzR0O2pJ5gNB6iLhk2nnYwyPJUjL9VsMWdJm8ZYoEru81BNYuNyWcPWcyQdmHKzU0ex8og==
   dependencies:
     chalk "^4.1.0"
     chrome-launcher "^0.15.0"
