@@ -36,8 +36,8 @@ rm package.json.orig yarn.lock.orig
 
 
 git add .
-if git commit -m "Updated the CHANGELOG for ${VERSION}" && git push origin "${RELEASE_BRANCH}"; then
-  gh pr create --draft --title "Merge branch develop into branch main for release: ${VERSION}" --base "${PRODUCTION_BRANCH}"
+if git commit -m "docs: updated the CHANGELOG for ${VERSION}" && git push origin "${RELEASE_BRANCH}"; then
+  gh pr create --draft --title "chore: merge branch develop into branch main for release: ${VERSION}" --base "${PRODUCTION_BRANCH}"
 else
   echo "Failed to commit the changes and raise a PR"
   exit 1
