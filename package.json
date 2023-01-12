@@ -22,11 +22,11 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.3.0",
-    "@commitlint/config-conventional": "^17.4.0",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
     "@joshuagardiner/typescript-component-library": "^1.0.0-alpha.1.1",
     "@netlify/plugin-lighthouse": "^4.0.3",
-    "@netlify/plugin-nextjs": "^4.29.4",
+    "@netlify/plugin-nextjs": "^4.30.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^28.1.8",
@@ -50,7 +50,7 @@
     "prettier": "^2.8.2",
     "react-icons": "^4.7.1",
     "sass": "^1.57.1",
-    "snyk": "^1.1083.0",
+    "snyk": "^1.1086.0",
     "styled-components": "^5.3.6",
     "stylelint": "^14.16.1",
     "stylelint-config-standard-scss": "^6.1.0",
