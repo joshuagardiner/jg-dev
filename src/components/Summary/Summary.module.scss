@@ -3,11 +3,9 @@
 }
 
 .avatarContainer {
-  height: 15.625rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: -11.7188rem;
-  width: 15.625rem;
 }
 
 .contactInformation {
@@ -65,9 +63,7 @@
 
 @media screen and (max-width: 425px) {
   .avatarContainer {
-    height: 6.25rem;
     margin-top: -4.6875rem;
-    width: 6.25rem;
   }
 
   .contactInformation {
