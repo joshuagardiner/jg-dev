@@ -33,7 +33,7 @@ export function response() {
         priority: true,
         role: "Software Development Engineer",
         company: "EMIS Health",
-        tenure: "November '17 - Present",
+        tenure: "November '17 - November '22",
         text: [
           {
             id: "0b3db32f-a3f3-4361-8538-cbf7c2c2eb2a",
