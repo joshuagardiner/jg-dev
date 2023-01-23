@@ -26,7 +26,7 @@
     "@commitlint/config-conventional": "^17.4.2",
     "@joshuagardiner/typescript-component-library": "^1.0.0-alpha.1.1",
     "@netlify/plugin-lighthouse": "^4.0.5",
-    "@netlify/plugin-nextjs": "^4.30.0",
+    "@netlify/plugin-nextjs": "^4.30.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^28.1.8",
