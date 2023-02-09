@@ -118,13 +118,13 @@ export function response() {
       address: "37 Oakwood Gardens, Halifax, HX28HB",
       email: "joshuagardiner@live.com",
       name: "Joshua Gardiner",
-      role: "Software Development Engineer",
+      role: "Software Engineer",
       telephone: "+44 7947 633 294",
       text: [
         {
           id: "11dc047d-9f34-4557-938a-01294d74e81a",
           value:
-            "An experienced software development engineer with a passion for developing web applications. Well-versed in a variety of technologies to create applications that are reliable and user-friendly."
+            "An experienced software engineer with a passion for developing web applications. Well-versed in a variety of technologies to create applications that are reliable and user-friendly."
         },
         {
           id: "113945ae-5d6c-4233-9957-25d66a5ebdab",
