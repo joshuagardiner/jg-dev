@@ -22,7 +22,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.4.3",
+    "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.3",
     "@joshuagardiner/typescript-component-library": "^1.0.0-alpha.1.1",
     "@netlify/plugin-lighthouse": "^4.0.7",
