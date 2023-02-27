@@ -40,7 +40,7 @@
     "crypto": "^1.0.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.34.0",
-    "eslint-config-next": "^13.1.6",
+    "eslint-config-next": "^13.2.1",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-jsdoc": "^40.0.0",
     "eslint-plugin-prettier": "^4.2.1",
