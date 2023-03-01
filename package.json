@@ -17,7 +17,7 @@
     "test:snyk": "snyk test"
   },
   "dependencies": {
-    "next": "^13.1.6",
+    "next": "^13.2.3",
     "react": "18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -30,7 +30,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.4.0",
-    "@types/node": "^18.14.0",
+    "@types/node": "^18.14.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/styled-components": "^5.1.26",
@@ -39,8 +39,8 @@
     "concurrently": "^7.6.0",
     "crypto": "^1.0.1",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^8.34.0",
-    "eslint-config-next": "^13.1.6",
+    "eslint": "^8.35.0",
+    "eslint-config-next": "^13.2.3",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-jsdoc": "^40.0.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -50,7 +50,7 @@
     "prettier": "^2.8.4",
     "react-icons": "^4.7.1",
     "sass": "^1.58.3",
-    "snyk": "^1.1108.0",
+    "snyk": "^1.1110.0",
     "styled-components": "^5.3.6",
     "stylelint": "^15.2.0",
     "stylelint-config-standard-scss": "^7.0.1",
