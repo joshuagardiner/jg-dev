@@ -50,7 +50,7 @@
     "prettier": "^2.8.4",
     "react-icons": "^4.7.1",
     "sass": "^1.58.3",
-    "snyk": "^1.1110.0",
+    "snyk": "^1.1118.0",
     "styled-components": "^5.3.6",
     "stylelint": "^15.2.0",
     "stylelint-config-standard-scss": "^7.0.1",
