@@ -52,7 +52,7 @@
     "sass": "^1.60.0",
     "snyk": "^1.1131.0",
     "styled-components": "^5.3.9",
-    "stylelint": "^15.3.0",
+    "stylelint": "^15.4.0",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-order": "^6.0.3",
     "stylelint-scss": "^4.6.0",
