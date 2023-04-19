@@ -44,7 +44,7 @@
   font-size: 3.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .contactInformation {
     font-size: 0.83rem;
   }
@@ -60,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
   .avatarContainer {
     margin-top: -4.6875rem;
   }

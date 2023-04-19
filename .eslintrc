@@ -11,6 +11,7 @@
   "rules": {
     // Turn off jsdoc type rules.
     "jsdoc/require-param-type": "off",
-    "jsdoc/require-returns-type": "off"
+    "jsdoc/require-returns-type": "off",
+    "jsdoc/tag-lines": "off"
   }
 }

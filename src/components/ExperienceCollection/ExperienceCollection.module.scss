@@ -9,14 +9,14 @@
   margin-top: 7.5%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .subExperience {
     display: grid;
     width: 100%;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
   .title {
     font-size: 1.25rem;
   }
