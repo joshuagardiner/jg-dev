@@ -8,7 +8,6 @@
     ],
     "no-descending-specificity": null,
     "length-zero-no-unit": null,
-    "number-leading-zero": "always",
     "order/properties-alphabetical-order": true,
     "property-no-unknown": [true, { "ignoreProperties": ["composes"] }],
     "scss/at-import-no-partial-leading-underscore": null,

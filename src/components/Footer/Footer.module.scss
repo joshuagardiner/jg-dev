@@ -26,7 +26,7 @@
   fill: #132138;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
   .author {
     font-size: 0.5rem;
   }
