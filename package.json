@@ -51,7 +51,7 @@
     "react-icons": "^4.10.1",
     "sass": "^1.63.6",
     "snyk": "^1.1187.0",
-    "styled-components": "^6.0.1",
+    "styled-components": "^6.0.5",
     "stylelint": "^15.9.0",
     "stylelint-config-standard-scss": "^10.0.0",
     "stylelint-order": "^6.0.3",
