@@ -39,7 +39,7 @@
     "concurrently": "^8.2.0",
     "crypto": "^1.0.1",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^8.43.0",
+    "eslint": "^8.47.0",
     "eslint-config-next": "^13.4.7",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jsdoc": "^46.4.2",
