@@ -2,6 +2,11 @@
 
 ## Release
 
+## 1.5.0 [20-01-2024]
+
+- Updated `Summary` component to reflect change of address.
+- Updated `Footer` component to reflect the new year.
+
 ## 1.4.0 [01-10-2022]
 
 - Added `commitizen`.
