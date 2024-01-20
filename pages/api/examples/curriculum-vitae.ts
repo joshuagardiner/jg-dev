@@ -115,8 +115,8 @@ export function response() {
       soft: ["Communication", "Iniative", "Leadership", "Problem solving", "Teamwork"]
     },
     summary: {
-      address: "37 Oakwood Gardens, Halifax, HX28HB",
-      email: "joshuagardiner@live.com",
+      address: "4 Miller Road, Halewood, Liverpool, L260AJ",
+      email: "joshuagardiner.dev@gmail.com",
       name: "Joshua Gardiner",
       role: "Software Engineer",
       telephone: "+44 7947 633 294",
