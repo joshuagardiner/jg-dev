@@ -23,10 +23,9 @@ export const Summary: React.FC<ISummaryProps> = (props: ISummaryProps) => {
           className={styles.avatar}
           src="/avatar.jpg"
           alt="jg_avatar"
-          height={0}
-          layout="responsive"
+          height={250}
           priority={true}
-          width={0}
+          width={250}
         />
       </div>
       <h1 className={styles.title} data-testid={"summary-title"}>

@@ -3,11 +3,9 @@
 }
 
 .avatarContainer {
-  height: 15.625rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: -11.7188rem;
-  width: 15.625rem;
 }
 
 .contactInformation {
@@ -23,7 +21,7 @@
 
 .role {
   font-size: 1.25rem;
-  margin-top: -1.75%;
+  margin-top: -1rem;
   text-transform: uppercase;
 }
 
@@ -44,10 +42,9 @@
 
 .title {
   font-size: 3.5rem;
-  margin-top: 5%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (width <= 768px) {
   .contactInformation {
     font-size: 0.83rem;
   }
@@ -63,11 +60,9 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (width <= 425px) {
   .avatarContainer {
-    height: 6.25rem;
     margin-top: -4.6875rem;
-    width: 6.25rem;
   }
 
   .contactInformation {

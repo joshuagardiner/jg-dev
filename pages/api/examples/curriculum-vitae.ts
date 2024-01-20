@@ -33,7 +33,7 @@ export function response() {
         priority: true,
         role: "Software Development Engineer",
         company: "EMIS Health",
-        tenure: "November '17 - Present",
+        tenure: "November '17 - November '22",
         text: [
           {
             id: "0b3db32f-a3f3-4361-8538-cbf7c2c2eb2a",
@@ -115,16 +115,16 @@ export function response() {
       soft: ["Communication", "Iniative", "Leadership", "Problem solving", "Teamwork"]
     },
     summary: {
-      address: "37 Oakwood Gardens, Halifax, HX28HB",
-      email: "joshuagardiner@live.com",
+      address: "4 Miller Road, Halewood, Liverpool, L260AJ",
+      email: "joshuagardiner.dev@gmail.com",
       name: "Joshua Gardiner",
-      role: "Software Development Engineer",
+      role: "Software Engineer",
       telephone: "+44 7947 633 294",
       text: [
         {
           id: "11dc047d-9f34-4557-938a-01294d74e81a",
           value:
-            "An experienced software development engineer with a passion for developing web applications. Well-versed in a variety of technologies to create applications that are reliable and user-friendly."
+            "An experienced software engineer with a passion for developing web applications. Well-versed in a variety of technologies to create applications that are reliable and user-friendly."
         },
         {
           id: "113945ae-5d6c-4233-9957-25d66a5ebdab",
