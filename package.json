@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
-    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@joshuagardiner/typescript-component-library": "^1.0.0-alpha.1.1",
     "@netlify/plugin-lighthouse": "^6.0.0",
     "@netlify/plugin-nextjs": "^5.0.0",
