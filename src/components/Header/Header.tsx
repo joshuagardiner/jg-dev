@@ -7,7 +7,7 @@ import styles from "./Header.module.scss";
  *
  * @returns the Header component.
  */
-export const Header: React.FC = (): JSX.Element => {
+export const Header: React.FC = (): React.JSX.Element => {
   return (
     <div className={styles.container} data-testid={"header"}>
       <svg
