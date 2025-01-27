@@ -7,7 +7,7 @@ import styles from "./Footer.module.scss";
  *
  * @returns the Footer component
  */
-export const Footer: React.FC = (): JSX.Element => {
+export const Footer: React.FC = (): React.JSX.Element => {
   return (
     <div className={styles.container}>
       <svg
