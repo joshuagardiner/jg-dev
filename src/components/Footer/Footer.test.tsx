@@ -5,6 +5,6 @@ describe("Footer", () => {
   it("renders the Footer component correctly.", () => {
     render(<Footer />);
     expect(screen.getByTestId("footer")).toBeDefined();
-    expect(screen.getByTestId("footer").textContent).toEqual("Joshua Gardiner, 2024");
+    expect(screen.getByTestId("footer").textContent).toEqual("Joshua Gardiner, 2025");
   });
 });

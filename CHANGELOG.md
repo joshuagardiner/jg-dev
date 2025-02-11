@@ -2,6 +2,17 @@
 
 ## Release
 
+## 1.6.0 [11-02-2025]
+
+- Implement `Experience` for LBG.
+- Condense `Experience` at EMIS Health.
+- Condense `Experience` at FDM.
+- Condense `Experience` at Sainsbury's.
+- Migrate to `v19.0.0` of `react` and `react-dom`.
+- Updated `Footer` component to current year.
+- Migrate to `v9.0.0` of eslint.
+- Upgrade `Node` to LTS.
+
 ## 1.5.0 [20-01-2024]
 
 - Updated `Summary` component to reflect change of address.

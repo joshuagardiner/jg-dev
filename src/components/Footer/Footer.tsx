@@ -7,7 +7,7 @@ import styles from "./Footer.module.scss";
  *
  * @returns the Footer component
  */
-export const Footer: React.FC = (): JSX.Element => {
+export const Footer: React.FC = (): React.JSX.Element => {
   return (
     <div className={styles.container}>
       <svg
@@ -19,7 +19,7 @@ export const Footer: React.FC = (): JSX.Element => {
         <path className={styles.wave} d="M1200 120L0 16.48 0 0 1200 0 1200 120z" />
       </svg>
       <p className={styles.author} data-testid={"footer"}>
-        Joshua Gardiner, 2024
+        Joshua Gardiner, 2025
       </p>
     </div>
   );
