@@ -44,3 +44,19 @@ yarn dev
 ```
 
 Open [`http://localhost:3000`](http://localhost:3000) with your browser to see the result.
+
+## Release
+
+Update the `CHANGELOG.md` with changes above the previous release.
+
+Run the release script:
+
+```bash
+DATE=DD-MM-YYYY VERSION=MAJOR.MINOR.PATCH ./scripts/release.sh
+```
+
+Ensure the raised draft `PULL_REQUEST` is building and deploying successfully.
+
+Create the `TAG` within GitHub with `CHANGELOG` details.
+
+Merge branch `main` into branch `develop` for `VERSION` and `CHANGELOG` details.
